@@ -1,0 +1,1182 @@
+[dynet] random seed: 1043948500
+[dynet] allocating memory: 512MB
+[dynet] memory allocation done.
+DATA_DIRECTORY:	data/
+DEBUG_MODE:	False
+EMBEDDINGS_FILE:	data/glove.6B.100d.txt
+VERSION:	1.7
+_____________________
+COMMAND: /home/postma/Dutch_FrameNet_Lexicon/resources/run_open-sesame/resources/open-sesame/sesame/targetid.py --mode train --model_name fn1.7-pretrained-targetid
+VALIDATED MODEL SAVED TO:	logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+PARSING MODE:	train
+_____________________
+
+
+Reading data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll : 19391 in 3413 sents
+# examples with missing arguments : 526
+Combined 19391 instances in data into 3413 instances.
+
+Reading the lexical unit index file: data/fndata-1.7/luIndex.xml
+# unique targets = 9421
+# total targets = 13572
+# targets with multiple LUs = 4151
+# max LUs per target = 5
+
+
+Reading pretrained embeddings from data/glove.6B.100d.txt ...
+
+Reading data/neural/fn1.7/fn1.7.dev.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.dev.syntaxnet.conll : 2272 in 326 sents
+# examples with missing arguments : 73
+Combined 2272 instances in data into 326 instances.
+
+PARSER SETTINGS (see logs/fn1.7-pretrained-targetid/configuration.json)
+_____________________
+DEV_EVAL_EPOCH_FREQUENCY:	3
+DROPOUT_RATE:	0.01
+EVAL_AFTER_EVERY_EPOCHS:	100
+HIDDEN_DIM:	100
+LEMMA_DIM:	100
+LSTM_DEPTH:	2
+LSTM_DIM:	100
+LSTM_INPUT_DIM:	100
+NUM_EPOCHS:	100
+PATIENCE:	25
+POS_DIM:	100
+PRETRAINED_EMBEDDING_DIM:	100
+TOKEN_DIM:	100
+TRAIN:	data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll
+UNK_PROB:	0.1
+USE_DROPOUT:	True
+
+# Tokens = 400574
+	Unseen in dev/test = 45
+	Unlearnt in dev/test = 390569
+# POS tags = 42
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 1
+# Lemmas = 9422
+	Unseen in dev/test = 515
+	Unlearnt in dev/test = 516
+
+_____________________
+
+[lr=0.01 clips=61 updates=99] epoch = 0.100 loss = 9.797351 train f1 = 0.2105
+[lr=0.01 clips=55 updates=100] epoch = 0.200 loss = 9.884680 train f1 = 0.0183
+[lr=0.01 clips=62 updates=100] epoch = 0.300 loss = 9.414921 train f1 = 0.2335
+[dev epoch=0] loss = 8.172481 p = 1.0000 (1.0/1.0) r = 0.0004 (1.0/2368.0) f1 = 0.0008 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=60 updates=100] epoch = 0.400 loss = 9.228958 train f1 = 0.3125
+[lr=0.01 clips=52 updates=100] epoch = 0.500 loss = 9.267902 train f1 = 0.2242
+[lr=0.01 clips=52 updates=100] epoch = 0.600 loss = 9.081374 train f1 = 0.0858
+[dev epoch=0] loss = 6.915950 p = 0.9259 (50.0/54.0) r = 0.0211 (50.0/2368.0) f1 = 0.0413 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=64 updates=100] epoch = 0.700 loss = 9.068012 train f1 = 0.2614
+[lr=0.01 clips=67 updates=100] epoch = 0.800 loss = 9.132152 train f1 = 0.4395
+[lr=0.01 clips=71 updates=100] epoch = 0.900 loss = 9.038640 train f1 = 0.3011
+[dev epoch=0] loss = 5.719411 p = 0.8936 (42.0/47.0) r = 0.0177 (42.0/2368.0) f1 = 0.0348
+[lr=0.01 clips=72 updates=100] epoch = 0.1000 loss = 9.021973 train f1 = 0.4605
+[lr=0.01 clips=82 updates=100] epoch = 0.1100 loss = 8.934249 train f1 = 0.4287
+[lr=0.01 clips=78 updates=100] epoch = 0.1200 loss = 8.917916 train f1 = 0.4271
+[dev epoch=0] loss = 7.330324 p = 0.7233 (852.0/1178.0) r = 0.3598 (852.0/2368.0) f1 = 0.4805 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=89 updates=100] epoch = 0.1300 loss = 8.882533 train f1 = 0.5381
+[lr=0.01 clips=86 updates=100] epoch = 0.1400 loss = 8.767830 train f1 = 0.5607
+[lr=0.01 clips=90 updates=99] epoch = 0.1500 loss = 8.723849 train f1 = 0.5364
+[dev epoch=0] loss = 5.390269 p = 0.7446 (933.0/1253.0) r = 0.3940 (933.0/2368.0) f1 = 0.5153 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+WARNING: Rule not defined for part-of-speech prp$ word sir - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 0.1600 loss = 8.629694 train f1 = 0.6479
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 0.1700 loss = 8.564166 train f1 = 0.6024
+[lr=0.01 clips=92 updates=100] epoch = 0.1800 loss = 8.462877 train f1 = 0.6436
+[dev epoch=0] loss = 4.343105 p = 0.7725 (832.0/1077.0) r = 0.3514 (832.0/2368.0) f1 = 0.4830
+[lr=0.01 clips=95 updates=100] epoch = 0.1900 loss = 8.409750 train f1 = 0.6651
+[lr=0.01 clips=95 updates=99] epoch = 0.2000 loss = 8.364332 train f1 = 0.7101
+[lr=0.01 clips=93 updates=100] epoch = 0.2100 loss = 8.299087 train f1 = 0.7160
+[dev epoch=0] loss = 4.321894 p = 0.7597 (1394.0/1835.0) r = 0.5887 (1394.0/2368.0) f1 = 0.6633 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=95 updates=100] epoch = 0.2200 loss = 8.295463 train f1 = 0.6873
+[lr=0.01 clips=95 updates=100] epoch = 0.2300 loss = 8.215998 train f1 = 0.7062
+[lr=0.01 clips=92 updates=100] epoch = 0.2400 loss = 8.140963 train f1 = 0.6752
+[dev epoch=0] loss = 3.712583 p = 0.8249 (617.0/748.0) r = 0.2606 (617.0/2368.0) f1 = 0.3960
+[lr=0.01 clips=91 updates=100] epoch = 0.2500 loss = 8.073586 train f1 = 0.6851
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=96 updates=100] epoch = 0.2600 loss = 8.011807 train f1 = 0.6723
+[lr=0.01 clips=95 updates=100] epoch = 0.2700 loss = 7.977925 train f1 = 0.6796
+[dev epoch=0] loss = 3.394711 p = 0.7251 (1918.0/2645.0) r = 0.8100 (1918.0/2368.0) f1 = 0.7652 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=94 updates=100] epoch = 0.2800 loss = 7.945396 train f1 = 0.6845
+[lr=0.01 clips=94 updates=100] epoch = 0.2900 loss = 7.921436 train f1 = 0.6690
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 0.3000 loss = 7.869551 train f1 = 0.6784
+[dev epoch=0] loss = 4.083822 p = 0.7869 (1333.0/1694.0) r = 0.5629 (1333.0/2368.0) f1 = 0.6563
+[lr=0.01 clips=98 updates=100] epoch = 0.3100 loss = 7.828445 train f1 = 0.7163
+[lr=0.01 clips=96 updates=100] epoch = 0.3200 loss = 7.794948 train f1 = 0.7359
+[lr=0.01 clips=93 updates=100] epoch = 0.3300 loss = 7.790093 train f1 = 0.7244
+[dev epoch=0] loss = 3.784904 p = 0.7415 (1882.0/2538.0) r = 0.7948 (1882.0/2368.0) f1 = 0.7672 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=94 updates=100] epoch = 0.3400 loss = 7.755633 train f1 = 0.7197
+[lr=0.01 clips=106 updates=113] epoch = 1.100 loss = 6.461447 train f1 = 0.7232
+[lr=0.01 clips=95 updates=100] epoch = 1.200 loss = 7.011256 train f1 = 0.6971
+[lr=0.01 clips=95 updates=100] epoch = 1.300 loss = 7.095907 train f1 = 0.7135
+[dev epoch=1] loss = 3.115452 p = 0.7442 (1836.0/2467.0) r = 0.7753 (1836.0/2368.0) f1 = 0.7595
+[lr=0.01 clips=94 updates=100] epoch = 1.400 loss = 6.979924 train f1 = 0.7067
+[lr=0.01 clips=93 updates=100] epoch = 1.500 loss = 6.843756 train f1 = 0.7161
+[lr=0.01 clips=97 updates=100] epoch = 1.600 loss = 6.800435 train f1 = 0.7391
+[dev epoch=1] loss = 3.447703 p = 0.7791 (1605.0/2060.0) r = 0.6778 (1605.0/2368.0) f1 = 0.7249
+[lr=0.01 clips=97 updates=100] epoch = 1.700 loss = 6.834627 train f1 = 0.7229
+[lr=0.01 clips=98 updates=100] epoch = 1.800 loss = 6.845357 train f1 = 0.6844
+[lr=0.01 clips=89 updates=100] epoch = 1.900 loss = 6.774315 train f1 = 0.7223
+[dev epoch=1] loss = 3.732990 p = 0.7486 (1802.0/2407.0) r = 0.7610 (1802.0/2368.0) f1 = 0.7548
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 1.1000 loss = 6.721864 train f1 = 0.7334
+[lr=0.01 clips=94 updates=100] epoch = 1.1100 loss = 6.680482 train f1 = 0.7423
+[lr=0.01 clips=96 updates=100] epoch = 1.1200 loss = 6.687892 train f1 = 0.6972
+[dev epoch=1] loss = 3.788224 p = 0.7474 (1823.0/2439.0) r = 0.7698 (1823.0/2368.0) f1 = 0.7585
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 1.1300 loss = 6.669776 train f1 = 0.7410
+[lr=0.01 clips=93 updates=100] epoch = 1.1400 loss = 6.634221 train f1 = 0.7624
+[lr=0.01 clips=94 updates=100] epoch = 1.1500 loss = 6.636134 train f1 = 0.7230
+[dev epoch=1] loss = 4.048121 p = 0.7744 (1723.0/2225.0) r = 0.7276 (1723.0/2368.0) f1 = 0.7503
+[lr=0.01 clips=97 updates=100] epoch = 1.1600 loss = 6.649109 train f1 = 0.7203
+[lr=0.01 clips=97 updates=100] epoch = 1.1700 loss = 6.619007 train f1 = 0.7280
+[lr=0.01 clips=97 updates=100] epoch = 1.1800 loss = 6.611830 train f1 = 0.7088
+[dev epoch=1] loss = 3.675927 p = 0.7491 (1899.0/2535.0) r = 0.8019 (1899.0/2368.0) f1 = 0.7746 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=94 updates=100] epoch = 1.1900 loss = 6.597813 train f1 = 0.7167
+[lr=0.01 clips=92 updates=100] epoch = 1.2000 loss = 6.570794 train f1 = 0.7316
+[lr=0.01 clips=94 updates=100] epoch = 1.2100 loss = 6.590807 train f1 = 0.7153
+[dev epoch=1] loss = 3.788754 p = 0.7861 (1639.0/2085.0) r = 0.6921 (1639.0/2368.0) f1 = 0.7361
+[lr=0.01 clips=95 updates=100] epoch = 1.2200 loss = 6.581321 train f1 = 0.7115
+[lr=0.01 clips=95 updates=100] epoch = 1.2300 loss = 6.579458 train f1 = 0.7182
+[lr=0.01 clips=95 updates=100] epoch = 1.2400 loss = 6.570202 train f1 = 0.7068
+[dev epoch=1] loss = 3.257248 p = 0.7849 (1675.0/2134.0) r = 0.7073 (1675.0/2368.0) f1 = 0.7441
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=99] epoch = 1.2500 loss = 6.571243 train f1 = 0.7540
+[lr=0.01 clips=92 updates=100] epoch = 1.2600 loss = 6.551322 train f1 = 0.6990
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=92 updates=100] epoch = 1.2700 loss = 6.529428 train f1 = 0.7582
+[dev epoch=1] loss = 3.480495 p = 0.7891 (1613.0/2044.0) r = 0.6812 (1613.0/2368.0) f1 = 0.7312
+[lr=0.01 clips=91 updates=100] epoch = 1.2800 loss = 6.492707 train f1 = 0.7473
+[lr=0.01 clips=95 updates=100] epoch = 1.2900 loss = 6.469149 train f1 = 0.7513
+[lr=0.01 clips=93 updates=100] epoch = 1.3000 loss = 6.444208 train f1 = 0.7336
+[dev epoch=1] loss = 3.252825 p = 0.7630 (1800.0/2359.0) r = 0.7601 (1800.0/2368.0) f1 = 0.7616
+[lr=0.01 clips=92 updates=100] epoch = 1.3100 loss = 6.422757 train f1 = 0.7411
+[lr=0.01 clips=97 updates=99] epoch = 1.3200 loss = 6.436997 train f1 = 0.7174
+[lr=0.01 clips=93 updates=100] epoch = 1.3300 loss = 6.416590 train f1 = 0.7345
+[dev epoch=1] loss = 3.155887 p = 0.8238 (1276.0/1549.0) r = 0.5389 (1276.0/2368.0) f1 = 0.6515
+[lr=0.01 clips=97 updates=100] epoch = 1.3400 loss = 6.425633 train f1 = 0.7049
+[lr=0.01 clips=107 updates=113] epoch = 2.100 loss = 6.671635 train f1 = 0.7126
+[lr=0.01 clips=95 updates=100] epoch = 2.200 loss = 6.329157 train f1 = 0.7118
+[lr=0.01 clips=93 updates=100] epoch = 2.300 loss = 6.217390 train f1 = 0.7144
+[dev epoch=2] loss = 3.658279 p = 0.7789 (1716.0/2203.0) r = 0.7247 (1716.0/2368.0) f1 = 0.7508
+[lr=0.01 clips=96 updates=100] epoch = 2.400 loss = 6.122650 train f1 = 0.7302
+[lr=0.01 clips=92 updates=100] epoch = 2.500 loss = 6.083724 train f1 = 0.7363
+[lr=0.01 clips=95 updates=100] epoch = 2.600 loss = 6.084428 train f1 = 0.7157
+[dev epoch=2] loss = 3.649691 p = 0.7809 (1689.0/2163.0) r = 0.7133 (1689.0/2368.0) f1 = 0.7455
+WARNING: Rule not defined for part-of-speech prp$ word hour - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 2.700 loss = 6.049015 train f1 = 0.7784
+[lr=0.01 clips=94 updates=99] epoch = 2.800 loss = 6.011078 train f1 = 0.7574
+[lr=0.01 clips=98 updates=100] epoch = 2.900 loss = 6.043476 train f1 = 0.7631
+[dev epoch=2] loss = 2.898248 p = 0.8045 (1551.0/1928.0) r = 0.6550 (1551.0/2368.0) f1 = 0.7221
+[lr=0.01 clips=96 updates=100] epoch = 2.1000 loss = 6.054047 train f1 = 0.7279
+[lr=0.01 clips=95 updates=100] epoch = 2.1100 loss = 6.022292 train f1 = 0.7710
+[lr=0.01 clips=96 updates=100] epoch = 2.1200 loss = 5.989700 train f1 = 0.7296
+[dev epoch=2] loss = 2.970328 p = 0.8024 (1632.0/2034.0) r = 0.6892 (1632.0/2368.0) f1 = 0.7415
+[lr=0.01 clips=95 updates=100] epoch = 2.1300 loss = 5.989387 train f1 = 0.7295
+[lr=0.01 clips=95 updates=100] epoch = 2.1400 loss = 5.993563 train f1 = 0.7345
+[lr=0.01 clips=99 updates=100] epoch = 2.1500 loss = 6.018852 train f1 = 0.6990
+[dev epoch=2] loss = 3.549239 p = 0.8004 (1612.0/2014.0) r = 0.6807 (1612.0/2368.0) f1 = 0.7357
+[lr=0.01 clips=96 updates=100] epoch = 2.1600 loss = 6.048784 train f1 = 0.7450
+[lr=0.01 clips=97 updates=100] epoch = 2.1700 loss = 6.032332 train f1 = 0.7528
+[lr=0.01 clips=95 updates=100] epoch = 2.1800 loss = 6.057210 train f1 = 0.6940
+[dev epoch=2] loss = 3.701357 p = 0.7958 (1691.0/2125.0) r = 0.7141 (1691.0/2368.0) f1 = 0.7527
+[lr=0.01 clips=98 updates=100] epoch = 2.1900 loss = 6.077878 train f1 = 0.7251
+[lr=0.01 clips=96 updates=100] epoch = 2.2000 loss = 6.063375 train f1 = 0.7434
+[lr=0.01 clips=98 updates=100] epoch = 2.2100 loss = 6.056677 train f1 = 0.7440
+[dev epoch=2] loss = 2.959538 p = 0.7950 (1644.0/2068.0) r = 0.6943 (1644.0/2368.0) f1 = 0.7412
+[lr=0.01 clips=95 updates=100] epoch = 2.2200 loss = 6.054474 train f1 = 0.7668
+[lr=0.01 clips=94 updates=100] epoch = 2.2300 loss = 6.040027 train f1 = 0.7349
+[lr=0.01 clips=96 updates=100] epoch = 2.2400 loss = 6.042446 train f1 = 0.7518
+[dev epoch=2] loss = 3.076502 p = 0.7925 (1677.0/2116.0) r = 0.7082 (1677.0/2368.0) f1 = 0.7480
+[lr=0.01 clips=98 updates=100] epoch = 2.2500 loss = 6.056531 train f1 = 0.7133
+[lr=0.01 clips=94 updates=100] epoch = 2.2600 loss = 6.039467 train f1 = 0.7893
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 2.2700 loss = 6.036992 train f1 = 0.7639
+[dev epoch=2] loss = 3.000356 p = 0.8159 (1511.0/1852.0) r = 0.6381 (1511.0/2368.0) f1 = 0.7161
+[lr=0.01 clips=95 updates=100] epoch = 2.2800 loss = 6.037915 train f1 = 0.7516
+[lr=0.01 clips=98 updates=100] epoch = 2.2900 loss = 6.034775 train f1 = 0.7262
+[lr=0.01 clips=93 updates=100] epoch = 2.3000 loss = 6.007515 train f1 = 0.7924
+[dev epoch=2] loss = 2.707431 p = 0.7816 (1757.0/2248.0) r = 0.7420 (1757.0/2368.0) f1 = 0.7613
+[lr=0.01 clips=93 updates=99] epoch = 2.3100 loss = 6.004673 train f1 = 0.7573
+[lr=0.01 clips=99 updates=100] epoch = 2.3200 loss = 6.015999 train f1 = 0.7078
+[lr=0.01 clips=94 updates=100] epoch = 2.3300 loss = 6.035460 train f1 = 0.7212
+[dev epoch=2] loss = 3.152947 p = 0.7921 (1707.0/2155.0) r = 0.7209 (1707.0/2368.0) f1 = 0.7548
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=98 updates=100] epoch = 2.3400 loss = 6.033267 train f1 = 0.7625
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=109 updates=113] epoch = 3.100 loss = 5.566884 train f1 = 0.7309
+[lr=0.01 clips=97 updates=100] epoch = 3.200 loss = 5.597572 train f1 = 0.7615
+[lr=0.01 clips=96 updates=100] epoch = 3.300 loss = 5.624707 train f1 = 0.7709
+[dev epoch=3] loss = 2.828433 p = 0.7968 (1702.0/2136.0) r = 0.7188 (1702.0/2368.0) f1 = 0.7558
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 3.400 loss = 5.675855 train f1 = 0.7670
+[lr=0.01 clips=96 updates=100] epoch = 3.500 loss = 5.698528 train f1 = 0.7749
+[lr=0.01 clips=91 updates=100] epoch = 3.600 loss = 5.646157 train f1 = 0.7562
+[dev epoch=3] loss = 2.698500 p = 0.7756 (1773.0/2286.0) r = 0.7487 (1773.0/2368.0) f1 = 0.7619
+[lr=0.01 clips=96 updates=100] epoch = 3.700 loss = 5.684857 train f1 = 0.7729
+[lr=0.01 clips=97 updates=100] epoch = 3.800 loss = 5.637775 train f1 = 0.7745
+[lr=0.01 clips=96 updates=100] epoch = 3.900 loss = 5.614086 train f1 = 0.7485
+[dev epoch=3] loss = 2.908078 p = 0.8085 (1642.0/2031.0) r = 0.6934 (1642.0/2368.0) f1 = 0.7465
+[lr=0.01 clips=98 updates=100] epoch = 3.1000 loss = 5.653903 train f1 = 0.7195
+[lr=0.01 clips=97 updates=100] epoch = 3.1100 loss = 5.656123 train f1 = 0.7368
+[lr=0.01 clips=96 updates=100] epoch = 3.1200 loss = 5.688084 train f1 = 0.7500
+[dev epoch=3] loss = 3.092193 p = 0.7659 (1835.0/2396.0) r = 0.7749 (1835.0/2368.0) f1 = 0.7704
+[lr=0.01 clips=97 updates=100] epoch = 3.1300 loss = 5.725336 train f1 = 0.7604
+[lr=0.01 clips=96 updates=100] epoch = 3.1400 loss = 5.713559 train f1 = 0.7634
+[lr=0.01 clips=92 updates=100] epoch = 3.1500 loss = 5.708634 train f1 = 0.7278
+[dev epoch=3] loss = 2.772269 p = 0.8239 (1507.0/1829.0) r = 0.6364 (1507.0/2368.0) f1 = 0.7181
+[lr=0.01 clips=96 updates=100] epoch = 3.1600 loss = 5.720071 train f1 = 0.7308
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=99] epoch = 3.1700 loss = 5.720415 train f1 = 0.7395
+[lr=0.01 clips=96 updates=100] epoch = 3.1800 loss = 5.753948 train f1 = 0.7736
+[dev epoch=3] loss = 2.752466 p = 0.7833 (1753.0/2238.0) r = 0.7403 (1753.0/2368.0) f1 = 0.7612
+[lr=0.01 clips=98 updates=100] epoch = 3.1900 loss = 5.755840 train f1 = 0.7332
+[lr=0.01 clips=94 updates=100] epoch = 3.2000 loss = 5.750552 train f1 = 0.7203
+[lr=0.01 clips=93 updates=100] epoch = 3.2100 loss = 5.751654 train f1 = 0.7682
+[dev epoch=3] loss = 2.546465 p = 0.8193 (1569.0/1915.0) r = 0.6626 (1569.0/2368.0) f1 = 0.7327
+[lr=0.01 clips=97 updates=100] epoch = 3.2200 loss = 5.768570 train f1 = 0.7484
+[lr=0.01 clips=95 updates=100] epoch = 3.2300 loss = 5.748450 train f1 = 0.7024
+[lr=0.01 clips=90 updates=100] epoch = 3.2400 loss = 5.718633 train f1 = 0.7641
+[dev epoch=3] loss = 3.007262 p = 0.8086 (1665.0/2059.0) r = 0.7031 (1665.0/2368.0) f1 = 0.7522
+[lr=0.01 clips=95 updates=100] epoch = 3.2500 loss = 5.704945 train f1 = 0.7806
+[lr=0.01 clips=95 updates=100] epoch = 3.2600 loss = 5.713159 train f1 = 0.7449
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 3.2700 loss = 5.700892 train f1 = 0.7854
+[dev epoch=3] loss = 3.047744 p = 0.7766 (1828.0/2354.0) r = 0.7720 (1828.0/2368.0) f1 = 0.7742
+[lr=0.01 clips=99 updates=100] epoch = 3.2800 loss = 5.714012 train f1 = 0.7363
+[lr=0.01 clips=97 updates=100] epoch = 3.2900 loss = 5.700920 train f1 = 0.7974
+[lr=0.01 clips=95 updates=100] epoch = 3.3000 loss = 5.704029 train f1 = 0.7502
+[dev epoch=3] loss = 2.526352 p = 0.8655 (1242.0/1435.0) r = 0.5245 (1242.0/2368.0) f1 = 0.6532
+[lr=0.01 clips=97 updates=100] epoch = 3.3100 loss = 5.699967 train f1 = 0.7576
+[lr=0.01 clips=100 updates=100] epoch = 3.3200 loss = 5.720157 train f1 = 0.7513
+[lr=0.01 clips=97 updates=100] epoch = 3.3300 loss = 5.712155 train f1 = 0.7818
+[dev epoch=3] loss = 2.486645 p = 0.8203 (1616.0/1970.0) r = 0.6824 (1616.0/2368.0) f1 = 0.7450
+[lr=0.01 clips=95 updates=99] epoch = 3.3400 loss = 5.719928 train f1 = 0.7914
+[lr=0.01 clips=109 updates=113] epoch = 4.100 loss = 5.353442 train f1 = 0.7654
+[lr=0.01 clips=92 updates=100] epoch = 4.200 loss = 5.365885 train f1 = 0.7489
+[lr=0.01 clips=93 updates=100] epoch = 4.300 loss = 5.278161 train f1 = 0.7885
+[dev epoch=4] loss = 2.331179 p = 0.7968 (1768.0/2219.0) r = 0.7466 (1768.0/2368.0) f1 = 0.7709
+[lr=0.01 clips=98 updates=100] epoch = 4.400 loss = 5.374166 train f1 = 0.7821
+[lr=0.01 clips=94 updates=100] epoch = 4.500 loss = 5.323164 train f1 = 0.7853
+[lr=0.01 clips=97 updates=100] epoch = 4.600 loss = 5.411128 train f1 = 0.7764
+[dev epoch=4] loss = 2.771708 p = 0.8239 (1586.0/1925.0) r = 0.6698 (1586.0/2368.0) f1 = 0.7389
+[lr=0.01 clips=96 updates=100] epoch = 4.700 loss = 5.374568 train f1 = 0.7785
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=97 updates=100] epoch = 4.800 loss = 5.394822 train f1 = 0.7901
+[lr=0.01 clips=94 updates=100] epoch = 4.900 loss = 5.470483 train f1 = 0.7556
+[dev epoch=4] loss = 3.001733 p = 0.7835 (1759.0/2245.0) r = 0.7428 (1759.0/2368.0) f1 = 0.7626
+[lr=0.01 clips=94 updates=100] epoch = 4.1000 loss = 5.499535 train f1 = 0.7848
+[lr=0.01 clips=97 updates=100] epoch = 4.1100 loss = 5.464352 train f1 = 0.7713
+[lr=0.01 clips=96 updates=100] epoch = 4.1200 loss = 5.531776 train f1 = 0.7458
+[dev epoch=4] loss = 2.500103 p = 0.8353 (1587.0/1900.0) r = 0.6702 (1587.0/2368.0) f1 = 0.7437
+[lr=0.01 clips=94 updates=100] epoch = 4.1300 loss = 5.546522 train f1 = 0.7691
+[lr=0.01 clips=97 updates=100] epoch = 4.1400 loss = 5.551105 train f1 = 0.7588
+[lr=0.01 clips=94 updates=100] epoch = 4.1500 loss = 5.537206 train f1 = 0.7656
+[dev epoch=4] loss = 2.366513 p = 0.8505 (1468.0/1726.0) r = 0.6199 (1468.0/2368.0) f1 = 0.7171
+[lr=0.01 clips=99 updates=100] epoch = 4.1600 loss = 5.529147 train f1 = 0.7776
+[lr=0.01 clips=91 updates=100] epoch = 4.1700 loss = 5.502488 train f1 = 0.7857
+[lr=0.01 clips=96 updates=100] epoch = 4.1800 loss = 5.481722 train f1 = 0.7455
+[dev epoch=4] loss = 2.637199 p = 0.8199 (1603.0/1955.0) r = 0.6769 (1603.0/2368.0) f1 = 0.7416
+[lr=0.01 clips=96 updates=100] epoch = 4.1900 loss = 5.492815 train f1 = 0.7644
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 4.2000 loss = 5.470031 train f1 = 0.7833
+[lr=0.01 clips=95 updates=100] epoch = 4.2100 loss = 5.464683 train f1 = 0.7698
+[dev epoch=4] loss = 2.592855 p = 0.8360 (1504.0/1799.0) r = 0.6351 (1504.0/2368.0) f1 = 0.7219
+[lr=0.01 clips=97 updates=100] epoch = 4.2200 loss = 5.450904 train f1 = 0.7734
+[lr=0.01 clips=97 updates=100] epoch = 4.2300 loss = 5.458795 train f1 = 0.7671
+[lr=0.01 clips=90 updates=100] epoch = 4.2400 loss = 5.425722 train f1 = 0.8062
+[dev epoch=4] loss = 2.515719 p = 0.8418 (1453.0/1726.0) r = 0.6136 (1453.0/2368.0) f1 = 0.7098
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=97 updates=100] epoch = 4.2500 loss = 5.417233 train f1 = 0.7743
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=96 updates=100] epoch = 4.2600 loss = 5.417142 train f1 = 0.7845
+[lr=0.01 clips=95 updates=100] epoch = 4.2700 loss = 5.411918 train f1 = 0.7443
+[dev epoch=4] loss = 2.753795 p = 0.8482 (1453.0/1713.0) r = 0.6136 (1453.0/2368.0) f1 = 0.7121
+[lr=0.01 clips=98 updates=100] epoch = 4.2800 loss = 5.449733 train f1 = 0.7446
+[lr=0.01 clips=96 updates=100] epoch = 4.2900 loss = 5.470877 train f1 = 0.7671
+[lr=0.01 clips=96 updates=99] epoch = 4.3000 loss = 5.469296 train f1 = 0.7596
+[dev epoch=4] loss = 2.670600 p = 0.8086 (1758.0/2174.0) r = 0.7424 (1758.0/2368.0) f1 = 0.7741
+[lr=0.01 clips=97 updates=100] epoch = 4.3100 loss = 5.468449 train f1 = 0.7432
+[lr=0.01 clips=93 updates=99] epoch = 4.3200 loss = 5.457710 train f1 = 0.7602
+[lr=0.01 clips=100 updates=100] epoch = 4.3300 loss = 5.459957 train f1 = 0.7810
+[dev epoch=4] loss = 2.672034 p = 0.8089 (1731.0/2140.0) r = 0.7310 (1731.0/2368.0) f1 = 0.7680
+[lr=0.01 clips=97 updates=100] epoch = 4.3400 loss = 5.475052 train f1 = 0.7302
+[lr=0.01 clips=106 updates=113] epoch = 5.100 loss = 5.268882 train f1 = 0.7816
+[lr=0.01 clips=93 updates=99] epoch = 5.200 loss = 5.269205 train f1 = 0.7615
+[lr=0.01 clips=98 updates=100] epoch = 5.300 loss = 5.178825 train f1 = 0.7767
+[dev epoch=5] loss = 2.593360 p = 0.8489 (1483.0/1747.0) r = 0.6263 (1483.0/2368.0) f1 = 0.7208
+[lr=0.01 clips=98 updates=100] epoch = 5.400 loss = 5.254411 train f1 = 0.7733
+[lr=0.01 clips=94 updates=100] epoch = 5.500 loss = 5.243656 train f1 = 0.7782
+[lr=0.01 clips=91 updates=100] epoch = 5.600 loss = 5.206575 train f1 = 0.7784
+[dev epoch=5] loss = 2.826054 p = 0.8424 (1593.0/1891.0) r = 0.6727 (1593.0/2368.0) f1 = 0.7481
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=97 updates=100] epoch = 5.700 loss = 5.252653 train f1 = 0.7847
+[lr=0.01 clips=93 updates=100] epoch = 5.800 loss = 5.217295 train f1 = 0.7769
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 5.900 loss = 5.169309 train f1 = 0.7701
+[dev epoch=5] loss = 2.581413 p = 0.8697 (1262.0/1451.0) r = 0.5329 (1262.0/2368.0) f1 = 0.6609
+[lr=0.01 clips=95 updates=99] epoch = 5.1000 loss = 5.207168 train f1 = 0.7636
+[lr=0.01 clips=90 updates=100] epoch = 5.1100 loss = 5.267553 train f1 = 0.7755
+[lr=0.01 clips=94 updates=100] epoch = 5.1200 loss = 5.241828 train f1 = 0.7597
+[dev epoch=5] loss = 2.612767 p = 0.8609 (1423.0/1653.0) r = 0.6009 (1423.0/2368.0) f1 = 0.7078
+[lr=0.01 clips=97 updates=100] epoch = 5.1300 loss = 5.258711 train f1 = 0.7580
+[lr=0.01 clips=95 updates=100] epoch = 5.1400 loss = 5.267167 train f1 = 0.7816
+[lr=0.01 clips=97 updates=100] epoch = 5.1500 loss = 5.236629 train f1 = 0.7938
+[dev epoch=5] loss = 2.146071 p = 0.8290 (1682.0/2029.0) r = 0.7103 (1682.0/2368.0) f1 = 0.7651
+[lr=0.01 clips=98 updates=100] epoch = 5.1600 loss = 5.253104 train f1 = 0.8095
+[lr=0.01 clips=95 updates=100] epoch = 5.1700 loss = 5.259731 train f1 = 0.7737
+[lr=0.01 clips=96 updates=100] epoch = 5.1800 loss = 5.288645 train f1 = 0.7961
+[dev epoch=5] loss = 2.392322 p = 0.8051 (1747.0/2170.0) r = 0.7378 (1747.0/2368.0) f1 = 0.7699
+[lr=0.01 clips=92 updates=100] epoch = 5.1900 loss = 5.310825 train f1 = 0.7681
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 5.2000 loss = 5.296903 train f1 = 0.7923
+[lr=0.01 clips=98 updates=100] epoch = 5.2100 loss = 5.310376 train f1 = 0.7940
+[dev epoch=5] loss = 2.682838 p = 0.8160 (1738.0/2130.0) r = 0.7340 (1738.0/2368.0) f1 = 0.7728
+[lr=0.01 clips=95 updates=100] epoch = 5.2200 loss = 5.300680 train f1 = 0.7920
+[lr=0.01 clips=95 updates=100] epoch = 5.2300 loss = 5.303521 train f1 = 0.7827
+[lr=0.01 clips=97 updates=100] epoch = 5.2400 loss = 5.298086 train f1 = 0.7943
+[dev epoch=5] loss = 2.382369 p = 0.8368 (1610.0/1924.0) r = 0.6799 (1610.0/2368.0) f1 = 0.7502
+[lr=0.01 clips=95 updates=100] epoch = 5.2500 loss = 5.296072 train f1 = 0.7892
+[lr=0.01 clips=95 updates=100] epoch = 5.2600 loss = 5.280709 train f1 = 0.7922
+[lr=0.01 clips=95 updates=100] epoch = 5.2700 loss = 5.281488 train f1 = 0.7730
+[dev epoch=5] loss = 2.167840 p = 0.8435 (1590.0/1885.0) r = 0.6715 (1590.0/2368.0) f1 = 0.7477
+[lr=0.01 clips=99 updates=100] epoch = 5.2800 loss = 5.278533 train f1 = 0.7730
+[lr=0.01 clips=94 updates=100] epoch = 5.2900 loss = 5.286774 train f1 = 0.7502
+[lr=0.01 clips=93 updates=100] epoch = 5.3000 loss = 5.295764 train f1 = 0.7856
+[dev epoch=5] loss = 2.400694 p = 0.8419 (1560.0/1853.0) r = 0.6588 (1560.0/2368.0) f1 = 0.7392
+[lr=0.01 clips=99 updates=100] epoch = 5.3100 loss = 5.297708 train f1 = 0.7380
+[lr=0.01 clips=96 updates=100] epoch = 5.3200 loss = 5.292850 train f1 = 0.7760
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 5.3300 loss = 5.298724 train f1 = 0.7520
+[dev epoch=5] loss = 2.403953 p = 0.7885 (1830.0/2321.0) r = 0.7728 (1830.0/2368.0) f1 = 0.7806 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=96 updates=100] epoch = 5.3400 loss = 5.305959 train f1 = 0.7496
+[lr=0.01 clips=108 updates=113] epoch = 6.100 loss = 5.372730 train f1 = 0.7674
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=92 updates=99] epoch = 6.200 loss = 5.110011 train f1 = 0.8079
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 6.300 loss = 5.014689 train f1 = 0.8054
+[dev epoch=6] loss = 2.397390 p = 0.8329 (1665.0/1999.0) r = 0.7031 (1665.0/2368.0) f1 = 0.7625
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 6.400 loss = 5.113481 train f1 = 0.7543
+[lr=0.01 clips=93 updates=100] epoch = 6.500 loss = 5.082992 train f1 = 0.7723
+[lr=0.01 clips=91 updates=100] epoch = 6.600 loss = 5.156546 train f1 = 0.7519
+[dev epoch=6] loss = 2.559026 p = 0.8057 (1845.0/2290.0) r = 0.7791 (1845.0/2368.0) f1 = 0.7922 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 6.700 loss = 5.229614 train f1 = 0.7673
+[lr=0.01 clips=95 updates=100] epoch = 6.800 loss = 5.199896 train f1 = 0.7793
+[lr=0.01 clips=93 updates=100] epoch = 6.900 loss = 5.200685 train f1 = 0.7869
+[dev epoch=6] loss = 2.377714 p = 0.8262 (1650.0/1997.0) r = 0.6968 (1650.0/2368.0) f1 = 0.7560
+[lr=0.01 clips=95 updates=100] epoch = 6.1000 loss = 5.150714 train f1 = 0.7939
+[lr=0.01 clips=98 updates=100] epoch = 6.1100 loss = 5.153320 train f1 = 0.7774
+[lr=0.01 clips=95 updates=100] epoch = 6.1200 loss = 5.105921 train f1 = 0.8015
+[dev epoch=6] loss = 2.466517 p = 0.7920 (1828.0/2308.0) r = 0.7720 (1828.0/2368.0) f1 = 0.7819
+[lr=0.01 clips=96 updates=100] epoch = 6.1300 loss = 5.124544 train f1 = 0.7821
+[lr=0.01 clips=92 updates=100] epoch = 6.1400 loss = 5.125659 train f1 = 0.7713
+[lr=0.01 clips=98 updates=100] epoch = 6.1500 loss = 5.148837 train f1 = 0.7846
+[dev epoch=6] loss = 2.186571 p = 0.8063 (1806.0/2240.0) r = 0.7627 (1806.0/2368.0) f1 = 0.7839
+[lr=0.01 clips=97 updates=100] epoch = 6.1600 loss = 5.152660 train f1 = 0.7732
+[lr=0.01 clips=93 updates=100] epoch = 6.1700 loss = 5.153692 train f1 = 0.7807
+[lr=0.01 clips=95 updates=100] epoch = 6.1800 loss = 5.172755 train f1 = 0.7881
+[dev epoch=6] loss = 2.685024 p = 0.7856 (1850.0/2355.0) r = 0.7812 (1850.0/2368.0) f1 = 0.7834
+[lr=0.01 clips=96 updates=100] epoch = 6.1900 loss = 5.180551 train f1 = 0.7864
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 6.2000 loss = 5.161731 train f1 = 0.8124
+[lr=0.01 clips=97 updates=100] epoch = 6.2100 loss = 5.167072 train f1 = 0.7736
+[dev epoch=6] loss = 2.486905 p = 0.7986 (1820.0/2279.0) r = 0.7686 (1820.0/2368.0) f1 = 0.7833
+[lr=0.01 clips=93 updates=100] epoch = 6.2200 loss = 5.199232 train f1 = 0.7543
+[lr=0.01 clips=97 updates=99] epoch = 6.2300 loss = 5.206784 train f1 = 0.7804
+[lr=0.01 clips=92 updates=100] epoch = 6.2400 loss = 5.207348 train f1 = 0.7616
+[dev epoch=6] loss = 3.094705 p = 0.8164 (1632.0/1999.0) r = 0.6892 (1632.0/2368.0) f1 = 0.7474
+[lr=0.01 clips=93 updates=100] epoch = 6.2500 loss = 5.204859 train f1 = 0.7915
+[lr=0.01 clips=96 updates=100] epoch = 6.2600 loss = 5.201218 train f1 = 0.8014
+[lr=0.01 clips=96 updates=100] epoch = 6.2700 loss = 5.196301 train f1 = 0.7918
+[dev epoch=6] loss = 2.229295 p = 0.8601 (1383.0/1608.0) r = 0.5840 (1383.0/2368.0) f1 = 0.6957
+[lr=0.01 clips=91 updates=100] epoch = 6.2800 loss = 5.164102 train f1 = 0.8004
+[lr=0.01 clips=95 updates=100] epoch = 6.2900 loss = 5.168849 train f1 = 0.7607
+[lr=0.01 clips=93 updates=100] epoch = 6.3000 loss = 5.165332 train f1 = 0.8025
+[dev epoch=6] loss = 2.183659 p = 0.8287 (1587.0/1915.0) r = 0.6702 (1587.0/2368.0) f1 = 0.7411
+[lr=0.01 clips=89 updates=100] epoch = 6.3100 loss = 5.150692 train f1 = 0.7841
+[lr=0.01 clips=96 updates=100] epoch = 6.3200 loss = 5.155231 train f1 = 0.7827
+[lr=0.01 clips=97 updates=100] epoch = 6.3300 loss = 5.152068 train f1 = 0.7644
+[dev epoch=6] loss = 2.651402 p = 0.8408 (1579.0/1878.0) r = 0.6668 (1579.0/2368.0) f1 = 0.7438
+[lr=0.01 clips=91 updates=100] epoch = 6.3400 loss = 5.141197 train f1 = 0.7922
+[lr=0.01 clips=104 updates=113] epoch = 7.100 loss = 4.167205 train f1 = 0.8215
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=97 updates=100] epoch = 7.200 loss = 4.690968 train f1 = 0.7652
+[lr=0.01 clips=93 updates=100] epoch = 7.300 loss = 4.763030 train f1 = 0.7670
+[dev epoch=7] loss = 2.439898 p = 0.8134 (1718.0/2112.0) r = 0.7255 (1718.0/2368.0) f1 = 0.7670
+[lr=0.01 clips=92 updates=100] epoch = 7.400 loss = 4.786381 train f1 = 0.8107
+[lr=0.01 clips=96 updates=100] epoch = 7.500 loss = 4.928985 train f1 = 0.7846
+[lr=0.01 clips=96 updates=100] epoch = 7.600 loss = 5.046602 train f1 = 0.7848
+[dev epoch=7] loss = 2.360876 p = 0.8379 (1669.0/1992.0) r = 0.7048 (1669.0/2368.0) f1 = 0.7656
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 7.700 loss = 5.040787 train f1 = 0.8095
+[lr=0.01 clips=96 updates=100] epoch = 7.800 loss = 5.053135 train f1 = 0.7776
+[lr=0.01 clips=94 updates=100] epoch = 7.900 loss = 4.998203 train f1 = 0.8180
+[dev epoch=7] loss = 2.123339 p = 0.8204 (1645.0/2005.0) r = 0.6947 (1645.0/2368.0) f1 = 0.7523
+[lr=0.01 clips=94 updates=100] epoch = 7.1000 loss = 4.993518 train f1 = 0.8023
+[lr=0.01 clips=94 updates=99] epoch = 7.1100 loss = 5.044573 train f1 = 0.7610
+[lr=0.01 clips=94 updates=100] epoch = 7.1200 loss = 5.007933 train f1 = 0.7842
+[dev epoch=7] loss = 1.997567 p = 0.8399 (1621.0/1930.0) r = 0.6845 (1621.0/2368.0) f1 = 0.7543
+[lr=0.01 clips=90 updates=100] epoch = 7.1300 loss = 5.027354 train f1 = 0.7798
+[lr=0.01 clips=93 updates=100] epoch = 7.1400 loss = 5.039833 train f1 = 0.7834
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 7.1500 loss = 5.026916 train f1 = 0.7965
+[dev epoch=7] loss = 2.258046 p = 0.8415 (1688.0/2006.0) r = 0.7128 (1688.0/2368.0) f1 = 0.7718
+[lr=0.01 clips=93 updates=100] epoch = 7.1600 loss = 5.040298 train f1 = 0.7807
+[lr=0.01 clips=90 updates=100] epoch = 7.1700 loss = 4.998816 train f1 = 0.8189
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 7.1800 loss = 5.020063 train f1 = 0.7730
+[dev epoch=7] loss = 1.992324 p = 0.8255 (1670.0/2023.0) r = 0.7052 (1670.0/2368.0) f1 = 0.7606
+[lr=0.01 clips=95 updates=100] epoch = 7.1900 loss = 5.001449 train f1 = 0.8034
+[lr=0.01 clips=97 updates=100] epoch = 7.2000 loss = 5.028340 train f1 = 0.7677
+[lr=0.01 clips=96 updates=100] epoch = 7.2100 loss = 5.028177 train f1 = 0.7841
+[dev epoch=7] loss = 1.994057 p = 0.8297 (1700.0/2049.0) r = 0.7179 (1700.0/2368.0) f1 = 0.7698
+[lr=0.01 clips=94 updates=100] epoch = 7.2200 loss = 5.030487 train f1 = 0.7740
+[lr=0.01 clips=94 updates=100] epoch = 7.2300 loss = 5.044391 train f1 = 0.7804
+[lr=0.01 clips=95 updates=100] epoch = 7.2400 loss = 5.029794 train f1 = 0.7969
+[dev epoch=7] loss = 1.806987 p = 0.8580 (1516.0/1767.0) r = 0.6402 (1516.0/2368.0) f1 = 0.7333
+[lr=0.01 clips=93 updates=100] epoch = 7.2500 loss = 5.026240 train f1 = 0.8106
+[lr=0.01 clips=96 updates=100] epoch = 7.2600 loss = 5.038127 train f1 = 0.7923
+[lr=0.01 clips=90 updates=100] epoch = 7.2700 loss = 5.012443 train f1 = 0.8074
+[dev epoch=7] loss = 2.094949 p = 0.8226 (1702.0/2069.0) r = 0.7188 (1702.0/2368.0) f1 = 0.7672
+[lr=0.01 clips=97 updates=100] epoch = 7.2800 loss = 5.010964 train f1 = 0.8113
+[lr=0.01 clips=92 updates=100] epoch = 7.2900 loss = 5.006865 train f1 = 0.7621
+[lr=0.01 clips=95 updates=100] epoch = 7.3000 loss = 5.024775 train f1 = 0.7709
+[dev epoch=7] loss = 2.506152 p = 0.8545 (1492.0/1746.0) r = 0.6301 (1492.0/2368.0) f1 = 0.7253
+[lr=0.01 clips=95 updates=100] epoch = 7.3100 loss = 5.045610 train f1 = 0.7654
+[lr=0.01 clips=98 updates=100] epoch = 7.3200 loss = 5.033201 train f1 = 0.8131
+[lr=0.01 clips=92 updates=100] epoch = 7.3300 loss = 5.038220 train f1 = 0.7906
+[dev epoch=7] loss = 2.222601 p = 0.8573 (1520.0/1773.0) r = 0.6419 (1520.0/2368.0) f1 = 0.7341
+[lr=0.01 clips=92 updates=100] epoch = 7.3400 loss = 5.033281 train f1 = 0.7682
+[lr=0.01 clips=107 updates=112] epoch = 8.100 loss = 4.754917 train f1 = 0.7997
+[lr=0.01 clips=92 updates=100] epoch = 8.200 loss = 4.928285 train f1 = 0.7872
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=92 updates=100] epoch = 8.300 loss = 4.778550 train f1 = 0.8270
+[dev epoch=8] loss = 2.583323 p = 0.8298 (1677.0/2021.0) r = 0.7082 (1677.0/2368.0) f1 = 0.7642
+[lr=0.01 clips=96 updates=100] epoch = 8.400 loss = 4.898532 train f1 = 0.8041
+[lr=0.01 clips=95 updates=100] epoch = 8.500 loss = 4.983251 train f1 = 0.7690
+[lr=0.01 clips=90 updates=100] epoch = 8.600 loss = 4.832321 train f1 = 0.8231
+[dev epoch=8] loss = 2.242748 p = 0.8560 (1545.0/1805.0) r = 0.6524 (1545.0/2368.0) f1 = 0.7405
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 8.700 loss = 4.924049 train f1 = 0.7645
+[lr=0.01 clips=96 updates=100] epoch = 8.800 loss = 4.898244 train f1 = 0.7757
+[lr=0.01 clips=94 updates=100] epoch = 8.900 loss = 4.972962 train f1 = 0.7736
+[dev epoch=8] loss = 2.170825 p = 0.8464 (1587.0/1875.0) r = 0.6702 (1587.0/2368.0) f1 = 0.7481
+[lr=0.01 clips=95 updates=100] epoch = 8.1000 loss = 4.941237 train f1 = 0.8292
+[lr=0.01 clips=94 updates=100] epoch = 8.1100 loss = 4.929332 train f1 = 0.7973
+[lr=0.01 clips=92 updates=100] epoch = 8.1200 loss = 4.922841 train f1 = 0.7750
+[dev epoch=8] loss = 2.470700 p = 0.8346 (1650.0/1977.0) r = 0.6968 (1650.0/2368.0) f1 = 0.7595
+[lr=0.01 clips=97 updates=100] epoch = 8.1300 loss = 4.914853 train f1 = 0.7915
+[lr=0.01 clips=82 updates=99] epoch = 8.1400 loss = 4.834118 train f1 = 0.8232
+[lr=0.01 clips=98 updates=100] epoch = 8.1500 loss = 4.889488 train f1 = 0.7895
+[dev epoch=8] loss = 2.469294 p = 0.8682 (1469.0/1692.0) r = 0.6204 (1469.0/2368.0) f1 = 0.7236
+[lr=0.01 clips=97 updates=100] epoch = 8.1600 loss = 4.868319 train f1 = 0.7948
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 8.1700 loss = 4.914472 train f1 = 0.7624
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 8.1800 loss = 4.925747 train f1 = 0.7834
+[dev epoch=8] loss = 2.465252 p = 0.8398 (1599.0/1904.0) r = 0.6753 (1599.0/2368.0) f1 = 0.7486
+[lr=0.01 clips=93 updates=100] epoch = 8.1900 loss = 4.919154 train f1 = 0.7873
+[lr=0.01 clips=96 updates=100] epoch = 8.2000 loss = 4.932835 train f1 = 0.8194
+[lr=0.01 clips=96 updates=100] epoch = 8.2100 loss = 4.951696 train f1 = 0.7846
+[dev epoch=8] loss = 2.508160 p = 0.8431 (1628.0/1931.0) r = 0.6875 (1628.0/2368.0) f1 = 0.7574
+[lr=0.01 clips=90 updates=99] epoch = 8.2200 loss = 4.908901 train f1 = 0.8189
+[lr=0.01 clips=95 updates=100] epoch = 8.2300 loss = 4.931168 train f1 = 0.7649
+[lr=0.01 clips=91 updates=100] epoch = 8.2400 loss = 4.955077 train f1 = 0.7782
+[dev epoch=8] loss = 2.364342 p = 0.8044 (1764.0/2193.0) r = 0.7449 (1764.0/2368.0) f1 = 0.7735
+[lr=0.01 clips=91 updates=100] epoch = 8.2500 loss = 4.960398 train f1 = 0.7910
+[lr=0.01 clips=92 updates=100] epoch = 8.2600 loss = 4.962526 train f1 = 0.7637
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 8.2700 loss = 4.956955 train f1 = 0.8070
+[dev epoch=8] loss = 2.406371 p = 0.8310 (1667.0/2006.0) r = 0.7040 (1667.0/2368.0) f1 = 0.7622
+[lr=0.01 clips=93 updates=100] epoch = 8.2800 loss = 4.960716 train f1 = 0.8017
+[lr=0.01 clips=94 updates=100] epoch = 8.2900 loss = 4.952280 train f1 = 0.8242
+[lr=0.01 clips=89 updates=100] epoch = 8.3000 loss = 4.950500 train f1 = 0.7918
+[dev epoch=8] loss = 2.002647 p = 0.8587 (1562.0/1819.0) r = 0.6596 (1562.0/2368.0) f1 = 0.7461
+[lr=0.01 clips=90 updates=100] epoch = 8.3100 loss = 4.937466 train f1 = 0.8087
+[lr=0.01 clips=89 updates=100] epoch = 8.3200 loss = 4.937323 train f1 = 0.8039
+[lr=0.01 clips=90 updates=100] epoch = 8.3300 loss = 4.924803 train f1 = 0.7953
+[dev epoch=8] loss = 2.408687 p = 0.8389 (1640.0/1955.0) r = 0.6926 (1640.0/2368.0) f1 = 0.7587
+[lr=0.01 clips=92 updates=100] epoch = 8.3400 loss = 4.930039 train f1 = 0.7874
+[lr=0.01 clips=100 updates=113] epoch = 9.100 loss = 4.890692 train f1 = 0.8079
+[lr=0.01 clips=89 updates=100] epoch = 9.200 loss = 4.698376 train f1 = 0.8145
+[lr=0.01 clips=94 updates=100] epoch = 9.300 loss = 4.943359 train f1 = 0.7756
+[dev epoch=9] loss = 2.358573 p = 0.8618 (1590.0/1845.0) r = 0.6715 (1590.0/2368.0) f1 = 0.7548
+[lr=0.01 clips=94 updates=100] epoch = 9.400 loss = 4.895464 train f1 = 0.8106
+[lr=0.01 clips=93 updates=100] epoch = 9.500 loss = 4.846838 train f1 = 0.8032
+[lr=0.01 clips=91 updates=99] epoch = 9.600 loss = 4.894522 train f1 = 0.8052
+[dev epoch=9] loss = 2.014463 p = 0.8230 (1776.0/2158.0) r = 0.7500 (1776.0/2368.0) f1 = 0.7848
+[lr=0.01 clips=86 updates=99] epoch = 9.700 loss = 4.778917 train f1 = 0.8203
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=97 updates=100] epoch = 9.800 loss = 4.745643 train f1 = 0.8011
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=87 updates=100] epoch = 9.900 loss = 4.721355 train f1 = 0.7924
+[dev epoch=9] loss = 2.028295 p = 0.8272 (1723.0/2083.0) r = 0.7276 (1723.0/2368.0) f1 = 0.7742
+[lr=0.01 clips=90 updates=100] epoch = 9.1000 loss = 4.695787 train f1 = 0.7937
+[lr=0.01 clips=91 updates=100] epoch = 9.1100 loss = 4.731463 train f1 = 0.7909
+[lr=0.01 clips=96 updates=100] epoch = 9.1200 loss = 4.802795 train f1 = 0.7819
+[dev epoch=9] loss = 2.316329 p = 0.8520 (1600.0/1878.0) r = 0.6757 (1600.0/2368.0) f1 = 0.7537
+[lr=0.01 clips=94 updates=100] epoch = 9.1300 loss = 4.788558 train f1 = 0.7960
+[lr=0.01 clips=91 updates=100] epoch = 9.1400 loss = 4.801953 train f1 = 0.8055
+[lr=0.01 clips=88 updates=100] epoch = 9.1500 loss = 4.773893 train f1 = 0.8381
+[dev epoch=9] loss = 1.819605 p = 0.8396 (1586.0/1889.0) r = 0.6698 (1586.0/2368.0) f1 = 0.7451
+[lr=0.01 clips=93 updates=100] epoch = 9.1600 loss = 4.782182 train f1 = 0.8180
+[lr=0.01 clips=92 updates=100] epoch = 9.1700 loss = 4.771655 train f1 = 0.7791
+[lr=0.01 clips=97 updates=100] epoch = 9.1800 loss = 4.804170 train f1 = 0.7817
+[dev epoch=9] loss = 2.319454 p = 0.8100 (1808.0/2232.0) r = 0.7635 (1808.0/2368.0) f1 = 0.7861
+[lr=0.01 clips=93 updates=100] epoch = 9.1900 loss = 4.786535 train f1 = 0.8199
+[lr=0.01 clips=92 updates=100] epoch = 9.2000 loss = 4.774688 train f1 = 0.7908
+[lr=0.01 clips=92 updates=100] epoch = 9.2100 loss = 4.782169 train f1 = 0.8040
+[dev epoch=9] loss = 2.161122 p = 0.8102 (1793.0/2213.0) r = 0.7572 (1793.0/2368.0) f1 = 0.7828
+[lr=0.01 clips=93 updates=100] epoch = 9.2200 loss = 4.769497 train f1 = 0.8094
+[lr=0.01 clips=91 updates=100] epoch = 9.2300 loss = 4.772891 train f1 = 0.8049
+[lr=0.01 clips=88 updates=100] epoch = 9.2400 loss = 4.754341 train f1 = 0.7976
+[dev epoch=9] loss = 1.809098 p = 0.8654 (1505.0/1739.0) r = 0.6356 (1505.0/2368.0) f1 = 0.7329
+[lr=0.01 clips=90 updates=100] epoch = 9.2500 loss = 4.763364 train f1 = 0.7770
+[lr=0.01 clips=96 updates=100] epoch = 9.2600 loss = 4.767444 train f1 = 0.7717
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=92 updates=100] epoch = 9.2700 loss = 4.771635 train f1 = 0.7777
+[dev epoch=9] loss = 2.163653 p = 0.8306 (1696.0/2042.0) r = 0.7162 (1696.0/2368.0) f1 = 0.7692
+[lr=0.01 clips=93 updates=100] epoch = 9.2800 loss = 4.793738 train f1 = 0.7895
+[lr=0.01 clips=95 updates=100] epoch = 9.2900 loss = 4.820162 train f1 = 0.7627
+[lr=0.01 clips=91 updates=100] epoch = 9.3000 loss = 4.815543 train f1 = 0.8103
+[dev epoch=9] loss = 2.376628 p = 0.8485 (1602.0/1888.0) r = 0.6765 (1602.0/2368.0) f1 = 0.7528
+[lr=0.01 clips=94 updates=100] epoch = 9.3100 loss = 4.829800 train f1 = 0.8060
+[lr=0.01 clips=91 updates=100] epoch = 9.3200 loss = 4.815367 train f1 = 0.8232
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=96 updates=100] epoch = 9.3300 loss = 4.819804 train f1 = 0.7758
+[dev epoch=9] loss = 1.997829 p = 0.8804 (1384.0/1572.0) r = 0.5845 (1384.0/2368.0) f1 = 0.7025
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=96 updates=100] epoch = 9.3400 loss = 4.808707 train f1 = 0.8051
+[lr=0.01 clips=102 updates=113] epoch = 10.100 loss = 4.985553 train f1 = 0.7734
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=92 updates=100] epoch = 10.200 loss = 4.789925 train f1 = 0.8019
+[lr=0.01 clips=90 updates=100] epoch = 10.300 loss = 4.543348 train f1 = 0.8270
+[dev epoch=10] loss = 1.748390 p = 0.8455 (1565.0/1851.0) r = 0.6609 (1565.0/2368.0) f1 = 0.7419
+[lr=0.01 clips=91 updates=100] epoch = 10.400 loss = 4.659266 train f1 = 0.8247
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=92 updates=100] epoch = 10.500 loss = 4.628424 train f1 = 0.8082
+[lr=0.01 clips=90 updates=100] epoch = 10.600 loss = 4.631378 train f1 = 0.7841
+[dev epoch=10] loss = 2.291992 p = 0.8515 (1611.0/1892.0) r = 0.6803 (1611.0/2368.0) f1 = 0.7563
+[lr=0.01 clips=96 updates=100] epoch = 10.700 loss = 4.650146 train f1 = 0.8219
+[lr=0.01 clips=93 updates=100] epoch = 10.800 loss = 4.617748 train f1 = 0.8303
+[lr=0.01 clips=91 updates=100] epoch = 10.900 loss = 4.643495 train f1 = 0.7962
+[dev epoch=10] loss = 2.060183 p = 0.8464 (1653.0/1953.0) r = 0.6981 (1653.0/2368.0) f1 = 0.7651
+[lr=0.01 clips=97 updates=100] epoch = 10.1000 loss = 4.704510 train f1 = 0.7925
+[lr=0.01 clips=89 updates=100] epoch = 10.1100 loss = 4.726705 train f1 = 0.7828
+[lr=0.01 clips=93 updates=99] epoch = 10.1200 loss = 4.740113 train f1 = 0.8160
+[dev epoch=10] loss = 1.760115 p = 0.8637 (1590.0/1841.0) r = 0.6715 (1590.0/2368.0) f1 = 0.7555
+[lr=0.01 clips=98 updates=100] epoch = 10.1300 loss = 4.719146 train f1 = 0.8099
+[lr=0.01 clips=88 updates=100] epoch = 10.1400 loss = 4.671304 train f1 = 0.8270
+[lr=0.01 clips=93 updates=100] epoch = 10.1500 loss = 4.678393 train f1 = 0.8051
+[dev epoch=10] loss = 2.149685 p = 0.8612 (1588.0/1844.0) r = 0.6706 (1588.0/2368.0) f1 = 0.7540
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 10.1600 loss = 4.674321 train f1 = 0.8318
+[lr=0.01 clips=90 updates=100] epoch = 10.1700 loss = 4.679527 train f1 = 0.8056
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=89 updates=100] epoch = 10.1800 loss = 4.674609 train f1 = 0.7934
+[dev epoch=10] loss = 2.306397 p = 0.8245 (1780.0/2159.0) r = 0.7517 (1780.0/2368.0) f1 = 0.7864
+[lr=0.01 clips=97 updates=100] epoch = 10.1900 loss = 4.684955 train f1 = 0.8087
+[lr=0.01 clips=96 updates=100] epoch = 10.2000 loss = 4.738691 train f1 = 0.7668
+[lr=0.01 clips=96 updates=99] epoch = 10.2100 loss = 4.740423 train f1 = 0.8104
+[dev epoch=10] loss = 2.261863 p = 0.8406 (1624.0/1932.0) r = 0.6858 (1624.0/2368.0) f1 = 0.7553
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 10.2200 loss = 4.761583 train f1 = 0.7880
+[lr=0.01 clips=91 updates=100] epoch = 10.2300 loss = 4.752155 train f1 = 0.7842
+[lr=0.01 clips=88 updates=100] epoch = 10.2400 loss = 4.731046 train f1 = 0.8085
+[dev epoch=10] loss = 2.280190 p = 0.8467 (1568.0/1852.0) r = 0.6622 (1568.0/2368.0) f1 = 0.7431
+[lr=0.01 clips=90 updates=100] epoch = 10.2500 loss = 4.722773 train f1 = 0.8130
+[lr=0.01 clips=87 updates=100] epoch = 10.2600 loss = 4.731024 train f1 = 0.7824
+[lr=0.01 clips=87 updates=100] epoch = 10.2700 loss = 4.700829 train f1 = 0.8208
+[dev epoch=10] loss = 2.026516 p = 0.8105 (1813.0/2237.0) r = 0.7656 (1813.0/2368.0) f1 = 0.7874
+[lr=0.01 clips=91 updates=100] epoch = 10.2800 loss = 4.687044 train f1 = 0.7973
+[lr=0.01 clips=96 updates=100] epoch = 10.2900 loss = 4.683644 train f1 = 0.8057
+[lr=0.01 clips=95 updates=100] epoch = 10.3000 loss = 4.696047 train f1 = 0.8000
+[dev epoch=10] loss = 2.182898 p = 0.8290 (1735.0/2093.0) r = 0.7327 (1735.0/2368.0) f1 = 0.7779
+[lr=0.01 clips=90 updates=100] epoch = 10.3100 loss = 4.704666 train f1 = 0.7926
+[lr=0.01 clips=94 updates=100] epoch = 10.3200 loss = 4.712961 train f1 = 0.7732
+[lr=0.01 clips=90 updates=100] epoch = 10.3300 loss = 4.725724 train f1 = 0.7875
+[dev epoch=10] loss = 2.269985 p = 0.8346 (1695.0/2031.0) r = 0.7158 (1695.0/2368.0) f1 = 0.7706
+[lr=0.01 clips=90 updates=100] epoch = 10.3400 loss = 4.726759 train f1 = 0.8010
+[lr=0.01 clips=106 updates=113] epoch = 11.100 loss = 4.153661 train f1 = 0.8236
+[lr=0.01 clips=87 updates=100] epoch = 11.200 loss = 4.497332 train f1 = 0.8129
+[lr=0.01 clips=86 updates=100] epoch = 11.300 loss = 4.336199 train f1 = 0.8216
+[dev epoch=11] loss = 1.779085 p = 0.8460 (1610.0/1903.0) r = 0.6799 (1610.0/2368.0) f1 = 0.7539
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=88 updates=100] epoch = 11.400 loss = 4.313247 train f1 = 0.8153
+[lr=0.01 clips=97 updates=100] epoch = 11.500 loss = 4.432118 train f1 = 0.8096
+[lr=0.01 clips=93 updates=100] epoch = 11.600 loss = 4.483707 train f1 = 0.8182
+[dev epoch=11] loss = 1.914303 p = 0.8589 (1534.0/1786.0) r = 0.6478 (1534.0/2368.0) f1 = 0.7386
+[lr=0.01 clips=93 updates=100] epoch = 11.700 loss = 4.523568 train f1 = 0.8068
+[lr=0.01 clips=94 updates=100] epoch = 11.800 loss = 4.542970 train f1 = 0.7996
+[lr=0.01 clips=94 updates=100] epoch = 11.900 loss = 4.550298 train f1 = 0.8212
+[dev epoch=11] loss = 1.766795 p = 0.8207 (1744.0/2125.0) r = 0.7365 (1744.0/2368.0) f1 = 0.7763
+[lr=0.01 clips=92 updates=100] epoch = 11.1000 loss = 4.586205 train f1 = 0.7915
+[lr=0.01 clips=86 updates=100] epoch = 11.1100 loss = 4.578618 train f1 = 0.8057
+[lr=0.01 clips=96 updates=100] epoch = 11.1200 loss = 4.618326 train f1 = 0.7787
+[dev epoch=11] loss = 2.195378 p = 0.8448 (1606.0/1901.0) r = 0.6782 (1606.0/2368.0) f1 = 0.7524
+[lr=0.01 clips=93 updates=100] epoch = 11.1300 loss = 4.583070 train f1 = 0.7984
+[lr=0.01 clips=86 updates=100] epoch = 11.1400 loss = 4.582311 train f1 = 0.7911
+[lr=0.01 clips=93 updates=100] epoch = 11.1500 loss = 4.549178 train f1 = 0.8375
+[dev epoch=11] loss = 1.665542 p = 0.8678 (1464.0/1687.0) r = 0.6182 (1464.0/2368.0) f1 = 0.7221
+[lr=0.01 clips=91 updates=100] epoch = 11.1600 loss = 4.526241 train f1 = 0.8333
+[lr=0.01 clips=92 updates=99] epoch = 11.1700 loss = 4.567183 train f1 = 0.7913
+[lr=0.01 clips=93 updates=100] epoch = 11.1800 loss = 4.548929 train f1 = 0.8295
+[dev epoch=11] loss = 1.568907 p = 0.8371 (1721.0/2056.0) r = 0.7268 (1721.0/2368.0) f1 = 0.7780
+[lr=0.01 clips=91 updates=100] epoch = 11.1900 loss = 4.545557 train f1 = 0.8313
+[lr=0.01 clips=94 updates=100] epoch = 11.2000 loss = 4.528708 train f1 = 0.8196
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 11.2100 loss = 4.563019 train f1 = 0.7878
+[dev epoch=11] loss = 2.021256 p = 0.8614 (1486.0/1725.0) r = 0.6275 (1486.0/2368.0) f1 = 0.7261
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=87 updates=99] epoch = 11.2200 loss = 4.563292 train f1 = 0.8042
+[lr=0.01 clips=91 updates=100] epoch = 11.2300 loss = 4.550126 train f1 = 0.8173
+[lr=0.01 clips=92 updates=100] epoch = 11.2400 loss = 4.596063 train f1 = 0.7825
+[dev epoch=11] loss = 1.912266 p = 0.8321 (1734.0/2084.0) r = 0.7323 (1734.0/2368.0) f1 = 0.7790
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 11.2500 loss = 4.590563 train f1 = 0.8296
+[lr=0.01 clips=90 updates=100] epoch = 11.2600 loss = 4.616192 train f1 = 0.7916
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=86 updates=100] epoch = 11.2700 loss = 4.625436 train f1 = 0.7886
+[dev epoch=11] loss = 2.134639 p = 0.8557 (1589.0/1857.0) r = 0.6710 (1589.0/2368.0) f1 = 0.7522
+[lr=0.01 clips=87 updates=100] epoch = 11.2800 loss = 4.644422 train f1 = 0.7908
+[lr=0.01 clips=90 updates=100] epoch = 11.2900 loss = 4.637385 train f1 = 0.8055
+[lr=0.01 clips=87 updates=100] epoch = 11.3000 loss = 4.615430 train f1 = 0.7982
+[dev epoch=11] loss = 2.061705 p = 0.8540 (1515.0/1774.0) r = 0.6398 (1515.0/2368.0) f1 = 0.7315
+[lr=0.01 clips=93 updates=100] epoch = 11.3100 loss = 4.644334 train f1 = 0.7795
+[lr=0.01 clips=92 updates=100] epoch = 11.3200 loss = 4.632165 train f1 = 0.8121
+[lr=0.01 clips=92 updates=100] epoch = 11.3300 loss = 4.642935 train f1 = 0.8106
+[dev epoch=11] loss = 1.902125 p = 0.8473 (1642.0/1938.0) r = 0.6934 (1642.0/2368.0) f1 = 0.7627
+[lr=0.01 clips=91 updates=100] epoch = 11.3400 loss = 4.648262 train f1 = 0.8042
+[lr=0.01 clips=101 updates=113] epoch = 12.100 loss = 4.062898 train f1 = 0.8207
+[lr=0.01 clips=81 updates=99] epoch = 12.200 loss = 3.802305 train f1 = 0.8511
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=96 updates=100] epoch = 12.300 loss = 4.175881 train f1 = 0.7843
+[dev epoch=12] loss = 2.068071 p = 0.8753 (1432.0/1636.0) r = 0.6047 (1432.0/2368.0) f1 = 0.7153
+[lr=0.01 clips=90 updates=100] epoch = 12.400 loss = 4.336279 train f1 = 0.8096
+[lr=0.01 clips=91 updates=100] epoch = 12.500 loss = 4.367117 train f1 = 0.7929
+[lr=0.01 clips=86 updates=100] epoch = 12.600 loss = 4.354571 train f1 = 0.8099
+[dev epoch=12] loss = 1.932923 p = 0.8404 (1701.0/2024.0) r = 0.7183 (1701.0/2368.0) f1 = 0.7746
+[lr=0.01 clips=87 updates=100] epoch = 12.700 loss = 4.360954 train f1 = 0.8226
+[lr=0.01 clips=93 updates=100] epoch = 12.800 loss = 4.391458 train f1 = 0.8088
+[lr=0.01 clips=82 updates=100] epoch = 12.900 loss = 4.405739 train f1 = 0.8101
+[dev epoch=12] loss = 1.532489 p = 0.8551 (1587.0/1856.0) r = 0.6702 (1587.0/2368.0) f1 = 0.7514
+[lr=0.01 clips=89 updates=100] epoch = 12.1000 loss = 4.480720 train f1 = 0.7883
+[lr=0.01 clips=87 updates=100] epoch = 12.1100 loss = 4.486811 train f1 = 0.8239
+[lr=0.01 clips=87 updates=100] epoch = 12.1200 loss = 4.519713 train f1 = 0.8009
+[dev epoch=12] loss = 1.894809 p = 0.8452 (1638.0/1938.0) r = 0.6917 (1638.0/2368.0) f1 = 0.7608
+[lr=0.01 clips=87 updates=100] epoch = 12.1300 loss = 4.492620 train f1 = 0.8293
+[lr=0.01 clips=93 updates=100] epoch = 12.1400 loss = 4.501506 train f1 = 0.7825
+[lr=0.01 clips=92 updates=100] epoch = 12.1500 loss = 4.448192 train f1 = 0.8495
+[dev epoch=12] loss = 1.587265 p = 0.8303 (1712.0/2062.0) r = 0.7230 (1712.0/2368.0) f1 = 0.7729
+[lr=0.01 clips=91 updates=100] epoch = 12.1600 loss = 4.461183 train f1 = 0.8007
+[lr=0.01 clips=92 updates=100] epoch = 12.1700 loss = 4.481142 train f1 = 0.8023
+[lr=0.01 clips=94 updates=99] epoch = 12.1800 loss = 4.477748 train f1 = 0.8226
+[dev epoch=12] loss = 2.213917 p = 0.7974 (1826.0/2290.0) r = 0.7711 (1826.0/2368.0) f1 = 0.7840
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=88 updates=100] epoch = 12.1900 loss = 4.473084 train f1 = 0.8312
+[lr=0.01 clips=93 updates=100] epoch = 12.2000 loss = 4.523966 train f1 = 0.8071
+[lr=0.01 clips=94 updates=100] epoch = 12.2100 loss = 4.509975 train f1 = 0.8096
+[dev epoch=12] loss = 2.503523 p = 0.8046 (1812.0/2252.0) r = 0.7652 (1812.0/2368.0) f1 = 0.7844
+[lr=0.01 clips=92 updates=100] epoch = 12.2200 loss = 4.514126 train f1 = 0.8000
+[lr=0.01 clips=95 updates=100] epoch = 12.2300 loss = 4.557760 train f1 = 0.8041
+[lr=0.01 clips=88 updates=100] epoch = 12.2400 loss = 4.570205 train f1 = 0.7941
+[dev epoch=12] loss = 1.800507 p = 0.8203 (1785.0/2176.0) r = 0.7538 (1785.0/2368.0) f1 = 0.7857
+[lr=0.01 clips=91 updates=100] epoch = 12.2500 loss = 4.566837 train f1 = 0.8266
+[lr=0.01 clips=85 updates=100] epoch = 12.2600 loss = 4.529047 train f1 = 0.8381
+[lr=0.01 clips=91 updates=100] epoch = 12.2700 loss = 4.531097 train f1 = 0.8060
+[dev epoch=12] loss = 2.521387 p = 0.8613 (1540.0/1788.0) r = 0.6503 (1540.0/2368.0) f1 = 0.7411
+[lr=0.01 clips=93 updates=100] epoch = 12.2800 loss = 4.537267 train f1 = 0.8078
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 12.2900 loss = 4.539890 train f1 = 0.8263
+[lr=0.01 clips=93 updates=100] epoch = 12.3000 loss = 4.535253 train f1 = 0.8158
+[dev epoch=12] loss = 1.601107 p = 0.8651 (1533.0/1772.0) r = 0.6474 (1533.0/2368.0) f1 = 0.7406
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 12.3100 loss = 4.560475 train f1 = 0.7971
+[lr=0.01 clips=93 updates=100] epoch = 12.3200 loss = 4.579670 train f1 = 0.8000
+[lr=0.01 clips=88 updates=100] epoch = 12.3300 loss = 4.572324 train f1 = 0.8108
+[dev epoch=12] loss = 1.558574 p = 0.8652 (1496.0/1729.0) r = 0.6318 (1496.0/2368.0) f1 = 0.7303
+[lr=0.01 clips=94 updates=100] epoch = 12.3400 loss = 4.578428 train f1 = 0.8187
+[lr=0.01 clips=101 updates=113] epoch = 13.100 loss = 4.029041 train f1 = 0.8365
+[lr=0.01 clips=93 updates=100] epoch = 13.200 loss = 4.151622 train f1 = 0.8129
+[lr=0.01 clips=85 updates=100] epoch = 13.300 loss = 4.259273 train f1 = 0.8018
+[dev epoch=13] loss = 1.922774 p = 0.8569 (1593.0/1859.0) r = 0.6727 (1593.0/2368.0) f1 = 0.7537
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=82 updates=100] epoch = 13.400 loss = 4.190072 train f1 = 0.8425
+[lr=0.01 clips=93 updates=100] epoch = 13.500 loss = 4.305089 train f1 = 0.8118
+[lr=0.01 clips=85 updates=100] epoch = 13.600 loss = 4.319678 train f1 = 0.8125
+[dev epoch=13] loss = 1.993156 p = 0.8357 (1689.0/2021.0) r = 0.7133 (1689.0/2368.0) f1 = 0.7697
+[lr=0.01 clips=90 updates=100] epoch = 13.700 loss = 4.338834 train f1 = 0.8172
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 13.800 loss = 4.383309 train f1 = 0.8164
+[lr=0.01 clips=90 updates=100] epoch = 13.900 loss = 4.467425 train f1 = 0.7882
+[dev epoch=13] loss = 2.182714 p = 0.8591 (1500.0/1746.0) r = 0.6334 (1500.0/2368.0) f1 = 0.7292
+[lr=0.01 clips=91 updates=100] epoch = 13.1000 loss = 4.481146 train f1 = 0.8104
+[lr=0.01 clips=95 updates=100] epoch = 13.1100 loss = 4.539613 train f1 = 0.7990
+[lr=0.01 clips=91 updates=100] epoch = 13.1200 loss = 4.515389 train f1 = 0.8268
+[dev epoch=13] loss = 2.007218 p = 0.8551 (1564.0/1829.0) r = 0.6605 (1564.0/2368.0) f1 = 0.7453
+[lr=0.01 clips=86 updates=100] epoch = 13.1300 loss = 4.492873 train f1 = 0.8188
+[lr=0.01 clips=89 updates=100] epoch = 13.1400 loss = 4.505751 train f1 = 0.8150
+[lr=0.01 clips=80 updates=100] epoch = 13.1500 loss = 4.427789 train f1 = 0.8522
+[dev epoch=13] loss = 1.469984 p = 0.8178 (1777.0/2173.0) r = 0.7504 (1777.0/2368.0) f1 = 0.7826
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 13.1600 loss = 4.467438 train f1 = 0.8224
+[lr=0.01 clips=92 updates=100] epoch = 13.1700 loss = 4.440274 train f1 = 0.8378
+[lr=0.01 clips=93 updates=100] epoch = 13.1800 loss = 4.457849 train f1 = 0.8052
+[dev epoch=13] loss = 1.893301 p = 0.8519 (1582.0/1857.0) r = 0.6681 (1582.0/2368.0) f1 = 0.7489
+[lr=0.01 clips=87 updates=100] epoch = 13.1900 loss = 4.454958 train f1 = 0.8340
+[lr=0.01 clips=85 updates=99] epoch = 13.2000 loss = 4.430468 train f1 = 0.8304
+[lr=0.01 clips=88 updates=100] epoch = 13.2100 loss = 4.443705 train f1 = 0.8052
+[dev epoch=13] loss = 2.067595 p = 0.8253 (1691.0/2049.0) r = 0.7141 (1691.0/2368.0) f1 = 0.7657
+[lr=0.01 clips=95 updates=100] epoch = 13.2200 loss = 4.463098 train f1 = 0.8024
+[lr=0.01 clips=90 updates=99] epoch = 13.2300 loss = 4.465070 train f1 = 0.8085
+[lr=0.01 clips=93 updates=100] epoch = 13.2400 loss = 4.448546 train f1 = 0.8296
+[dev epoch=13] loss = 1.919067 p = 0.8240 (1765.0/2142.0) r = 0.7454 (1765.0/2368.0) f1 = 0.7827
+[lr=0.01 clips=91 updates=100] epoch = 13.2500 loss = 4.447160 train f1 = 0.8169
+[lr=0.01 clips=84 updates=100] epoch = 13.2600 loss = 4.443754 train f1 = 0.8097
+[lr=0.01 clips=91 updates=100] epoch = 13.2700 loss = 4.445283 train f1 = 0.8095
+[dev epoch=13] loss = 1.771193 p = 0.8363 (1650.0/1973.0) r = 0.6968 (1650.0/2368.0) f1 = 0.7602
+[lr=0.01 clips=89 updates=100] epoch = 13.2800 loss = 4.447830 train f1 = 0.8038
+[lr=0.01 clips=88 updates=100] epoch = 13.2900 loss = 4.445011 train f1 = 0.8251
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=95 updates=100] epoch = 13.3000 loss = 4.479714 train f1 = 0.7781
+[dev epoch=13] loss = 2.416216 p = 0.8638 (1566.0/1813.0) r = 0.6613 (1566.0/2368.0) f1 = 0.7491
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 13.3100 loss = 4.498759 train f1 = 0.7969
+[lr=0.01 clips=92 updates=100] epoch = 13.3200 loss = 4.524774 train f1 = 0.7960
+[lr=0.01 clips=87 updates=100] epoch = 13.3300 loss = 4.507841 train f1 = 0.8071
+[dev epoch=13] loss = 1.755013 p = 0.8279 (1713.0/2069.0) r = 0.7234 (1713.0/2368.0) f1 = 0.7721
+[lr=0.01 clips=91 updates=100] epoch = 13.3400 loss = 4.513065 train f1 = 0.8084
+[lr=0.01 clips=99 updates=112] epoch = 14.100 loss = 3.333364 train f1 = 0.8461
+[lr=0.01 clips=92 updates=99] epoch = 14.200 loss = 3.799836 train f1 = 0.8128
+[lr=0.01 clips=85 updates=100] epoch = 14.300 loss = 3.738672 train f1 = 0.8509
+[dev epoch=14] loss = 1.851691 p = 0.8184 (1807.0/2208.0) r = 0.7631 (1807.0/2368.0) f1 = 0.7898
+[lr=0.01 clips=89 updates=100] epoch = 14.400 loss = 3.877079 train f1 = 0.8188
+[lr=0.01 clips=87 updates=100] epoch = 14.500 loss = 3.939318 train f1 = 0.8344
+[lr=0.01 clips=91 updates=100] epoch = 14.600 loss = 3.907340 train f1 = 0.8040
+[dev epoch=14] loss = 1.769305 p = 0.8386 (1704.0/2032.0) r = 0.7196 (1704.0/2368.0) f1 = 0.7745
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 14.700 loss = 4.087483 train f1 = 0.8250
+[lr=0.01 clips=90 updates=100] epoch = 14.800 loss = 4.185816 train f1 = 0.8041
+[lr=0.01 clips=95 updates=100] epoch = 14.900 loss = 4.233911 train f1 = 0.8059
+[dev epoch=14] loss = 1.883773 p = 0.8536 (1563.0/1831.0) r = 0.6601 (1563.0/2368.0) f1 = 0.7445
+[lr=0.01 clips=83 updates=100] epoch = 14.1000 loss = 4.201928 train f1 = 0.8384
+[lr=0.01 clips=91 updates=100] epoch = 14.1100 loss = 4.141385 train f1 = 0.8401
+[lr=0.01 clips=89 updates=100] epoch = 14.1200 loss = 4.173129 train f1 = 0.8132
+[dev epoch=14] loss = 1.679537 p = 0.8154 (1838.0/2254.0) r = 0.7762 (1838.0/2368.0) f1 = 0.7953 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=96 updates=100] epoch = 14.1300 loss = 4.249176 train f1 = 0.8226
+[lr=0.01 clips=91 updates=100] epoch = 14.1400 loss = 4.264157 train f1 = 0.8275
+[lr=0.01 clips=92 updates=100] epoch = 14.1500 loss = 4.321708 train f1 = 0.8115
+[dev epoch=14] loss = 1.700874 p = 0.8663 (1464.0/1690.0) r = 0.6182 (1464.0/2368.0) f1 = 0.7215
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 14.1600 loss = 4.310819 train f1 = 0.8201
+[lr=0.01 clips=84 updates=100] epoch = 14.1700 loss = 4.306891 train f1 = 0.8139
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 14.1800 loss = 4.324859 train f1 = 0.8183
+[dev epoch=14] loss = 1.996759 p = 0.8659 (1511.0/1745.0) r = 0.6381 (1511.0/2368.0) f1 = 0.7347
+[lr=0.01 clips=86 updates=100] epoch = 14.1900 loss = 4.331740 train f1 = 0.8145
+[lr=0.01 clips=89 updates=100] epoch = 14.2000 loss = 4.323320 train f1 = 0.8258
+[lr=0.01 clips=85 updates=100] epoch = 14.2100 loss = 4.327354 train f1 = 0.8192
+[dev epoch=14] loss = 1.886040 p = 0.8317 (1754.0/2109.0) r = 0.7407 (1754.0/2368.0) f1 = 0.7836
+[lr=0.01 clips=87 updates=100] epoch = 14.2200 loss = 4.311462 train f1 = 0.8138
+[lr=0.01 clips=90 updates=100] epoch = 14.2300 loss = 4.365952 train f1 = 0.7932
+[lr=0.01 clips=93 updates=100] epoch = 14.2400 loss = 4.357159 train f1 = 0.8202
+[dev epoch=14] loss = 1.695910 p = 0.8427 (1709.0/2028.0) r = 0.7217 (1709.0/2368.0) f1 = 0.7775
+[lr=0.01 clips=88 updates=100] epoch = 14.2500 loss = 4.369379 train f1 = 0.8223
+[lr=0.01 clips=88 updates=100] epoch = 14.2600 loss = 4.361396 train f1 = 0.8182
+[lr=0.01 clips=88 updates=100] epoch = 14.2700 loss = 4.353502 train f1 = 0.8267
+[dev epoch=14] loss = 1.848690 p = 0.8268 (1766.0/2136.0) r = 0.7458 (1766.0/2368.0) f1 = 0.7842
+[lr=0.01 clips=90 updates=100] epoch = 14.2800 loss = 4.373151 train f1 = 0.7978
+[lr=0.01 clips=88 updates=100] epoch = 14.2900 loss = 4.392211 train f1 = 0.8119
+[lr=0.01 clips=91 updates=100] epoch = 14.3000 loss = 4.398187 train f1 = 0.8243
+[dev epoch=14] loss = 1.995898 p = 0.8000 (1892.0/2365.0) r = 0.7990 (1892.0/2368.0) f1 = 0.7995 -- saving to logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+[lr=0.01 clips=94 updates=100] epoch = 14.3100 loss = 4.404988 train f1 = 0.8137
+[lr=0.01 clips=92 updates=100] epoch = 14.3200 loss = 4.401778 train f1 = 0.8197
+[lr=0.01 clips=90 updates=100] epoch = 14.3300 loss = 4.397998 train f1 = 0.8038
+[dev epoch=14] loss = 2.153492 p = 0.8345 (1618.0/1939.0) r = 0.6833 (1618.0/2368.0) f1 = 0.7513
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 14.3400 loss = 4.415072 train f1 = 0.8108
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=104 updates=113] epoch = 15.100 loss = 4.007898 train f1 = 0.8381
+[lr=0.01 clips=89 updates=100] epoch = 15.200 loss = 4.288026 train f1 = 0.8218
+[lr=0.01 clips=94 updates=100] epoch = 15.300 loss = 4.344035 train f1 = 0.8377
+[dev epoch=15] loss = 1.855447 p = 0.8744 (1358.0/1553.0) r = 0.5735 (1358.0/2368.0) f1 = 0.6927
+[lr=0.01 clips=92 updates=99] epoch = 15.400 loss = 4.398225 train f1 = 0.8287
+[lr=0.01 clips=87 updates=100] epoch = 15.500 loss = 4.379449 train f1 = 0.8004
+[lr=0.01 clips=89 updates=100] epoch = 15.600 loss = 4.436142 train f1 = 0.7996
+[dev epoch=15] loss = 2.270515 p = 0.7967 (1842.0/2312.0) r = 0.7779 (1842.0/2368.0) f1 = 0.7872
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=85 updates=100] epoch = 15.700 loss = 4.456211 train f1 = 0.8098
+[lr=0.01 clips=89 updates=100] epoch = 15.800 loss = 4.452229 train f1 = 0.8103
+[lr=0.01 clips=87 updates=99] epoch = 15.900 loss = 4.382454 train f1 = 0.8250
+[dev epoch=15] loss = 1.768393 p = 0.8523 (1552.0/1821.0) r = 0.6554 (1552.0/2368.0) f1 = 0.7410
+[lr=0.01 clips=84 updates=100] epoch = 15.1000 loss = 4.352827 train f1 = 0.8263
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 15.1100 loss = 4.376597 train f1 = 0.8233
+[lr=0.01 clips=90 updates=100] epoch = 15.1200 loss = 4.396979 train f1 = 0.8240
+[dev epoch=15] loss = 1.716529 p = 0.8381 (1672.0/1995.0) r = 0.7061 (1672.0/2368.0) f1 = 0.7664
+[lr=0.01 clips=86 updates=100] epoch = 15.1300 loss = 4.374145 train f1 = 0.8385
+[lr=0.01 clips=94 updates=100] epoch = 15.1400 loss = 4.412486 train f1 = 0.8081
+[lr=0.01 clips=87 updates=100] epoch = 15.1500 loss = 4.399120 train f1 = 0.8220
+[dev epoch=15] loss = 1.690976 p = 0.8278 (1745.0/2108.0) r = 0.7369 (1745.0/2368.0) f1 = 0.7797
+[lr=0.01 clips=94 updates=100] epoch = 15.1600 loss = 4.417609 train f1 = 0.8135
+[lr=0.01 clips=84 updates=100] epoch = 15.1700 loss = 4.386968 train f1 = 0.8149
+[lr=0.01 clips=89 updates=100] epoch = 15.1800 loss = 4.399911 train f1 = 0.7929
+[dev epoch=15] loss = 1.628175 p = 0.8512 (1647.0/1935.0) r = 0.6955 (1647.0/2368.0) f1 = 0.7655
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=88 updates=100] epoch = 15.1900 loss = 4.379907 train f1 = 0.8411
+[lr=0.01 clips=83 updates=100] epoch = 15.2000 loss = 4.385066 train f1 = 0.8251
+[lr=0.01 clips=87 updates=100] epoch = 15.2100 loss = 4.363377 train f1 = 0.8347
+[dev epoch=15] loss = 1.348168 p = 0.8390 (1688.0/2012.0) r = 0.7128 (1688.0/2368.0) f1 = 0.7708
+[lr=0.01 clips=95 updates=100] epoch = 15.2200 loss = 4.374000 train f1 = 0.8242
+[lr=0.01 clips=85 updates=100] epoch = 15.2300 loss = 4.370641 train f1 = 0.8127
+[lr=0.01 clips=89 updates=100] epoch = 15.2400 loss = 4.336262 train f1 = 0.8408
+[dev epoch=15] loss = 1.729437 p = 0.8248 (1700.0/2061.0) r = 0.7179 (1700.0/2368.0) f1 = 0.7677
+[lr=0.01 clips=96 updates=100] epoch = 15.2500 loss = 4.359173 train f1 = 0.8027
+[lr=0.01 clips=87 updates=100] epoch = 15.2600 loss = 4.351016 train f1 = 0.8249
+[lr=0.01 clips=91 updates=100] epoch = 15.2700 loss = 4.381756 train f1 = 0.7842
+[dev epoch=15] loss = 2.204222 p = 0.8521 (1671.0/1961.0) r = 0.7057 (1671.0/2368.0) f1 = 0.7720
+[lr=0.01 clips=88 updates=100] epoch = 15.2800 loss = 4.368050 train f1 = 0.8352
+[lr=0.01 clips=89 updates=100] epoch = 15.2900 loss = 4.365077 train f1 = 0.8218
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=89 updates=100] epoch = 15.3000 loss = 4.362122 train f1 = 0.8385
+[dev epoch=15] loss = 1.693428 p = 0.8337 (1745.0/2093.0) r = 0.7369 (1745.0/2368.0) f1 = 0.7823
+[lr=0.01 clips=91 updates=100] epoch = 15.3100 loss = 4.360459 train f1 = 0.8149
+[lr=0.01 clips=91 updates=100] epoch = 15.3200 loss = 4.366880 train f1 = 0.8199
+[lr=0.01 clips=82 updates=100] epoch = 15.3300 loss = 4.370460 train f1 = 0.8125
+[dev epoch=15] loss = 1.410482 p = 0.8352 (1688.0/2021.0) r = 0.7128 (1688.0/2368.0) f1 = 0.7692
+[lr=0.01 clips=88 updates=100] epoch = 15.3400 loss = 4.364447 train f1 = 0.8287
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=100 updates=113] epoch = 16.100 loss = 4.517922 train f1 = 0.8286
+[lr=0.01 clips=92 updates=100] epoch = 16.200 loss = 4.461262 train f1 = 0.8136
+[lr=0.01 clips=90 updates=100] epoch = 16.300 loss = 4.430297 train f1 = 0.8289
+[dev epoch=16] loss = 2.235764 p = 0.7942 (1868.0/2352.0) r = 0.7889 (1868.0/2368.0) f1 = 0.7915
+[lr=0.01 clips=88 updates=100] epoch = 16.400 loss = 4.442617 train f1 = 0.8183
+[lr=0.01 clips=90 updates=100] epoch = 16.500 loss = 4.340481 train f1 = 0.8323
+[lr=0.01 clips=88 updates=100] epoch = 16.600 loss = 4.393423 train f1 = 0.8246
+[dev epoch=16] loss = 1.790676 p = 0.8298 (1765.0/2127.0) r = 0.7454 (1765.0/2368.0) f1 = 0.7853
+[lr=0.01 clips=87 updates=100] epoch = 16.700 loss = 4.402323 train f1 = 0.8256
+[lr=0.01 clips=91 updates=100] epoch = 16.800 loss = 4.450367 train f1 = 0.8077
+[lr=0.01 clips=83 updates=100] epoch = 16.900 loss = 4.434504 train f1 = 0.8460
+[dev epoch=16] loss = 1.671073 p = 0.8383 (1701.0/2029.0) r = 0.7183 (1701.0/2368.0) f1 = 0.7737
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 16.1000 loss = 4.436271 train f1 = 0.7953
+[lr=0.01 clips=86 updates=100] epoch = 16.1100 loss = 4.325592 train f1 = 0.8627
+[lr=0.01 clips=84 updates=100] epoch = 16.1200 loss = 4.275739 train f1 = 0.8358
+[dev epoch=16] loss = 1.467364 p = 0.8447 (1632.0/1932.0) r = 0.6892 (1632.0/2368.0) f1 = 0.7591
+[lr=0.01 clips=84 updates=100] epoch = 16.1300 loss = 4.270997 train f1 = 0.8284
+[lr=0.01 clips=86 updates=100] epoch = 16.1400 loss = 4.255171 train f1 = 0.8439
+[lr=0.01 clips=88 updates=100] epoch = 16.1500 loss = 4.252168 train f1 = 0.8327
+[dev epoch=16] loss = 1.959284 p = 0.8175 (1778.0/2175.0) r = 0.7508 (1778.0/2368.0) f1 = 0.7827
+[lr=0.01 clips=89 updates=100] epoch = 16.1600 loss = 4.247644 train f1 = 0.8316
+[lr=0.01 clips=88 updates=100] epoch = 16.1700 loss = 4.263015 train f1 = 0.8382
+[lr=0.01 clips=83 updates=100] epoch = 16.1800 loss = 4.237505 train f1 = 0.8559
+[dev epoch=16] loss = 1.451263 p = 0.8052 (1815.0/2254.0) r = 0.7665 (1815.0/2368.0) f1 = 0.7854
+[lr=0.01 clips=85 updates=100] epoch = 16.1900 loss = 4.248488 train f1 = 0.8147
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 16.2000 loss = 4.292661 train f1 = 0.7772
+[lr=0.01 clips=91 updates=100] epoch = 16.2100 loss = 4.285897 train f1 = 0.7992
+[dev epoch=16] loss = 1.833877 p = 0.8460 (1664.0/1967.0) r = 0.7027 (1664.0/2368.0) f1 = 0.7677
+[lr=0.01 clips=91 updates=99] epoch = 16.2200 loss = 4.302118 train f1 = 0.8199
+[lr=0.01 clips=84 updates=100] epoch = 16.2300 loss = 4.277294 train f1 = 0.8321
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=86 updates=100] epoch = 16.2400 loss = 4.298665 train f1 = 0.8398
+[dev epoch=16] loss = 1.374426 p = 0.8300 (1670.0/2012.0) r = 0.7052 (1670.0/2368.0) f1 = 0.7626
+[lr=0.01 clips=91 updates=100] epoch = 16.2500 loss = 4.316024 train f1 = 0.7923
+[lr=0.01 clips=89 updates=100] epoch = 16.2600 loss = 4.312461 train f1 = 0.8235
+[lr=0.01 clips=92 updates=100] epoch = 16.2700 loss = 4.303384 train f1 = 0.8207
+[dev epoch=16] loss = 1.501106 p = 0.8526 (1648.0/1933.0) r = 0.6959 (1648.0/2368.0) f1 = 0.7663
+[lr=0.01 clips=88 updates=100] epoch = 16.2800 loss = 4.318368 train f1 = 0.8082
+[lr=0.01 clips=89 updates=100] epoch = 16.2900 loss = 4.329323 train f1 = 0.8036
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=85 updates=100] epoch = 16.3000 loss = 4.310867 train f1 = 0.8561
+[dev epoch=16] loss = 1.919273 p = 0.8417 (1712.0/2034.0) r = 0.7230 (1712.0/2368.0) f1 = 0.7778
+[lr=0.01 clips=91 updates=100] epoch = 16.3100 loss = 4.281682 train f1 = 0.8370
+[lr=0.01 clips=88 updates=100] epoch = 16.3200 loss = 4.279186 train f1 = 0.8203
+[lr=0.01 clips=93 updates=100] epoch = 16.3300 loss = 4.298537 train f1 = 0.8029
+[dev epoch=16] loss = 2.205647 p = 0.8473 (1587.0/1873.0) r = 0.6702 (1587.0/2368.0) f1 = 0.7484
+[lr=0.01 clips=88 updates=100] epoch = 16.3400 loss = 4.297508 train f1 = 0.8388
+[lr=0.01 clips=105 updates=112] epoch = 17.100 loss = 4.575275 train f1 = 0.8247
+[lr=0.01 clips=88 updates=100] epoch = 17.200 loss = 4.111674 train f1 = 0.8480
+[lr=0.01 clips=84 updates=100] epoch = 17.300 loss = 4.131310 train f1 = 0.8456
+[dev epoch=17] loss = 1.532551 p = 0.8294 (1721.0/2075.0) r = 0.7268 (1721.0/2368.0) f1 = 0.7747
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=86 updates=100] epoch = 17.400 loss = 4.108810 train f1 = 0.8325
+[lr=0.01 clips=83 updates=100] epoch = 17.500 loss = 4.004714 train f1 = 0.8532
+[lr=0.01 clips=87 updates=99] epoch = 17.600 loss = 3.975683 train f1 = 0.8514
+[dev epoch=17] loss = 1.665929 p = 0.8622 (1508.0/1749.0) r = 0.6368 (1508.0/2368.0) f1 = 0.7326
+[lr=0.01 clips=90 updates=100] epoch = 17.700 loss = 4.066585 train f1 = 0.8168
+[lr=0.01 clips=87 updates=100] epoch = 17.800 loss = 4.033764 train f1 = 0.8462
+[lr=0.01 clips=86 updates=100] epoch = 17.900 loss = 4.060376 train f1 = 0.8469
+[dev epoch=17] loss = 1.488850 p = 0.8327 (1677.0/2014.0) r = 0.7082 (1677.0/2368.0) f1 = 0.7654
+[lr=0.01 clips=91 updates=100] epoch = 17.1000 loss = 4.122477 train f1 = 0.7990
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=83 updates=100] epoch = 17.1100 loss = 4.118219 train f1 = 0.8442
+[lr=0.01 clips=93 updates=100] epoch = 17.1200 loss = 4.139156 train f1 = 0.8172
+[dev epoch=17] loss = 1.822060 p = 0.8363 (1701.0/2034.0) r = 0.7183 (1701.0/2368.0) f1 = 0.7728
+[lr=0.01 clips=85 updates=100] epoch = 17.1300 loss = 4.135936 train f1 = 0.8023
+[lr=0.01 clips=89 updates=100] epoch = 17.1400 loss = 4.165296 train f1 = 0.8124
+[lr=0.01 clips=95 updates=100] epoch = 17.1500 loss = 4.196648 train f1 = 0.7944
+[dev epoch=17] loss = 2.066843 p = 0.8402 (1656.0/1971.0) r = 0.6993 (1656.0/2368.0) f1 = 0.7633
+[lr=0.01 clips=89 updates=100] epoch = 17.1600 loss = 4.194477 train f1 = 0.8054
+[lr=0.01 clips=85 updates=100] epoch = 17.1700 loss = 4.216084 train f1 = 0.8159
+[lr=0.01 clips=81 updates=100] epoch = 17.1800 loss = 4.177702 train f1 = 0.8353
+[dev epoch=17] loss = 1.626450 p = 0.8516 (1636.0/1921.0) r = 0.6909 (1636.0/2368.0) f1 = 0.7629
+[lr=0.01 clips=90 updates=100] epoch = 17.1900 loss = 4.196483 train f1 = 0.8197
+[lr=0.01 clips=84 updates=100] epoch = 17.2000 loss = 4.202785 train f1 = 0.8226
+[lr=0.01 clips=89 updates=100] epoch = 17.2100 loss = 4.210125 train f1 = 0.8355
+[dev epoch=17] loss = 1.626282 p = 0.8457 (1705.0/2016.0) r = 0.7200 (1705.0/2368.0) f1 = 0.7778
+[lr=0.01 clips=84 updates=100] epoch = 17.2200 loss = 4.195757 train f1 = 0.8311
+[lr=0.01 clips=85 updates=100] epoch = 17.2300 loss = 4.192364 train f1 = 0.8307
+[lr=0.01 clips=91 updates=99] epoch = 17.2400 loss = 4.194725 train f1 = 0.8210
+[dev epoch=17] loss = 1.759937 p = 0.8345 (1709.0/2048.0) r = 0.7217 (1709.0/2368.0) f1 = 0.7740
+[lr=0.01 clips=89 updates=100] epoch = 17.2500 loss = 4.192385 train f1 = 0.8168
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 17.2600 loss = 4.202676 train f1 = 0.8212
+[lr=0.01 clips=87 updates=100] epoch = 17.2700 loss = 4.200460 train f1 = 0.8283
+[dev epoch=17] loss = 2.269285 p = 0.8428 (1603.0/1902.0) r = 0.6769 (1603.0/2368.0) f1 = 0.7508
+[lr=0.01 clips=86 updates=100] epoch = 17.2800 loss = 4.194013 train f1 = 0.8454
+[lr=0.01 clips=93 updates=100] epoch = 17.2900 loss = 4.210318 train f1 = 0.7993
+[lr=0.01 clips=88 updates=100] epoch = 17.3000 loss = 4.231740 train f1 = 0.8306
+[dev epoch=17] loss = 1.738230 p = 0.8082 (1871.0/2315.0) r = 0.7901 (1871.0/2368.0) f1 = 0.7991
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 17.3100 loss = 4.233125 train f1 = 0.8350
+[lr=0.01 clips=84 updates=100] epoch = 17.3200 loss = 4.232927 train f1 = 0.8183
+[lr=0.01 clips=88 updates=100] epoch = 17.3300 loss = 4.219550 train f1 = 0.8413
+[dev epoch=17] loss = 1.397593 p = 0.8299 (1781.0/2146.0) r = 0.7521 (1781.0/2368.0) f1 = 0.7891
+[lr=0.01 clips=89 updates=100] epoch = 17.3400 loss = 4.230321 train f1 = 0.8316
+[lr=0.01 clips=98 updates=113] epoch = 18.100 loss = 3.755480 train f1 = 0.8243
+[lr=0.01 clips=86 updates=100] epoch = 18.200 loss = 3.980990 train f1 = 0.8218
+[lr=0.01 clips=89 updates=100] epoch = 18.300 loss = 3.954815 train f1 = 0.8314
+[dev epoch=18] loss = 1.699416 p = 0.8265 (1715.0/2075.0) r = 0.7242 (1715.0/2368.0) f1 = 0.7720
+[lr=0.01 clips=84 updates=100] epoch = 18.400 loss = 4.056595 train f1 = 0.8277
+[lr=0.01 clips=84 updates=100] epoch = 18.500 loss = 3.990860 train f1 = 0.8443
+[lr=0.01 clips=94 updates=100] epoch = 18.600 loss = 4.068347 train f1 = 0.8142
+[dev epoch=18] loss = 1.726536 p = 0.8082 (1732.0/2143.0) r = 0.7314 (1732.0/2368.0) f1 = 0.7679
+[lr=0.01 clips=91 updates=100] epoch = 18.700 loss = 4.067426 train f1 = 0.8285
+[lr=0.01 clips=84 updates=100] epoch = 18.800 loss = 3.997971 train f1 = 0.8352
+[lr=0.01 clips=87 updates=100] epoch = 18.900 loss = 4.012468 train f1 = 0.8443
+[dev epoch=18] loss = 1.570242 p = 0.8302 (1789.0/2155.0) r = 0.7555 (1789.0/2368.0) f1 = 0.7911
+[lr=0.01 clips=92 updates=100] epoch = 18.1000 loss = 4.036106 train f1 = 0.8308
+[lr=0.01 clips=87 updates=100] epoch = 18.1100 loss = 4.091144 train f1 = 0.8025
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 18.1200 loss = 4.098206 train f1 = 0.8470
+[dev epoch=18] loss = 1.821657 p = 0.8600 (1554.0/1807.0) r = 0.6562 (1554.0/2368.0) f1 = 0.7444
+[lr=0.01 clips=80 updates=100] epoch = 18.1300 loss = 4.041179 train f1 = 0.8421
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 18.1400 loss = 4.082632 train f1 = 0.8422
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 18.1500 loss = 4.104162 train f1 = 0.8092
+[dev epoch=18] loss = 2.045707 p = 0.8413 (1601.0/1903.0) r = 0.6761 (1601.0/2368.0) f1 = 0.7497
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=88 updates=100] epoch = 18.1600 loss = 4.089042 train f1 = 0.8381
+[lr=0.01 clips=90 updates=100] epoch = 18.1700 loss = 4.091460 train f1 = 0.8252
+[lr=0.01 clips=91 updates=100] epoch = 18.1800 loss = 4.071245 train f1 = 0.8353
+[dev epoch=18] loss = 1.688859 p = 0.8588 (1587.0/1848.0) r = 0.6702 (1587.0/2368.0) f1 = 0.7528
+[lr=0.01 clips=89 updates=100] epoch = 18.1900 loss = 4.073328 train f1 = 0.8196
+[lr=0.01 clips=84 updates=100] epoch = 18.2000 loss = 4.105380 train f1 = 0.8130
+[lr=0.01 clips=83 updates=100] epoch = 18.2100 loss = 4.111898 train f1 = 0.8441
+[dev epoch=18] loss = 1.901362 p = 0.8478 (1621.0/1912.0) r = 0.6845 (1621.0/2368.0) f1 = 0.7575
+[lr=0.01 clips=85 updates=99] epoch = 18.2200 loss = 4.112101 train f1 = 0.8394
+[lr=0.01 clips=89 updates=100] epoch = 18.2300 loss = 4.135645 train f1 = 0.8241
+[lr=0.01 clips=81 updates=100] epoch = 18.2400 loss = 4.104236 train f1 = 0.8638
+[dev epoch=18] loss = 1.318772 p = 0.8371 (1706.0/2038.0) r = 0.7204 (1706.0/2368.0) f1 = 0.7744
+WARNING: Rule not defined for part-of-speech prp$ word hour - treating as noun.[lr=0.01 clips=90 updates=99] epoch = 18.2500 loss = 4.125380 train f1 = 0.8286
+[lr=0.01 clips=88 updates=100] epoch = 18.2600 loss = 4.155091 train f1 = 0.8093
+[lr=0.01 clips=84 updates=100] epoch = 18.2700 loss = 4.145224 train f1 = 0.8448
+[dev epoch=18] loss = 1.548016 p = 0.8343 (1672.0/2004.0) r = 0.7061 (1672.0/2368.0) f1 = 0.7649
+[lr=0.01 clips=90 updates=100] epoch = 18.2800 loss = 4.175707 train f1 = 0.8069
+[lr=0.01 clips=90 updates=100] epoch = 18.2900 loss = 4.163172 train f1 = 0.8520
+[lr=0.01 clips=85 updates=100] epoch = 18.3000 loss = 4.152437 train f1 = 0.8327
+[dev epoch=18] loss = 1.578723 p = 0.8497 (1634.0/1923.0) r = 0.6900 (1634.0/2368.0) f1 = 0.7616
+[lr=0.01 clips=89 updates=100] epoch = 18.3100 loss = 4.183572 train f1 = 0.8282
+[lr=0.01 clips=91 updates=100] epoch = 18.3200 loss = 4.175264 train f1 = 0.8428
+[lr=0.01 clips=88 updates=100] epoch = 18.3300 loss = 4.168093 train f1 = 0.8129
+[dev epoch=18] loss = 1.765773 p = 0.8353 (1739.0/2082.0) r = 0.7344 (1739.0/2368.0) f1 = 0.7816
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=82 updates=100] epoch = 18.3400 loss = 4.158673 train f1 = 0.8426
+[lr=0.01 clips=97 updates=113] epoch = 19.100 loss = 3.895476 train f1 = 0.8249
+[lr=0.01 clips=83 updates=100] epoch = 19.200 loss = 3.736097 train f1 = 0.8365
+[lr=0.01 clips=83 updates=100] epoch = 19.300 loss = 3.835388 train f1 = 0.8288
+[dev epoch=19] loss = 1.621810 p = 0.8481 (1636.0/1929.0) r = 0.6909 (1636.0/2368.0) f1 = 0.7615
+[lr=0.01 clips=76 updates=100] epoch = 19.400 loss = 3.832270 train f1 = 0.8554
+[lr=0.01 clips=86 updates=100] epoch = 19.500 loss = 3.950873 train f1 = 0.8254
+[lr=0.01 clips=83 updates=100] epoch = 19.600 loss = 3.912268 train f1 = 0.8543
+[dev epoch=19] loss = 1.743603 p = 0.8422 (1660.0/1971.0) r = 0.7010 (1660.0/2368.0) f1 = 0.7652
+[lr=0.01 clips=84 updates=100] epoch = 19.700 loss = 3.906807 train f1 = 0.8323
+[lr=0.01 clips=83 updates=100] epoch = 19.800 loss = 3.879398 train f1 = 0.8382
+[lr=0.01 clips=83 updates=99] epoch = 19.900 loss = 3.889589 train f1 = 0.8355
+[dev epoch=19] loss = 1.798092 p = 0.7844 (1863.0/2375.0) r = 0.7867 (1863.0/2368.0) f1 = 0.7856
+[lr=0.01 clips=87 updates=100] epoch = 19.1000 loss = 3.856317 train f1 = 0.8358
+[lr=0.01 clips=89 updates=100] epoch = 19.1100 loss = 3.886203 train f1 = 0.8262
+[lr=0.01 clips=85 updates=100] epoch = 19.1200 loss = 3.940419 train f1 = 0.8208
+[dev epoch=19] loss = 1.722899 p = 0.8655 (1480.0/1710.0) r = 0.6250 (1480.0/2368.0) f1 = 0.7258
+[lr=0.01 clips=91 updates=100] epoch = 19.1300 loss = 3.941141 train f1 = 0.8438
+[lr=0.01 clips=87 updates=100] epoch = 19.1400 loss = 3.975006 train f1 = 0.8159
+[lr=0.01 clips=85 updates=100] epoch = 19.1500 loss = 3.969112 train f1 = 0.8472
+[dev epoch=19] loss = 1.677931 p = 0.8372 (1605.0/1917.0) r = 0.6778 (1605.0/2368.0) f1 = 0.7491
+[lr=0.01 clips=85 updates=99] epoch = 19.1600 loss = 3.969344 train f1 = 0.8374
+[lr=0.01 clips=82 updates=100] epoch = 19.1700 loss = 4.015516 train f1 = 0.8274
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=94 updates=100] epoch = 19.1800 loss = 4.046909 train f1 = 0.8172
+[dev epoch=19] loss = 2.127012 p = 0.8009 (1854.0/2315.0) r = 0.7829 (1854.0/2368.0) f1 = 0.7918
+[lr=0.01 clips=89 updates=100] epoch = 19.1900 loss = 4.048807 train f1 = 0.8508
+[lr=0.01 clips=88 updates=100] epoch = 19.2000 loss = 4.055154 train f1 = 0.8333
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=84 updates=100] epoch = 19.2100 loss = 4.049621 train f1 = 0.8481
+[dev epoch=19] loss = 1.474586 p = 0.8393 (1708.0/2035.0) r = 0.7213 (1708.0/2368.0) f1 = 0.7758
+[lr=0.01 clips=88 updates=100] epoch = 19.2200 loss = 4.045349 train f1 = 0.8358
+[lr=0.01 clips=90 updates=100] epoch = 19.2300 loss = 4.071410 train f1 = 0.8331
+[lr=0.01 clips=88 updates=100] epoch = 19.2400 loss = 4.098353 train f1 = 0.8180
+[dev epoch=19] loss = 1.960169 p = 0.8042 (1840.0/2288.0) r = 0.7770 (1840.0/2368.0) f1 = 0.7904
+[lr=0.01 clips=87 updates=100] epoch = 19.2500 loss = 4.097502 train f1 = 0.8382
+[lr=0.01 clips=92 updates=100] epoch = 19.2600 loss = 4.119576 train f1 = 0.8283
+[lr=0.01 clips=86 updates=100] epoch = 19.2700 loss = 4.120497 train f1 = 0.8335
+[dev epoch=19] loss = 1.704989 p = 0.8467 (1652.0/1951.0) r = 0.6976 (1652.0/2368.0) f1 = 0.7650
+[lr=0.01 clips=91 updates=100] epoch = 19.2800 loss = 4.135347 train f1 = 0.8117
+[lr=0.01 clips=82 updates=100] epoch = 19.2900 loss = 4.117100 train f1 = 0.8229
+[lr=0.01 clips=93 updates=100] epoch = 19.3000 loss = 4.132249 train f1 = 0.8332
+[dev epoch=19] loss = 1.507205 p = 0.8675 (1539.0/1774.0) r = 0.6499 (1539.0/2368.0) f1 = 0.7431
+[lr=0.01 clips=91 updates=100] epoch = 19.3100 loss = 4.131136 train f1 = 0.8267
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 19.3200 loss = 4.145181 train f1 = 0.8314
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 19.3300 loss = 4.149672 train f1 = 0.8216
+[dev epoch=19] loss = 2.077872 p = 0.8252 (1699.0/2059.0) r = 0.7175 (1699.0/2368.0) f1 = 0.7676
+[lr=0.01 clips=87 updates=100] epoch = 19.3400 loss = 4.143689 train f1 = 0.8385
+[lr=0.01 clips=96 updates=113] epoch = 20.100 loss = 4.040557 train f1 = 0.8439
+[lr=0.01 clips=82 updates=100] epoch = 20.200 loss = 3.695726 train f1 = 0.8402
+[lr=0.01 clips=91 updates=100] epoch = 20.300 loss = 4.097507 train f1 = 0.8103
+[dev epoch=20] loss = 1.860847 p = 0.8467 (1580.0/1866.0) r = 0.6672 (1580.0/2368.0) f1 = 0.7463
+[lr=0.01 clips=76 updates=100] epoch = 20.400 loss = 3.899025 train f1 = 0.8533
+[lr=0.01 clips=84 updates=100] epoch = 20.500 loss = 3.747248 train f1 = 0.8521
+[lr=0.01 clips=83 updates=100] epoch = 20.600 loss = 3.777045 train f1 = 0.8253
+[dev epoch=20] loss = 1.472547 p = 0.8414 (1634.0/1942.0) r = 0.6900 (1634.0/2368.0) f1 = 0.7582
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=81 updates=100] epoch = 20.700 loss = 3.844798 train f1 = 0.8416
+[lr=0.01 clips=81 updates=100] epoch = 20.800 loss = 3.792513 train f1 = 0.8525
+[lr=0.01 clips=88 updates=100] epoch = 20.900 loss = 3.773913 train f1 = 0.8415
+[dev epoch=20] loss = 1.209986 p = 0.8353 (1689.0/2022.0) r = 0.7133 (1689.0/2368.0) f1 = 0.7695
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 20.1000 loss = 3.841901 train f1 = 0.8370
+[lr=0.01 clips=94 updates=100] epoch = 20.1100 loss = 3.872283 train f1 = 0.8305
+[lr=0.01 clips=83 updates=100] epoch = 20.1200 loss = 3.918121 train f1 = 0.8189
+[dev epoch=20] loss = 1.626799 p = 0.8306 (1731.0/2084.0) r = 0.7310 (1731.0/2368.0) f1 = 0.7776
+[lr=0.01 clips=87 updates=100] epoch = 20.1300 loss = 3.915037 train f1 = 0.8345
+[lr=0.01 clips=86 updates=100] epoch = 20.1400 loss = 3.902918 train f1 = 0.8673
+[lr=0.01 clips=91 updates=100] epoch = 20.1500 loss = 3.952744 train f1 = 0.8285
+[dev epoch=20] loss = 1.856072 p = 0.8235 (1712.0/2079.0) r = 0.7230 (1712.0/2368.0) f1 = 0.7700
+[lr=0.01 clips=90 updates=100] epoch = 20.1600 loss = 3.959998 train f1 = 0.8500
+[lr=0.01 clips=95 updates=100] epoch = 20.1700 loss = 3.969492 train f1 = 0.8293
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=82 updates=100] epoch = 20.1800 loss = 3.940001 train f1 = 0.8543
+[dev epoch=20] loss = 1.174715 p = 0.8437 (1598.0/1894.0) r = 0.6748 (1598.0/2368.0) f1 = 0.7499
+[lr=0.01 clips=90 updates=100] epoch = 20.1900 loss = 3.962908 train f1 = 0.8163
+[lr=0.01 clips=84 updates=100] epoch = 20.2000 loss = 3.971038 train f1 = 0.8455
+[lr=0.01 clips=87 updates=100] epoch = 20.2100 loss = 3.961616 train f1 = 0.8655
+[dev epoch=20] loss = 1.396213 p = 0.8423 (1730.0/2054.0) r = 0.7306 (1730.0/2368.0) f1 = 0.7825
+[lr=0.01 clips=90 updates=100] epoch = 20.2200 loss = 3.993762 train f1 = 0.8299
+[lr=0.01 clips=84 updates=100] epoch = 20.2300 loss = 3.973903 train f1 = 0.8619
+[lr=0.01 clips=88 updates=100] epoch = 20.2400 loss = 4.009686 train f1 = 0.8158
+[dev epoch=20] loss = 1.442724 p = 0.8411 (1683.0/2001.0) r = 0.7107 (1683.0/2368.0) f1 = 0.7704
+[lr=0.01 clips=85 updates=100] epoch = 20.2500 loss = 4.024760 train f1 = 0.8300
+[lr=0.01 clips=83 updates=100] epoch = 20.2600 loss = 4.019386 train f1 = 0.8382
+[lr=0.01 clips=87 updates=100] epoch = 20.2700 loss = 4.016421 train f1 = 0.8231
+[dev epoch=20] loss = 1.801210 p = 0.8412 (1632.0/1940.0) r = 0.6892 (1632.0/2368.0) f1 = 0.7577
+[lr=0.01 clips=80 updates=99] epoch = 20.2800 loss = 3.989292 train f1 = 0.8647
+[lr=0.01 clips=87 updates=100] epoch = 20.2900 loss = 3.964748 train f1 = 0.8621
+[lr=0.01 clips=88 updates=100] epoch = 20.3000 loss = 3.980605 train f1 = 0.8139
+[dev epoch=20] loss = 2.270207 p = 0.8213 (1687.0/2054.0) r = 0.7124 (1687.0/2368.0) f1 = 0.7630
+[lr=0.01 clips=84 updates=99] epoch = 20.3100 loss = 3.994444 train f1 = 0.8194
+[lr=0.01 clips=90 updates=100] epoch = 20.3200 loss = 4.012599 train f1 = 0.8236
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=92 updates=100] epoch = 20.3300 loss = 4.030349 train f1 = 0.8301
+[dev epoch=20] loss = 1.534013 p = 0.8377 (1652.0/1972.0) r = 0.6976 (1652.0/2368.0) f1 = 0.7613
+[lr=0.01 clips=86 updates=100] epoch = 20.3400 loss = 4.042620 train f1 = 0.8137
+[lr=0.01 clips=92 updates=113] epoch = 21.100 loss = 3.629553 train f1 = 0.8205
+[lr=0.01 clips=85 updates=100] epoch = 21.200 loss = 3.766095 train f1 = 0.8509
+[lr=0.01 clips=90 updates=100] epoch = 21.300 loss = 3.956370 train f1 = 0.8396
+[dev epoch=21] loss = 2.073096 p = 0.8331 (1682.0/2019.0) r = 0.7103 (1682.0/2368.0) f1 = 0.7668
+[lr=0.01 clips=84 updates=100] epoch = 21.400 loss = 3.830061 train f1 = 0.8406
+[lr=0.01 clips=83 updates=100] epoch = 21.500 loss = 3.806130 train f1 = 0.8517
+[lr=0.01 clips=83 updates=99] epoch = 21.600 loss = 3.834223 train f1 = 0.8679
+[dev epoch=21] loss = 1.213353 p = 0.8319 (1747.0/2100.0) r = 0.7378 (1747.0/2368.0) f1 = 0.7820
+[lr=0.01 clips=78 updates=99] epoch = 21.700 loss = 3.762896 train f1 = 0.8583
+[lr=0.01 clips=86 updates=100] epoch = 21.800 loss = 3.765934 train f1 = 0.8421
+[lr=0.01 clips=84 updates=100] epoch = 21.900 loss = 3.724234 train f1 = 0.8505
+[dev epoch=21] loss = 1.370848 p = 0.8562 (1542.0/1801.0) r = 0.6512 (1542.0/2368.0) f1 = 0.7397
+[lr=0.01 clips=85 updates=100] epoch = 21.1000 loss = 3.759424 train f1 = 0.8465
+[lr=0.01 clips=88 updates=100] epoch = 21.1100 loss = 3.777456 train f1 = 0.8344
+[lr=0.01 clips=84 updates=100] epoch = 21.1200 loss = 3.746610 train f1 = 0.8487
+[dev epoch=21] loss = 1.364490 p = 0.8436 (1656.0/1963.0) r = 0.6993 (1656.0/2368.0) f1 = 0.7647
+[lr=0.01 clips=88 updates=100] epoch = 21.1300 loss = 3.815865 train f1 = 0.7854
+[lr=0.01 clips=83 updates=100] epoch = 21.1400 loss = 3.813853 train f1 = 0.8629
+[lr=0.01 clips=87 updates=100] epoch = 21.1500 loss = 3.856308 train f1 = 0.8677
+[dev epoch=21] loss = 1.508724 p = 0.8278 (1759.0/2125.0) r = 0.7428 (1759.0/2368.0) f1 = 0.7830
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=90 updates=100] epoch = 21.1600 loss = 3.906196 train f1 = 0.8184
+[lr=0.01 clips=88 updates=100] epoch = 21.1700 loss = 3.898232 train f1 = 0.8446
+[lr=0.01 clips=89 updates=100] epoch = 21.1800 loss = 3.922796 train f1 = 0.8367
+[dev epoch=21] loss = 1.857743 p = 0.8102 (1797.0/2218.0) r = 0.7589 (1797.0/2368.0) f1 = 0.7837
+[lr=0.01 clips=85 updates=100] epoch = 21.1900 loss = 3.939164 train f1 = 0.8426
+[lr=0.01 clips=91 updates=100] epoch = 21.2000 loss = 3.998226 train f1 = 0.8281
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=85 updates=100] epoch = 21.2100 loss = 4.004506 train f1 = 0.8508
+[dev epoch=21] loss = 1.754930 p = 0.8468 (1630.0/1925.0) r = 0.6883 (1630.0/2368.0) f1 = 0.7594
+[lr=0.01 clips=90 updates=100] epoch = 21.2200 loss = 4.018680 train f1 = 0.8132
+[lr=0.01 clips=85 updates=100] epoch = 21.2300 loss = 4.012271 train f1 = 0.8323
+[lr=0.01 clips=85 updates=100] epoch = 21.2400 loss = 4.030328 train f1 = 0.8221
+[dev epoch=21] loss = 1.636412 p = 0.8495 (1654.0/1947.0) r = 0.6985 (1654.0/2368.0) f1 = 0.7666
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=82 updates=100] epoch = 21.2500 loss = 4.026589 train f1 = 0.8436
+[lr=0.01 clips=90 updates=100] epoch = 21.2600 loss = 4.065296 train f1 = 0.8197
+[lr=0.01 clips=88 updates=100] epoch = 21.2700 loss = 4.026753 train f1 = 0.8365
+[dev epoch=21] loss = 1.682831 p = 0.8246 (1740.0/2110.0) r = 0.7348 (1740.0/2368.0) f1 = 0.7771
+[lr=0.01 clips=93 updates=100] epoch = 21.2800 loss = 4.038931 train f1 = 0.8446
+[lr=0.01 clips=85 updates=100] epoch = 21.2900 loss = 4.015921 train f1 = 0.8499
+[lr=0.01 clips=85 updates=100] epoch = 21.3000 loss = 4.005425 train f1 = 0.8548
+[dev epoch=21] loss = 1.536576 p = 0.8412 (1658.0/1971.0) r = 0.7002 (1658.0/2368.0) f1 = 0.7642
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=89 updates=100] epoch = 21.3100 loss = 4.020483 train f1 = 0.8156
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=89 updates=100] epoch = 21.3200 loss = 4.009332 train f1 = 0.8357
+[lr=0.01 clips=86 updates=100] epoch = 21.3300 loss = 4.016068 train f1 = 0.8218
+[dev epoch=21] loss = 1.618456 p = 0.8479 (1583.0/1867.0) r = 0.6685 (1583.0/2368.0) f1 = 0.7476
+[lr=0.01 clips=81 updates=100] epoch = 21.3400 loss = 3.999667 train f1 = 0.8304
+[lr=0.01 clips=96 updates=113] epoch = 22.100 loss = 3.667763 train f1 = 0.8459
+[lr=0.01 clips=84 updates=100] epoch = 22.200 loss = 3.991900 train f1 = 0.8292
+[lr=0.01 clips=86 updates=100] epoch = 22.300 loss = 3.867692 train f1 = 0.8725
+[dev epoch=22] loss = 1.666745 p = 0.8326 (1696.0/2037.0) r = 0.7162 (1696.0/2368.0) f1 = 0.7700
+[lr=0.01 clips=92 updates=100] epoch = 22.400 loss = 3.890865 train f1 = 0.8250
+[lr=0.01 clips=89 updates=100] epoch = 22.500 loss = 3.999587 train f1 = 0.8340
+[lr=0.01 clips=84 updates=100] epoch = 22.600 loss = 3.900205 train f1 = 0.8831
+[dev epoch=22] loss = 1.419492 p = 0.8026 (1846.0/2300.0) r = 0.7796 (1846.0/2368.0) f1 = 0.7909
+[lr=0.01 clips=84 updates=100] epoch = 22.700 loss = 3.869059 train f1 = 0.8696
+[lr=0.01 clips=85 updates=100] epoch = 22.800 loss = 3.787220 train f1 = 0.8686
+[lr=0.01 clips=84 updates=100] epoch = 22.900 loss = 3.862973 train f1 = 0.8109
+[dev epoch=22] loss = 1.974381 p = 0.8342 (1681.0/2015.0) r = 0.7099 (1681.0/2368.0) f1 = 0.7671
+[lr=0.01 clips=91 updates=100] epoch = 22.1000 loss = 3.872148 train f1 = 0.8400
+[lr=0.01 clips=87 updates=100] epoch = 22.1100 loss = 3.877610 train f1 = 0.8391
+[lr=0.01 clips=87 updates=100] epoch = 22.1200 loss = 3.957111 train f1 = 0.8108
+[dev epoch=22] loss = 1.893014 p = 0.8331 (1712.0/2055.0) r = 0.7230 (1712.0/2368.0) f1 = 0.7741
+[lr=0.01 clips=89 updates=100] epoch = 22.1300 loss = 3.898317 train f1 = 0.8515
+[lr=0.01 clips=89 updates=100] epoch = 22.1400 loss = 3.918070 train f1 = 0.8426
+[lr=0.01 clips=83 updates=100] epoch = 22.1500 loss = 3.894108 train f1 = 0.8533
+[dev epoch=22] loss = 2.085969 p = 0.8544 (1537.0/1799.0) r = 0.6491 (1537.0/2368.0) f1 = 0.7377
+[lr=0.01 clips=84 updates=100] epoch = 22.1600 loss = 3.890045 train f1 = 0.8559
+[lr=0.01 clips=84 updates=99] epoch = 22.1700 loss = 3.893463 train f1 = 0.8504
+[lr=0.01 clips=84 updates=100] epoch = 22.1800 loss = 3.919986 train f1 = 0.8327
+[dev epoch=22] loss = 1.598045 p = 0.8359 (1707.0/2042.0) r = 0.7209 (1707.0/2368.0) f1 = 0.7741
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=83 updates=100] epoch = 22.1900 loss = 3.918333 train f1 = 0.8339
+[lr=0.01 clips=82 updates=100] epoch = 22.2000 loss = 3.918880 train f1 = 0.8253
+[lr=0.01 clips=83 updates=100] epoch = 22.2100 loss = 3.913361 train f1 = 0.8554
+[dev epoch=22] loss = 1.472258 p = 0.8419 (1651.0/1961.0) r = 0.6972 (1651.0/2368.0) f1 = 0.7628
+[lr=0.01 clips=86 updates=100] epoch = 22.2200 loss = 3.923688 train f1 = 0.8229
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=93 updates=100] epoch = 22.2300 loss = 3.935209 train f1 = 0.8175
+[lr=0.01 clips=80 updates=100] epoch = 22.2400 loss = 3.937437 train f1 = 0.8462
+[dev epoch=22] loss = 1.449823 p = 0.8192 (1744.0/2129.0) r = 0.7365 (1744.0/2368.0) f1 = 0.7756
+[lr=0.01 clips=92 updates=100] epoch = 22.2500 loss = 3.965823 train f1 = 0.8066
+[lr=0.01 clips=90 updates=100] epoch = 22.2600 loss = 3.981221 train f1 = 0.8300
+[lr=0.01 clips=91 updates=100] epoch = 22.2700 loss = 3.981747 train f1 = 0.8408
+[dev epoch=22] loss = 1.653674 p = 0.8357 (1729.0/2069.0) r = 0.7302 (1729.0/2368.0) f1 = 0.7794
+[lr=0.01 clips=74 updates=99] epoch = 22.2800 loss = 3.961496 train f1 = 0.8547
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=82 updates=100] epoch = 22.2900 loss = 3.948763 train f1 = 0.8516
+[lr=0.01 clips=84 updates=100] epoch = 22.3000 loss = 3.938643 train f1 = 0.8501
+[dev epoch=22] loss = 1.529128 p = 0.8568 (1592.0/1858.0) r = 0.6723 (1592.0/2368.0) f1 = 0.7534
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=91 updates=100] epoch = 22.3100 loss = 3.960224 train f1 = 0.8094
+[lr=0.01 clips=89 updates=100] epoch = 22.3200 loss = 3.944318 train f1 = 0.8470
+[lr=0.01 clips=80 updates=100] epoch = 22.3300 loss = 3.932223 train f1 = 0.8593
+[dev epoch=22] loss = 1.501720 p = 0.8346 (1690.0/2025.0) r = 0.7137 (1690.0/2368.0) f1 = 0.7694
+[lr=0.01 clips=88 updates=100] epoch = 22.3400 loss = 3.946807 train f1 = 0.8374
+[lr=0.01 clips=89 updates=113] epoch = 23.100 loss = 3.525052 train f1 = 0.8672
+[lr=0.01 clips=84 updates=100] epoch = 23.200 loss = 3.622708 train f1 = 0.8669
+[lr=0.01 clips=83 updates=100] epoch = 23.300 loss = 3.692031 train f1 = 0.8479
+[dev epoch=23] loss = 1.832021 p = 0.8697 (1522.0/1750.0) r = 0.6427 (1522.0/2368.0) f1 = 0.7392
+[lr=0.01 clips=80 updates=99] epoch = 23.400 loss = 3.701834 train f1 = 0.8336
+[lr=0.01 clips=90 updates=100] epoch = 23.500 loss = 3.809340 train f1 = 0.8446
+[lr=0.01 clips=86 updates=100] epoch = 23.600 loss = 3.710103 train f1 = 0.8561
+[dev epoch=23] loss = 1.870056 p = 0.8306 (1657.0/1995.0) r = 0.6997 (1657.0/2368.0) f1 = 0.7596
+[lr=0.01 clips=85 updates=99] epoch = 23.700 loss = 3.848913 train f1 = 0.8265
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=88 updates=100] epoch = 23.800 loss = 3.875924 train f1 = 0.8462
+[lr=0.01 clips=87 updates=100] epoch = 23.900 loss = 3.849916 train f1 = 0.8373
+[dev epoch=23] loss = 1.947927 p = 0.8228 (1751.0/2128.0) r = 0.7394 (1751.0/2368.0) f1 = 0.7789
+[lr=0.01 clips=86 updates=100] epoch = 23.1000 loss = 3.862139 train f1 = 0.8306
+[lr=0.01 clips=85 updates=100] epoch = 23.1100 loss = 3.860379 train f1 = 0.8527
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=89 updates=100] epoch = 23.1200 loss = 3.880889 train f1 = 0.8509
+[dev epoch=23] loss = 1.767016 p = 0.8291 (1683.0/2030.0) r = 0.7107 (1683.0/2368.0) f1 = 0.7653
+[lr=0.01 clips=85 updates=100] epoch = 23.1300 loss = 3.887135 train f1 = 0.8396
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=84 updates=100] epoch = 23.1400 loss = 3.920163 train f1 = 0.8211
+[lr=0.01 clips=84 updates=100] epoch = 23.1500 loss = 3.927536 train f1 = 0.8268
+[dev epoch=23] loss = 1.405392 p = 0.8120 (1792.0/2207.0) r = 0.7568 (1792.0/2368.0) f1 = 0.7834
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=88 updates=100] epoch = 23.1600 loss = 3.913566 train f1 = 0.8486
+[lr=0.01 clips=82 updates=100] epoch = 23.1700 loss = 3.910411 train f1 = 0.8528
+[lr=0.01 clips=81 updates=100] epoch = 23.1800 loss = 3.925954 train f1 = 0.8434
+[dev epoch=23] loss = 1.414573 p = 0.8469 (1649.0/1947.0) r = 0.6964 (1649.0/2368.0) f1 = 0.7643
+[lr=0.01 clips=87 updates=100] epoch = 23.1900 loss = 3.942423 train f1 = 0.8163
+[lr=0.01 clips=82 updates=100] epoch = 23.2000 loss = 3.920604 train f1 = 0.8588
+[lr=0.01 clips=83 updates=100] epoch = 23.2100 loss = 3.950302 train f1 = 0.8285
+[dev epoch=23] loss = 2.097056 p = 0.8370 (1684.0/2012.0) r = 0.7111 (1684.0/2368.0) f1 = 0.7689
+[lr=0.01 clips=85 updates=100] epoch = 23.2200 loss = 3.942645 train f1 = 0.8545
+[lr=0.01 clips=86 updates=100] epoch = 23.2300 loss = 3.937273 train f1 = 0.8628
+[lr=0.01 clips=89 updates=100] epoch = 23.2400 loss = 3.940699 train f1 = 0.8428
+[dev epoch=23] loss = 1.720277 p = 0.8339 (1682.0/2017.0) r = 0.7103 (1682.0/2368.0) f1 = 0.7672
+[lr=0.01 clips=82 updates=100] epoch = 23.2500 loss = 3.937288 train f1 = 0.8423
+[lr=0.01 clips=81 updates=100] epoch = 23.2600 loss = 3.916994 train f1 = 0.8579
+[lr=0.01 clips=83 updates=100] epoch = 23.2700 loss = 3.891884 train f1 = 0.8458
+[dev epoch=23] loss = 1.644306 p = 0.8492 (1633.0/1923.0) r = 0.6896 (1633.0/2368.0) f1 = 0.7611
+[lr=0.01 clips=84 updates=100] epoch = 23.2800 loss = 3.890316 train f1 = 0.8223
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=84 updates=100] epoch = 23.2900 loss = 3.882106 train f1 = 0.8500
+[lr=0.01 clips=81 updates=100] epoch = 23.3000 loss = 3.882039 train f1 = 0.8472
+[dev epoch=23] loss = 1.651234 p = 0.8261 (1734.0/2099.0) r = 0.7323 (1734.0/2368.0) f1 = 0.7764
+[lr=0.01 clips=82 updates=100] epoch = 23.3100 loss = 3.889479 train f1 = 0.8327
+[lr=0.01 clips=81 updates=100] epoch = 23.3200 loss = 3.888210 train f1 = 0.8393
+[lr=0.01 clips=82 updates=100] epoch = 23.3300 loss = 3.882015 train f1 = 0.8327
+[dev epoch=23] loss = 1.945872 p = 0.8382 (1658.0/1978.0) r = 0.7002 (1658.0/2368.0) f1 = 0.7630
+[lr=0.01 clips=88 updates=100] epoch = 23.3400 loss = 3.884916 train f1 = 0.8496
+[lr=0.01 clips=98 updates=113] epoch = 24.100 loss = 3.944778 train f1 = 0.8472
+[lr=0.01 clips=82 updates=100] epoch = 24.200 loss = 3.913967 train f1 = 0.8452
+[lr=0.01 clips=87 updates=100] epoch = 24.300 loss = 3.863758 train f1 = 0.8612
+[dev epoch=24] loss = 1.540082 p = 0.8313 (1739.0/2092.0) r = 0.7344 (1739.0/2368.0) f1 = 0.7798
+[lr=0.01 clips=77 updates=100] epoch = 24.400 loss = 3.713645 train f1 = 0.8582
+[lr=0.01 clips=87 updates=100] epoch = 24.500 loss = 3.771067 train f1 = 0.8458
+[lr=0.01 clips=77 updates=100] epoch = 24.600 loss = 3.709375 train f1 = 0.8729
+[dev epoch=24] loss = 1.404165 p = 0.8366 (1679.0/2007.0) r = 0.7090 (1679.0/2368.0) f1 = 0.7675
+[lr=0.01 clips=88 updates=100] epoch = 24.700 loss = 3.789373 train f1 = 0.8430
+[lr=0.01 clips=88 updates=100] epoch = 24.800 loss = 3.864848 train f1 = 0.8299
+[lr=0.01 clips=79 updates=100] epoch = 24.900 loss = 3.810639 train f1 = 0.8448
+[dev epoch=24] loss = 1.493400 p = 0.8369 (1652.0/1974.0) r = 0.6976 (1652.0/2368.0) f1 = 0.7609
+[lr=0.01 clips=83 updates=100] epoch = 24.1000 loss = 3.855210 train f1 = 0.8548
+[lr=0.01 clips=87 updates=100] epoch = 24.1100 loss = 3.905419 train f1 = 0.8253
+[lr=0.01 clips=86 updates=100] epoch = 24.1200 loss = 3.876673 train f1 = 0.8722
+[dev epoch=24] loss = 1.324551 p = 0.8456 (1670.0/1975.0) r = 0.7052 (1670.0/2368.0) f1 = 0.7691
+[lr=0.01 clips=82 updates=100] epoch = 24.1300 loss = 3.831719 train f1 = 0.8462
+[lr=0.01 clips=86 updates=100] epoch = 24.1400 loss = 3.831353 train f1 = 0.8533
+[lr=0.01 clips=83 updates=100] epoch = 24.1500 loss = 3.843132 train f1 = 0.8512
+[dev epoch=24] loss = 1.622141 p = 0.8361 (1648.0/1971.0) r = 0.6959 (1648.0/2368.0) f1 = 0.7596
+[lr=0.01 clips=81 updates=100] epoch = 24.1600 loss = 3.869170 train f1 = 0.8237
+[lr=0.01 clips=79 updates=100] epoch = 24.1700 loss = 3.884632 train f1 = 0.8440
+WARNING: Rule not defined for part-of-speech prp$ word tour - treating as noun.[lr=0.01 clips=83 updates=100] epoch = 24.1800 loss = 3.900138 train f1 = 0.8381
+[dev epoch=24] loss = 1.323102 p = 0.8348 (1673.0/2004.0) r = 0.7065 (1673.0/2368.0) f1 = 0.7653
+[lr=0.01 clips=80 updates=100] epoch = 24.1900 loss = 3.912922 train f1 = 0.8564
+[lr=0.01 clips=81 updates=100] epoch = 24.2000 loss = 3.895086 train f1 = 0.8517
+[lr=0.01 clips=85 updates=100] epoch = 24.2100 loss = 3.900392 train f1 = 0.8405
+[dev epoch=24] loss = 1.825961 p = 0.8178 (1710.0/2091.0) r = 0.7221 (1710.0/2368.0) f1 = 0.7670
+WARNING: Rule not defined for part-of-speech prp$ word pour - treating as noun.[lr=0.01 clips=87 updates=100] epoch = 24.2200 loss = 3.868972 train f1 = 0.8574
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=89 updates=100] epoch = 24.2300 loss = 3.901073 train f1 = 0.8264
+[lr=0.01 clips=86 updates=100] epoch = 24.2400 loss = 3.857185 train f1 = 0.8840
+[dev epoch=24] loss = 1.282832 p = 0.8679 (1538.0/1772.0) r = 0.6495 (1538.0/2368.0) f1 = 0.7430
+[lr=0.01 clips=85 updates=100] epoch = 24.2500 loss = 3.849258 train f1 = 0.8594
+[lr=0.01 clips=83 updates=100] epoch = 24.2600 loss = 3.842587 train f1 = 0.8339
+WARNING: Rule not defined for part-of-speech -none- word Scud-B - treating as noun.[lr=0.01 clips=88 updates=100] epoch = 24.2700 loss = 3.832731 train f1 = 0.8524
+[dev epoch=24] loss = 1.663943 p = 0.8287 (1688.0/2037.0) r = 0.7128 (1688.0/2368.0) f1 = 0.7664
+[lr=0.01 clips=82 updates=100] epoch = 24.2800 loss = 3.809266 train f1 = 0.8673
+train_target.sh: line 5: 17796 Terminated              python2 -m sesame.$MODEL --mode train --model_name $MODEL_NAME

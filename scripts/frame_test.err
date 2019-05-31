@@ -1,0 +1,81 @@
+[dynet] random seed: 445196585
+[dynet] allocating memory: 512MB
+[dynet] memory allocation done.
+DATA_DIRECTORY:	data/
+DEBUG_MODE:	False
+EMBEDDINGS_FILE:	data/glove.6B.100d.txt
+VERSION:	1.7
+_____________________
+COMMAND: /home/postma/Dutch_FrameNet_Lexicon/resources/run_open-sesame/resources/open-sesame/sesame/frameid.py --mode test --model_name fn1.7-pretrained-frameid
+MODEL FOR TEST / PREDICTION:	logs/fn1.7-pretrained-frameid/best-frameid-1.7-model
+PARSING MODE:	test
+_____________________
+
+
+Reading data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll : 19391 in 3413 sents
+# examples with missing arguments : 526
+multi-token targets in train: 3.481% [675 / 19391]
+
+Reading the frame-LU map from data/fndata-1.7/frame/ ...
+# Max frames for LU: 13 in LU (order)
+# Avg LUs for frame: 11.163800
+# Avg frames per LU: 1.394110
+# Max LUs for frame: 186 in Frame (Emotion_directed)
+
+Reading pretrained embeddings from data/glove.6B.100d.txt ...
+
+Reading data/neural/fn1.7/fn1.7.test.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.test.syntaxnet.conll : 6714 in 1354 sents
+# examples with missing arguments : 491
+multi-token targets in dev/test: 2.264% [152 / 6714]
+
+PARSER SETTINGS (see logs/fn1.7-pretrained-frameid/configuration.json)
+_____________________
+DEV_EVAL_EPOCH_FREQUENCY:	5
+DROPOUT_RATE:	0.01
+EVAL_AFTER_EVERY_EPOCHS:	100
+HIDDEN_DIM:	100
+LSTM_DEPTH:	2
+LSTM_DIM:	100
+LSTM_INPUT_DIM:	100
+LU_DIM:	100
+LU_POS_DIM:	100
+NUM_EPOCHS:	100
+PATIENCE:	25
+POS_DIM:	100
+PRETRAINED_EMBEDDING_DIM:	100
+TOKEN_DIM:	100
+TRAIN:	data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll
+UNK_PROB:	0.1
+USE_DROPOUT:	True
+USE_EXEMPLAR:	False
+USE_HIERARCHY:	False
+
+# Tokens = 400574
+	Unseen in dev/test = 142
+	Unlearnt in dev/test = 390666
+# POS tags = 42
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 1
+# LUs = 9441
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 6444
+# LU POS tags = 14
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 3
+# Frames = 1223
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 469
+
+_____________________
+
+Loading model from logs/fn1.7-pretrained-frameid/best-frameid-1.7-model ...
+[test] p = 0.8615 (5784.0/6714.0) r = 0.8615 (5784.0/6714.0) f1 = 0.8615
+Printing output conll to logs/fn1.7-pretrained-frameid/predicted-1.7-frameid-test.conll ... Done!
+Printing frame-elements to logs/fn1.7-pretrained-frameid/predicted-1.7-frameid-test.fes ...
+
+Reading logs/fn1.7-pretrained-frameid/predicted-1.7-frameid-test.conll ...
+# examples in logs/fn1.7-pretrained-frameid/predicted-1.7-frameid-test.conll : 6714 in 1354 sents
+# examples with missing arguments : 491
+Done!

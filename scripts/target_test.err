@@ -1,0 +1,68 @@
+[dynet] random seed: 2280156759
+[dynet] allocating memory: 512MB
+[dynet] memory allocation done.
+DATA_DIRECTORY:	data/
+DEBUG_MODE:	False
+EMBEDDINGS_FILE:	data/glove.6B.100d.txt
+VERSION:	1.7
+_____________________
+COMMAND: /home/postma/Dutch_FrameNet_Lexicon/resources/run_open-sesame/resources/open-sesame/sesame/targetid.py --mode test --model_name fn1.7-pretrained-targetid
+MODEL FOR TEST / PREDICTION:	logs/fn1.7-pretrained-targetid/best-targetid-1.7-model
+PARSING MODE:	test
+_____________________
+
+
+Reading data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll : 19391 in 3413 sents
+# examples with missing arguments : 526
+Combined 19391 instances in data into 3413 instances.
+
+Reading the lexical unit index file: data/fndata-1.7/luIndex.xml
+# unique targets = 9421
+# total targets = 13572
+# targets with multiple LUs = 4151
+# max LUs per target = 5
+
+
+Reading pretrained embeddings from data/glove.6B.100d.txt ...
+
+Reading data/neural/fn1.7/fn1.7.test.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.test.syntaxnet.conll : 6714 in 1354 sents
+# examples with missing arguments : 491
+Combined 6714 instances in data into 1354 instances.
+
+PARSER SETTINGS (see logs/fn1.7-pretrained-targetid/configuration.json)
+_____________________
+DEV_EVAL_EPOCH_FREQUENCY:	3
+DROPOUT_RATE:	0.01
+EVAL_AFTER_EVERY_EPOCHS:	100
+HIDDEN_DIM:	100
+LEMMA_DIM:	100
+LSTM_DEPTH:	2
+LSTM_DIM:	100
+LSTM_INPUT_DIM:	100
+NUM_EPOCHS:	100
+PATIENCE:	25
+POS_DIM:	100
+PRETRAINED_EMBEDDING_DIM:	100
+TOKEN_DIM:	100
+TRAIN:	data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll
+UNK_PROB:	0.1
+USE_DROPOUT:	True
+
+# Tokens = 400574
+	Unseen in dev/test = 142
+	Unlearnt in dev/test = 390666
+# POS tags = 42
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 1
+# Lemmas = 9422
+	Unseen in dev/test = 1959
+	Unlearnt in dev/test = 1960
+
+_____________________
+
+Reading model from logs/fn1.7-pretrained-targetid/best-targetid-1.7-model ...
+[test] p = 0.7360 (5003.0/6798.0) r = 0.7285 (5003.0/6868.0) f1 = 0.7322
+Printing output in CoNLL format to logs/fn1.7-pretrained-targetid/predicted-1.7-targetid-test.conll
+Done!

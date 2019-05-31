@@ -1,0 +1,562 @@
+[dynet] random seed: 104796652
+[dynet] allocating memory: 512MB
+[dynet] memory allocation done.
+DATA_DIRECTORY:	data/
+DEBUG_MODE:	False
+EMBEDDINGS_FILE:	data/glove.6B.100d.txt
+VERSION:	1.7
+_____________________
+COMMAND: /home/postma/Dutch_FrameNet_Lexicon/resources/run_open-sesame/resources/open-sesame/sesame/argid.py --mode train --model_name fn1.7-pretrained-argid
+VALIDATED MODEL SAVED TO:	logs/fn1.7-pretrained-argid/best-argid-1.7-model
+PARSING MODE:	train
+_____________________
+
+
+Reading data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll : 19391 in 3413 sents
+# examples with missing arguments : 526
+
+Reading the frame-element - frame map from data/fndata-1.7/frame/ ...
+Max! 32 frame-elements for frame: Traversing
+
+
+Reading pretrained embeddings from data/glove.6B.100d.txt ...
+
+Reading data/neural/fn1.7/fn1.7.dev.syntaxnet.conll ...
+# examples in data/neural/fn1.7/fn1.7.dev.syntaxnet.conll : 2272 in 326 sents
+# examples with missing arguments : 73
+
+clipping spans longer than 20...
+longest span size: 102
+longest FE span size: 89
+# train examples before filter: 19391
+# train examples after filter: 19391
+
+
+PARSER SETTINGS (see logs/fn1.7-pretrained-argid/configuration.json)
+_____________________
+ALLOWED_MAX_SPAN_LENGTH:	20
+COST_TYPE:	recall
+DEPENDENCY_RELATION_DIM:	8
+DEV_EVAL_EPOCH_FREQUENCY:	5
+DROPOUT_RATE:	0.01
+EVAL_AFTER_EVERY_EPOCHS:	100
+FE_DIM:	50
+FRAME_DIM:	100
+HIDDEN_DIM:	64
+LOSS_TYPE:	softmaxm
+LSTM_DEPTH:	1
+LSTM_DIM:	64
+LSTM_INPUT_DIM:	64
+LU_DIM:	64
+LU_POS_DIM:	2
+NUM_EPOCHS:	10
+PATH_DIM:	64
+PATH_LSTM_DIM:	64
+PATIENCE:	3
+PHRASE_DIM:	16
+POS_DIM:	4
+PRETRAINED_EMBEDDING_DIM:	100
+RECALL_ORIENTED_COST:	2
+TOKEN_DIM:	60
+TRAIN:	data/neural/fn1.7/fn1.7.fulltext.train.syntaxnet.conll
+UNK_PROB:	0.1
+USE_DROPOUT:	True
+USE_EXEMPLAR:	False
+USE_HIERARCHY:	False
+USE_SPAN_CLIP:	True
+USING_CONSTITUENCY_PARSES:	False
+USING_DEPENDENCY_PARSES:	False
+USING_SCAFFOLD_LOSS:	False
+
+# Tokens = 400574
+	Unseen in dev/test = 45
+	Unlearnt in dev/test = 390569
+# POS tags = 42
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 1
+# LUs = 9441
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 6444
+# LU POS tags = 14
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 3
+# Frames = 1223
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 469
+# FEs = 1287
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 521
+# Constit Labels = 1
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 1
+# Dependency Relations = 1
+	Unseen in dev/test = 0
+	Unlearnt in dev/test = 1
+
+_____________________
+
+[lr=0.0005 clips=98 updates=100] epoch=0.100 loss=29.0956 [took 53.917s]
+[lr=0.0005 clips=100 updates=100] epoch=0.200 loss=24.6121 [took 43.199s]
+[lr=0.0005 clips=100 updates=100] epoch=0.300 loss=22.5297 [took 50.201s]
+[lr=0.0005 clips=100 updates=100] epoch=0.400 loss=21.2221 [took 52.952s]
+[lr=0.0005 clips=99 updates=100] epoch=0.500 loss=20.6954 [took 47.922s]
+[dev epoch=0.501] wprec = 0.00000 wrec = 0.00000 wf1 = 0.00000
+[dev epoch=0.501] uprec = 0.00000 urec = 0.00000 uf1 = 0.00000
+[dev epoch=0.501] lprec = 0.00000 lrec = 0.00000 lf1 = 0.00000 [took 695.521s]
+[lr=0.0005 clips=100 updates=100] epoch=0.600 loss=20.3406 [took 50.259s]
+[lr=0.0005 clips=100 updates=100] epoch=0.700 loss=19.8617 [took 49.087s]
+[lr=0.0005 clips=100 updates=100] epoch=0.800 loss=19.3885 [took 49.722s]
+[lr=0.0005 clips=100 updates=100] epoch=0.900 loss=18.9926 [took 49.612s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1000 loss=18.6635 [took 49.603s]
+[dev epoch=0.1001] wprec = 0.00000 wrec = 0.00000 wf1 = 0.00000
+[dev epoch=0.1001] uprec = 0.00000 urec = 0.00000 uf1 = 0.00000
+[dev epoch=0.1001] lprec = 0.00000 lrec = 0.00000 lf1 = 0.00000 [took 706.371s]
+[lr=0.0005 clips=99 updates=100] epoch=0.1100 loss=18.4552 [took 51.371s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1200 loss=18.1323 [took 50.876s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1300 loss=17.8534 [took 55.329s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1400 loss=17.6516 [took 46.861s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1500 loss=17.5119 [took 48.290s]
+[dev epoch=0.1501] wprec = 0.52530 wrec = 0.03351 wf1 = 0.06300
+[dev epoch=0.1501] uprec = 0.71979 urec = 0.10648 uf1 = 0.18551
+[dev epoch=0.1501] lprec = 0.66123 lrec = 0.10432 lf1 = 0.18020 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 740.485s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1600 loss=17.4074 [took 59.923s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1700 loss=17.2271 [took 45.910s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1800 loss=17.0292 [took 54.481s]
+[lr=0.0005 clips=100 updates=100] epoch=0.1900 loss=16.9014 [took 53.684s]
+[lr=0.0005 clips=100 updates=100] epoch=0.2000 loss=16.7181 [took 42.210s]
+[dev epoch=0.2001] wprec = 0.49861 wrec = 0.05281 wf1 = 0.09551
+[dev epoch=0.2001] uprec = 0.70988 urec = 0.14896 uf1 = 0.24625
+[dev epoch=0.2001] lprec = 0.57868 lrec = 0.13032 lf1 = 0.21274 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 737.384s]
+[lr=0.0005 clips=99 updates=100] epoch=0.2100 loss=16.5988 [took 58.774s]
+[lr=0.0005 clips=100 updates=100] epoch=0.2200 loss=16.4793 [took 52.154s]
+[lr=0.0005 clips=100 updates=100] epoch=0.2300 loss=16.3401 [took 54.867s]
+[lr=0.0005 clips=100 updates=100] epoch=0.2400 loss=16.2241 [took 51.745s]
+[lr=0.0005 clips=99 updates=100] epoch=0.2500 loss=16.0868 [took 48.969s]
+[dev epoch=0.2501] wprec = 0.50295 wrec = 0.07007 wf1 = 0.12300
+[dev epoch=0.2501] uprec = 0.63357 urec = 0.20829 uf1 = 0.31351
+[dev epoch=0.2501] lprec = 0.48546 lrec = 0.17176 lf1 = 0.25375 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 742.183s]
+[lr=0.0005 clips=100 updates=100] epoch=0.2600 loss=15.9833 [took 48.058s]
+[lr=0.0005 clips=98 updates=100] epoch=0.2700 loss=15.8172 [took 53.696s]
+[lr=0.0005 clips=99 updates=100] epoch=0.2800 loss=15.7032 [took 51.997s]
+[lr=0.0005 clips=100 updates=100] epoch=0.2900 loss=15.5918 [took 47.912s]
+[lr=0.0005 clips=98 updates=100] epoch=0.3000 loss=15.4566 [took 52.720s]
+[dev epoch=0.3001] wprec = 0.34072 wrec = 0.20122 wf1 = 0.25302
+[dev epoch=0.3001] uprec = 0.49976 urec = 0.26606 uf1 = 0.34725
+[dev epoch=0.3001] lprec = 0.35730 lrec = 0.20377 lf1 = 0.25953 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 730.737s]
+[lr=0.0005 clips=99 updates=100] epoch=0.3100 loss=15.3569 [took 52.558s]
+[lr=0.0005 clips=98 updates=100] epoch=0.3200 loss=15.2712 [took 55.326s]
+[lr=0.0005 clips=96 updates=100] epoch=0.3300 loss=15.1439 [took 48.603s]
+[lr=0.0005 clips=99 updates=100] epoch=0.3400 loss=15.0203 [took 51.688s]
+[lr=0.0005 clips=96 updates=100] epoch=0.3500 loss=14.9691 [took 54.936s]
+[dev epoch=0.3501] wprec = 0.34199 wrec = 0.12904 wf1 = 0.18738
+[dev epoch=0.3501] uprec = 0.54418 urec = 0.16114 uf1 = 0.24865
+[dev epoch=0.3501] lprec = 0.43119 lrec = 0.13790 lf1 = 0.20896 [took 694.468s]
+[lr=0.0005 clips=99 updates=100] epoch=0.3600 loss=14.8909 [took 45.328s]
+[lr=0.0005 clips=96 updates=100] epoch=0.3700 loss=14.7997 [took 47.654s]
+[lr=0.0005 clips=98 updates=100] epoch=0.3800 loss=14.7605 [took 53.067s]
+[lr=0.0005 clips=97 updates=100] epoch=0.3900 loss=14.6779 [took 52.920s]
+[lr=0.0005 clips=98 updates=100] epoch=0.4000 loss=14.6163 [took 48.111s]
+[dev epoch=0.4001] wprec = 0.38495 wrec = 0.27311 wf1 = 0.31952
+[dev epoch=0.4001] uprec = 0.55550 urec = 0.28264 uf1 = 0.37466
+[dev epoch=0.4001] lprec = 0.43207 lrec = 0.23221 lf1 = 0.30207 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 716.979s]
+[lr=0.0005 clips=97 updates=100] epoch=0.4100 loss=14.5552 [took 50.276s]
+[lr=0.0005 clips=98 updates=100] epoch=0.4200 loss=14.4898 [took 51.948s]
+[lr=0.0005 clips=98 updates=100] epoch=0.4300 loss=14.4408 [took 61.092s]
+[lr=0.0005 clips=96 updates=100] epoch=0.4400 loss=14.3582 [took 46.463s]
+[lr=0.0005 clips=99 updates=100] epoch=0.4500 loss=14.2722 [took 49.587s]
+[dev epoch=0.4501] wprec = 0.47380 wrec = 0.19365 wf1 = 0.27493
+[dev epoch=0.4501] uprec = 0.59369 urec = 0.32668 uf1 = 0.42146
+[dev epoch=0.4501] lprec = 0.46294 lrec = 0.26593 lf1 = 0.33781 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 737.076s]
+[lr=0.0005 clips=99 updates=100] epoch=0.4600 loss=14.2158 [took 47.964s]
+[lr=0.0005 clips=95 updates=100] epoch=0.4700 loss=14.1655 [took 49.111s]
+[lr=0.0005 clips=97 updates=100] epoch=0.4800 loss=14.0983 [took 54.611s]
+[lr=0.0005 clips=97 updates=100] epoch=0.4900 loss=14.0331 [took 57.267s]
+[lr=0.0005 clips=99 updates=100] epoch=0.5000 loss=14.0105 [took 51.638s]
+[dev epoch=0.5001] wprec = 0.48875 wrec = 0.23966 wf1 = 0.32161
+[dev epoch=0.5001] uprec = 0.61535 urec = 0.32617 uf1 = 0.42635
+[dev epoch=0.5001] lprec = 0.48007 lrec = 0.26851 lf1 = 0.34439 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 715.465s]
+[lr=0.0005 clips=93 updates=100] epoch=0.5100 loss=13.9416 [took 53.257s]
+[lr=0.0005 clips=99 updates=100] epoch=0.5200 loss=13.9204 [took 59.502s]
+[lr=0.0005 clips=97 updates=100] epoch=0.5300 loss=13.8749 [took 52.593s]
+[lr=0.0005 clips=93 updates=100] epoch=0.5400 loss=13.8236 [took 55.150s]
+[lr=0.0005 clips=96 updates=100] epoch=0.5500 loss=13.7670 [took 53.230s]
+[dev epoch=0.5501] wprec = 0.44743 wrec = 0.30139 wf1 = 0.36017
+[dev epoch=0.5501] uprec = 0.59841 urec = 0.33161 uf1 = 0.42674
+[dev epoch=0.5501] lprec = 0.47421 lrec = 0.27722 lf1 = 0.34990 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 712.467s]
+[lr=0.0005 clips=95 updates=100] epoch=0.5600 loss=13.7338 [took 51.108s]
+[lr=0.0005 clips=97 updates=100] epoch=0.5700 loss=13.6960 [took 50.498s]
+[lr=0.0005 clips=95 updates=100] epoch=0.5800 loss=13.6578 [took 46.692s]
+[lr=0.0005 clips=98 updates=100] epoch=0.5900 loss=13.6406 [took 63.624s]
+[lr=0.0005 clips=94 updates=100] epoch=0.6000 loss=13.5898 [took 52.123s]
+[dev epoch=0.6001] wprec = 0.50000 wrec = 0.28954 wf1 = 0.36672
+[dev epoch=0.6001] uprec = 0.63743 urec = 0.38031 uf1 = 0.47639
+[dev epoch=0.6001] lprec = 0.51015 lrec = 0.31952 lf1 = 0.39294 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 721.461s]
+[lr=0.0005 clips=98 updates=100] epoch=0.6100 loss=13.5447 [took 52.587s]
+[lr=0.0005 clips=91 updates=100] epoch=0.6200 loss=13.5005 [took 46.304s]
+[lr=0.0005 clips=94 updates=100] epoch=0.6300 loss=13.4731 [took 51.716s]
+[lr=0.0005 clips=88 updates=100] epoch=0.6400 loss=13.4430 [took 45.010s]
+[lr=0.0005 clips=96 updates=100] epoch=0.6500 loss=13.4113 [took 49.184s]
+[dev epoch=0.6501] wprec = 0.35744 wrec = 0.37680 wf1 = 0.36686
+[dev epoch=0.6501] uprec = 0.54112 urec = 0.34093 uf1 = 0.41831
+[dev epoch=0.6501] lprec = 0.44201 lrec = 0.29137 lf1 = 0.35122 [took 586.043s]
+[lr=0.0005 clips=97 updates=100] epoch=0.6600 loss=13.3714 [took 45.727s]
+[lr=0.0005 clips=94 updates=100] epoch=0.6700 loss=13.3145 [took 45.305s]
+[lr=0.0005 clips=93 updates=100] epoch=0.6800 loss=13.2776 [took 43.978s]
+[lr=0.0005 clips=94 updates=100] epoch=0.6900 loss=13.2536 [took 47.209s]
+[lr=0.0005 clips=95 updates=100] epoch=0.7000 loss=13.2058 [took 42.451s]
+[dev epoch=0.7001] wprec = 0.54233 wrec = 0.29810 wf1 = 0.38473
+[dev epoch=0.7001] uprec = 0.61899 urec = 0.40363 uf1 = 0.48863
+[dev epoch=0.7001] lprec = 0.49625 lrec = 0.34010 lf1 = 0.40360 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 595.487s]
+[lr=0.0005 clips=95 updates=100] epoch=0.7100 loss=13.1825 [took 44.461s]
+[lr=0.0005 clips=95 updates=100] epoch=0.7200 loss=13.1417 [took 47.786s]
+[lr=0.0005 clips=92 updates=100] epoch=0.7300 loss=13.1081 [took 46.569s]
+[lr=0.0005 clips=91 updates=100] epoch=0.7400 loss=13.0466 [took 42.268s]
+[lr=0.0005 clips=89 updates=100] epoch=0.7500 loss=13.0134 [took 43.446s]
+[dev epoch=0.7501] wprec = 0.51414 wrec = 0.38407 wf1 = 0.43969
+[dev epoch=0.7501] uprec = 0.63633 urec = 0.42565 uf1 = 0.51009
+[dev epoch=0.7501] lprec = 0.50491 lrec = 0.35296 lf1 = 0.41548 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 609.044s]
+[lr=0.0005 clips=94 updates=100] epoch=0.7600 loss=12.9790 [took 42.221s]
+[lr=0.0005 clips=94 updates=100] epoch=0.7700 loss=12.9289 [took 45.685s]
+[lr=0.0005 clips=98 updates=100] epoch=0.7800 loss=12.9143 [took 45.505s]
+[lr=0.0005 clips=95 updates=100] epoch=0.7900 loss=12.8806 [took 38.097s]
+[lr=0.0005 clips=96 updates=100] epoch=0.8000 loss=12.8536 [took 42.635s]
+[dev epoch=0.8001] wprec = 0.54312 wrec = 0.35996 wf1 = 0.43296
+[dev epoch=0.8001] uprec = 0.62107 urec = 0.39870 uf1 = 0.48564
+[dev epoch=0.8001] lprec = 0.50446 lrec = 0.33924 lf1 = 0.40567 [took 557.624s]
+[lr=0.0005 clips=94 updates=100] epoch=0.8100 loss=12.8261 [took 44.268s]
+[lr=0.0005 clips=93 updates=100] epoch=0.8200 loss=12.8086 [took 44.532s]
+[lr=0.0005 clips=92 updates=100] epoch=0.8300 loss=12.7798 [took 33.281s]
+[lr=0.0005 clips=95 updates=100] epoch=0.8400 loss=12.7474 [took 44.829s]
+[lr=0.0005 clips=90 updates=100] epoch=0.8500 loss=12.6969 [took 45.169s]
+[dev epoch=0.8501] wprec = 0.58840 wrec = 0.33279 wf1 = 0.42513
+[dev epoch=0.8501] uprec = 0.65984 urec = 0.41710 uf1 = 0.51111
+[dev epoch=0.8501] lprec = 0.53883 lrec = 0.35696 lf1 = 0.42943 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 579.826s]
+[lr=0.0005 clips=87 updates=100] epoch=0.8600 loss=12.6609 [took 40.281s]
+[lr=0.0005 clips=94 updates=100] epoch=0.8700 loss=12.6436 [took 43.777s]
+[lr=0.0005 clips=87 updates=100] epoch=0.8800 loss=12.5937 [took 40.321s]
+[lr=0.0005 clips=91 updates=100] epoch=0.8900 loss=12.5744 [took 37.957s]
+[lr=0.0005 clips=95 updates=100] epoch=0.9000 loss=12.5592 [took 45.498s]
+[dev epoch=0.9001] wprec = 0.55545 wrec = 0.38032 wf1 = 0.45150
+[dev epoch=0.9001] uprec = 0.63323 urec = 0.43342 uf1 = 0.51461
+[dev epoch=0.9001] lprec = 0.50927 lrec = 0.36510 lf1 = 0.42530 [took 545.084s]
+[lr=0.0005 clips=92 updates=100] epoch=0.9100 loss=12.5222 [took 42.517s]
+[lr=0.0005 clips=93 updates=100] epoch=0.9200 loss=12.5023 [took 42.421s]
+[lr=0.0005 clips=91 updates=100] epoch=0.9300 loss=12.4630 [took 42.924s]
+[lr=0.0005 clips=95 updates=100] epoch=0.9400 loss=12.4522 [took 40.231s]
+[lr=0.0005 clips=98 updates=100] epoch=0.9500 loss=12.4386 [took 39.508s]
+[dev epoch=0.9501] wprec = 0.55340 wrec = 0.37034 wf1 = 0.44373
+[dev epoch=0.9501] uprec = 0.62747 urec = 0.41192 uf1 = 0.49734
+[dev epoch=0.9501] lprec = 0.51858 lrec = 0.35296 lf1 = 0.42003 [took 555.102s]
+[lr=0.0005 clips=95 updates=100] epoch=0.9600 loss=12.4135 [took 42.778s]
+[lr=0.0005 clips=91 updates=100] epoch=0.9700 loss=12.3915 [took 41.953s]
+[lr=0.0005 clips=90 updates=100] epoch=0.9800 loss=12.3743 [took 42.908s]
+[lr=0.0005 clips=92 updates=100] epoch=0.9900 loss=12.3641 [took 45.510s]
+[lr=0.0005 clips=91 updates=100] epoch=0.10000 loss=12.3438 [took 42.816s]
+[dev epoch=0.10001] wprec = 0.60633 wrec = 0.33061 wf1 = 0.42790
+[dev epoch=0.10001] uprec = 0.65207 urec = 0.42824 uf1 = 0.51697
+[dev epoch=0.10001] lprec = 0.53804 lrec = 0.36682 lf1 = 0.43623 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 600.321s]
+[lr=0.0005 clips=94 updates=100] epoch=0.10100 loss=12.3212 [took 39.158s]
+[lr=0.0005 clips=99 updates=100] epoch=0.10200 loss=12.2979 [took 45.075s]
+[lr=0.0005 clips=96 updates=100] epoch=0.10300 loss=12.2711 [took 40.968s]
+[lr=0.0005 clips=93 updates=100] epoch=0.10400 loss=12.2643 [took 54.894s]
+[lr=0.0005 clips=89 updates=100] epoch=0.10500 loss=12.2417 [took 40.856s]
+[dev epoch=0.10501] wprec = 0.57314 wrec = 0.40326 wf1 = 0.47342
+[dev epoch=0.10501] uprec = 0.60431 urec = 0.45777 uf1 = 0.52093
+[dev epoch=0.10501] lprec = 0.49502 lrec = 0.39083 lf1 = 0.43680 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 610.733s]
+[lr=0.0005 clips=94 updates=100] epoch=0.10600 loss=12.2206 [took 38.875s]
+[lr=0.0005 clips=91 updates=100] epoch=0.10700 loss=12.2052 [took 41.915s]
+[lr=0.0005 clips=95 updates=100] epoch=0.10800 loss=12.1840 [took 40.243s]
+[lr=0.0005 clips=90 updates=100] epoch=0.10900 loss=12.1679 [took 48.777s]
+[lr=0.0005 clips=90 updates=100] epoch=0.11000 loss=12.1454 [took 43.114s]
+[dev epoch=0.11001] wprec = 0.55406 wrec = 0.40931 wf1 = 0.47081
+[dev epoch=0.11001] uprec = 0.64556 urec = 0.41995 uf1 = 0.50887
+[dev epoch=0.11001] lprec = 0.53788 lrec = 0.36525 lf1 = 0.43506 [took 566.258s]
+[lr=0.0005 clips=95 updates=100] epoch=0.11100 loss=12.1244 [took 47.562s]
+[lr=0.0005 clips=95 updates=100] epoch=0.11200 loss=12.1064 [took 45.038s]
+[lr=0.0005 clips=96 updates=100] epoch=0.11300 loss=12.0919 [took 49.205s]
+[lr=0.0005 clips=94 updates=100] epoch=0.11400 loss=12.0706 [took 46.020s]
+[lr=0.0005 clips=91 updates=100] epoch=0.11500 loss=12.0493 [took 45.511s]
+[dev epoch=0.11501] wprec = 0.61106 wrec = 0.36048 wf1 = 0.45346
+[dev epoch=0.11501] uprec = 0.66428 urec = 0.40907 uf1 = 0.50633
+[dev epoch=0.11501] lprec = 0.56820 lrec = 0.37325 lf1 = 0.45054 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 605.485s]
+[lr=0.0005 clips=91 updates=100] epoch=0.11600 loss=12.0283 [took 40.787s]
+[lr=0.0005 clips=92 updates=100] epoch=0.11700 loss=12.0070 [took 40.800s]
+[lr=0.0005 clips=90 updates=100] epoch=0.11800 loss=11.9840 [took 41.928s]
+[lr=0.0005 clips=94 updates=100] epoch=0.11900 loss=11.9719 [took 49.858s]
+[lr=0.0005 clips=93 updates=100] epoch=0.12000 loss=11.9563 [took 37.927s]
+[dev epoch=0.12001] wprec = 0.52914 wrec = 0.47210 wf1 = 0.49899
+[dev epoch=0.12001] uprec = 0.62387 urec = 0.46580 uf1 = 0.53337
+[dev epoch=0.12001] lprec = 0.51768 lrec = 0.40383 lf1 = 0.45372 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 604.145s]
+[lr=0.0005 clips=92 updates=100] epoch=0.12100 loss=11.9352 [took 40.645s]
+[lr=0.0005 clips=96 updates=100] epoch=0.12200 loss=11.9132 [took 42.816s]
+[lr=0.0005 clips=93 updates=100] epoch=0.12300 loss=11.8953 [took 47.204s]
+[lr=0.0005 clips=90 updates=100] epoch=0.12400 loss=11.8678 [took 38.262s]
+[lr=0.0005 clips=94 updates=100] epoch=0.12500 loss=11.8550 [took 41.961s]
+[dev epoch=0.12501] wprec = 0.56119 wrec = 0.41118 wf1 = 0.47462
+[dev epoch=0.12501] uprec = 0.64899 urec = 0.41528 uf1 = 0.50648
+[dev epoch=0.12501] lprec = 0.54122 lrec = 0.36396 lf1 = 0.43524 [took 564.572s]
+[lr=0.0005 clips=91 updates=100] epoch=0.12600 loss=11.8465 [took 48.550s]
+[lr=0.0005 clips=92 updates=100] epoch=0.12700 loss=11.8254 [took 40.917s]
+[lr=0.0005 clips=95 updates=100] epoch=0.12800 loss=11.8154 [took 50.628s]
+[lr=0.0005 clips=91 updates=100] epoch=0.12900 loss=11.7960 [took 50.841s]
+[lr=0.0005 clips=91 updates=100] epoch=0.13000 loss=11.7692 [took 50.802s]
+[dev epoch=0.13001] wprec = 0.58706 wrec = 0.42321 wf1 = 0.49185
+[dev epoch=0.13001] uprec = 0.66719 urec = 0.44249 uf1 = 0.53209
+[dev epoch=0.13001] lprec = 0.57020 lrec = 0.39640 lf1 = 0.46767 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 603.320s]
+[lr=0.0005 clips=92 updates=100] epoch=0.13100 loss=11.7581 [took 41.256s]
+[lr=0.0005 clips=86 updates=100] epoch=0.13200 loss=11.7431 [took 42.258s]
+[lr=0.0005 clips=89 updates=100] epoch=0.13300 loss=11.7286 [took 39.139s]
+[lr=0.0005 clips=95 updates=100] epoch=0.13400 loss=11.7223 [took 39.642s]
+[lr=0.0005 clips=89 updates=100] epoch=0.13500 loss=11.7055 [took 48.736s]
+[dev epoch=0.13501] wprec = 0.58957 wrec = 0.44575 wf1 = 0.50767
+[dev epoch=0.13501] uprec = 0.63883 urec = 0.49948 uf1 = 0.56063
+[dev epoch=0.13501] lprec = 0.53568 lrec = 0.43770 lf1 = 0.48176 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 607.386s]
+[lr=0.0005 clips=91 updates=100] epoch=0.13600 loss=11.6998 [took 44.913s]
+[lr=0.0005 clips=92 updates=100] epoch=0.13700 loss=11.6850 [took 45.203s]
+[lr=0.0005 clips=88 updates=100] epoch=0.13800 loss=11.6592 [took 46.368s]
+[lr=0.0005 clips=84 updates=100] epoch=0.13900 loss=11.6410 [took 46.491s]
+[lr=0.0005 clips=96 updates=100] epoch=0.14000 loss=11.6343 [took 42.017s]
+[dev epoch=0.14001] wprec = 0.58500 wrec = 0.44205 wf1 = 0.50358
+[dev epoch=0.14001] uprec = 0.67053 urec = 0.47927 uf1 = 0.55900
+[dev epoch=0.14001] lprec = 0.56724 lrec = 0.42012 lf1 = 0.48272 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 604.378s]
+[lr=0.0005 clips=91 updates=100] epoch=0.14100 loss=11.6315 [took 55.827s]
+[lr=0.0005 clips=88 updates=100] epoch=0.14200 loss=11.6179 [took 43.525s]
+[lr=0.0005 clips=92 updates=100] epoch=0.14300 loss=11.6024 [took 41.119s]
+[lr=0.0005 clips=93 updates=100] epoch=0.14400 loss=11.5856 [took 50.218s]
+[lr=0.0005 clips=91 updates=100] epoch=0.14500 loss=11.5713 [took 40.938s]
+[dev epoch=0.14501] wprec = 0.59573 wrec = 0.44334 wf1 = 0.50836
+[dev epoch=0.14501] uprec = 0.65207 urec = 0.49378 uf1 = 0.56199
+[dev epoch=0.14501] lprec = 0.54779 lrec = 0.43241 lf1 = 0.48331 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 610.395s]
+[lr=0.0005 clips=94 updates=100] epoch=0.14600 loss=11.5553 [took 39.532s]
+[lr=0.0005 clips=91 updates=100] epoch=0.14700 loss=11.5412 [took 44.946s]
+[lr=0.0005 clips=86 updates=100] epoch=0.14800 loss=11.5177 [took 44.600s]
+[lr=0.0005 clips=95 updates=100] epoch=0.14900 loss=11.5140 [took 47.794s]
+[lr=0.0005 clips=92 updates=100] epoch=0.15000 loss=11.5005 [took 44.341s]
+[dev epoch=0.15001] wprec = 0.64868 wrec = 0.38507 wf1 = 0.48326
+[dev epoch=0.15001] uprec = 0.66424 urec = 0.49611 uf1 = 0.56800
+[dev epoch=0.15001] lprec = 0.56090 lrec = 0.43827 lf1 = 0.49206 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 606.519s]
+[lr=0.0005 clips=90 updates=100] epoch=0.15100 loss=11.4721 [took 34.599s]
+[lr=0.0005 clips=95 updates=100] epoch=0.15200 loss=11.4642 [took 46.171s]
+[lr=0.0005 clips=84 updates=100] epoch=0.15300 loss=11.4469 [took 41.527s]
+[lr=0.0005 clips=88 updates=100] epoch=0.15400 loss=11.4280 [took 42.577s]
+[lr=0.0005 clips=93 updates=100] epoch=0.15500 loss=11.4161 [took 45.702s]
+[dev epoch=0.15501] wprec = 0.62254 wrec = 0.43853 wf1 = 0.51458
+[dev epoch=0.15501] uprec = 0.66283 urec = 0.49197 uf1 = 0.56476
+[dev epoch=0.15501] lprec = 0.56471 lrec = 0.43584 lf1 = 0.49198 [took 556.146s]
+[lr=0.0005 clips=90 updates=100] epoch=0.15600 loss=11.4093 [took 42.818s]
+[lr=0.0005 clips=87 updates=100] epoch=0.15700 loss=11.3900 [took 43.523s]
+[lr=0.0005 clips=94 updates=100] epoch=0.15800 loss=11.3783 [took 42.792s]
+[lr=0.0005 clips=88 updates=100] epoch=0.15900 loss=11.3676 [took 46.576s]
+[lr=0.0005 clips=91 updates=100] epoch=0.16000 loss=11.3560 [took 45.900s]
+[dev epoch=0.16001] wprec = 0.63311 wrec = 0.41072 wf1 = 0.49822
+[dev epoch=0.16001] uprec = 0.68706 urec = 0.48575 uf1 = 0.56913
+[dev epoch=0.16001] lprec = 0.59625 lrec = 0.44127 lf1 = 0.50719 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 592.951s]
+[lr=0.0005 clips=92 updates=100] epoch=0.16100 loss=11.3482 [took 38.105s]
+[lr=0.0005 clips=86 updates=100] epoch=0.16200 loss=11.3294 [took 37.452s]
+[lr=0.0005 clips=93 updates=100] epoch=0.16300 loss=11.3149 [took 48.109s]
+[lr=0.0005 clips=94 updates=100] epoch=0.16400 loss=11.3123 [took 46.860s]
+[lr=0.0005 clips=89 updates=100] epoch=0.16500 loss=11.2971 [took 44.406s]
+[dev epoch=0.16501] wprec = 0.62960 wrec = 0.42732 wf1 = 0.50911
+[dev epoch=0.16501] uprec = 0.68671 urec = 0.49404 uf1 = 0.57466
+[dev epoch=0.16501] lprec = 0.59561 lrec = 0.44556 lf1 = 0.50977 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 594.692s]
+[lr=0.0005 clips=94 updates=100] epoch=0.16600 loss=11.2915 [took 49.064s]
+[lr=0.0005 clips=93 updates=100] epoch=0.16700 loss=11.2770 [took 37.889s]
+[lr=0.0005 clips=88 updates=100] epoch=0.16800 loss=11.2615 [took 49.022s]
+[lr=0.0005 clips=92 updates=100] epoch=0.16900 loss=11.2511 [took 46.608s]
+[lr=0.0005 clips=91 updates=100] epoch=0.17000 loss=11.2423 [took 38.832s]
+[dev epoch=0.17001] wprec = 0.58731 wrec = 0.47761 wf1 = 0.52681
+[dev epoch=0.17001] uprec = 0.64739 urec = 0.50181 uf1 = 0.56538
+[dev epoch=0.17001] lprec = 0.55631 lrec = 0.44756 lf1 = 0.49604 [took 564.252s]
+[lr=0.0005 clips=90 updates=100] epoch=0.17100 loss=11.2263 [took 34.731s]
+[lr=0.0005 clips=89 updates=100] epoch=0.17200 loss=11.2134 [took 44.882s]
+[lr=0.0005 clips=94 updates=100] epoch=0.17300 loss=11.2043 [took 40.567s]
+[lr=0.0005 clips=90 updates=100] epoch=0.17400 loss=11.1823 [took 50.385s]
+[lr=0.0005 clips=91 updates=100] epoch=0.17500 loss=11.1728 [took 39.766s]
+[dev epoch=0.17501] wprec = 0.67334 wrec = 0.38707 wf1 = 0.49156
+[dev epoch=0.17501] uprec = 0.68765 urec = 0.50933 uf1 = 0.58521
+[dev epoch=0.17501] lprec = 0.59058 lrec = 0.45699 lf1 = 0.51527 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 601.684s]
+[lr=0.0005 clips=89 updates=100] epoch=0.17600 loss=11.1632 [took 44.494s]
+[lr=0.0005 clips=85 updates=100] epoch=0.17700 loss=11.1456 [took 41.039s]
+[lr=0.0005 clips=89 updates=100] epoch=0.17800 loss=11.1300 [took 40.350s]
+[lr=0.0005 clips=88 updates=100] epoch=0.17900 loss=11.1158 [took 46.891s]
+[lr=0.0005 clips=82 updates=100] epoch=0.18000 loss=11.0969 [took 43.412s]
+[dev epoch=0.18001] wprec = 0.62195 wrec = 0.44757 wf1 = 0.52054
+[dev epoch=0.18001] uprec = 0.64750 urec = 0.49016 uf1 = 0.55795
+[dev epoch=0.18001] lprec = 0.56764 lrec = 0.44970 lf1 = 0.50183 [took 566.113s]
+[lr=0.0005 clips=87 updates=100] epoch=0.18100 loss=11.0849 [took 41.823s]
+[lr=0.0005 clips=94 updates=100] epoch=0.18200 loss=11.0730 [took 47.286s]
+[lr=0.0005 clips=84 updates=100] epoch=0.18300 loss=11.0531 [took 43.069s]
+[lr=0.0005 clips=89 updates=100] epoch=0.18400 loss=11.0457 [took 44.518s]
+[lr=0.0005 clips=93 updates=100] epoch=0.18500 loss=11.0407 [took 48.761s]
+[dev epoch=0.18501] wprec = 0.66411 wrec = 0.41723 wf1 = 0.51249
+[dev epoch=0.18501] uprec = 0.68563 urec = 0.51192 uf1 = 0.58618
+[dev epoch=0.18501] lprec = 0.58566 lrec = 0.45627 lf1 = 0.51293 [took 563.440s]
+[lr=0.0005 clips=92 updates=100] epoch=0.18600 loss=11.0310 [took 41.116s]
+[lr=0.0005 clips=87 updates=100] epoch=0.18700 loss=11.0192 [took 38.459s]
+[lr=0.0005 clips=85 updates=100] epoch=0.18800 loss=10.9984 [took 44.100s]
+[lr=0.0005 clips=86 updates=100] epoch=0.18900 loss=10.9837 [took 36.897s]
+[lr=0.0005 clips=92 updates=100] epoch=0.19000 loss=10.9755 [took 42.492s]
+[dev epoch=0.19001] wprec = 0.58944 wrec = 0.45983 wf1 = 0.51663
+[dev epoch=0.19001] uprec = 0.69504 urec = 0.48653 uf1 = 0.57239
+[dev epoch=0.19001] lprec = 0.59828 lrec = 0.43798 lf1 = 0.50573 [took 561.301s]
+[lr=0.0005 clips=96 updates=100] epoch=0.19100 loss=10.9694 [took 42.482s]
+[lr=0.0005 clips=86 updates=100] epoch=0.19200 loss=10.9579 [took 40.411s]
+[lr=0.0005 clips=88 updates=100] epoch=0.19300 loss=10.9435 [took 40.145s]
+[lr=0.0005 clips=177 updates=191] epoch=1.100 loss=7.7588 [took 74.879s]
+[lr=0.0005 clips=88 updates=100] epoch=1.200 loss=7.7556 [took 42.981s]
+[lr=0.0005 clips=87 updates=100] epoch=1.300 loss=8.0131 [took 41.557s]
+[lr=0.0005 clips=85 updates=100] epoch=1.400 loss=7.8962 [took 43.874s]
+[lr=0.0005 clips=90 updates=100] epoch=1.500 loss=8.1332 [took 47.332s]
+[dev epoch=1.501] wprec = 0.65465 wrec = 0.42316 wf1 = 0.51404
+[dev epoch=1.501] uprec = 0.69309 urec = 0.52772 uf1 = 0.59921
+[dev epoch=1.501] lprec = 0.59727 lrec = 0.47514 lf1 = 0.52925 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 597.189s]
+[lr=0.0005 clips=91 updates=100] epoch=1.600 loss=7.9408 [took 40.536s]
+[lr=0.0005 clips=92 updates=100] epoch=1.700 loss=7.9924 [took 45.823s]
+[lr=0.0005 clips=86 updates=100] epoch=1.800 loss=7.9317 [took 39.773s]
+[lr=0.0005 clips=88 updates=100] epoch=1.900 loss=8.0127 [took 43.052s]
+[lr=0.0005 clips=86 updates=100] epoch=1.1000 loss=8.1787 [took 46.808s]
+[dev epoch=1.1001] wprec = 0.64598 wrec = 0.43742 wf1 = 0.52162
+[dev epoch=1.1001] uprec = 0.69910 urec = 0.52306 uf1 = 0.59840
+[dev epoch=1.1001] lprec = 0.60909 lrec = 0.47471 lf1 = 0.53357 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 594.220s]
+[lr=0.0005 clips=87 updates=100] epoch=1.1100 loss=8.1766 [took 46.867s]
+[lr=0.0005 clips=89 updates=100] epoch=1.1200 loss=8.1652 [took 44.372s]
+[lr=0.0005 clips=89 updates=100] epoch=1.1300 loss=8.2715 [took 47.322s]
+[lr=0.0005 clips=86 updates=100] epoch=1.1400 loss=8.2478 [took 43.025s]
+[lr=0.0005 clips=86 updates=100] epoch=1.1500 loss=8.2788 [took 44.387s]
+[dev epoch=1.1501] wprec = 0.63720 wrec = 0.45297 wf1 = 0.52951
+[dev epoch=1.1501] uprec = 0.69384 urec = 0.53135 uf1 = 0.60182
+[dev epoch=1.1501] lprec = 0.59321 lrec = 0.47199 lf1 = 0.52570 [took 557.495s]
+[lr=0.0005 clips=84 updates=100] epoch=1.1600 loss=8.2371 [took 40.195s]
+[lr=0.0005 clips=90 updates=100] epoch=1.1700 loss=8.3175 [took 42.139s]
+[lr=0.0005 clips=83 updates=100] epoch=1.1800 loss=8.3091 [took 48.974s]
+[lr=0.0005 clips=93 updates=100] epoch=1.1900 loss=8.4091 [took 45.722s]
+[lr=0.0005 clips=83 updates=100] epoch=1.2000 loss=8.3588 [took 38.142s]
+[dev epoch=1.2001] wprec = 0.64319 wrec = 0.44375 wf1 = 0.52518
+[dev epoch=1.2001] uprec = 0.69483 urec = 0.48368 uf1 = 0.57034
+[dev epoch=1.2001] lprec = 0.61511 lrec = 0.44899 lf1 = 0.51908 [took 576.835s]
+[lr=0.0005 clips=89 updates=100] epoch=1.2100 loss=8.3708 [took 44.926s]
+[lr=0.0005 clips=92 updates=100] epoch=1.2200 loss=8.3490 [took 42.483s]
+[lr=0.0005 clips=81 updates=100] epoch=1.2300 loss=8.3557 [took 41.400s]
+[lr=0.0005 clips=92 updates=100] epoch=1.2400 loss=8.3433 [took 41.051s]
+[lr=0.0005 clips=87 updates=100] epoch=1.2500 loss=8.3428 [took 42.218s]
+[dev epoch=1.2501] wprec = 0.59905 wrec = 0.47186 wf1 = 0.52790
+[dev epoch=1.2501] uprec = 0.66067 urec = 0.54275 uf1 = 0.59593
+[dev epoch=1.2501] lprec = 0.57647 lrec = 0.48800 lf1 = 0.52856 [took 561.013s]
+[lr=0.0005 clips=90 updates=100] epoch=1.2600 loss=8.4174 [took 54.174s]
+[lr=0.0005 clips=87 updates=100] epoch=1.2700 loss=8.4130 [took 46.066s]
+[lr=0.0005 clips=78 updates=100] epoch=1.2800 loss=8.3975 [took 37.093s]
+[lr=0.0005 clips=88 updates=100] epoch=1.2900 loss=8.3994 [took 42.508s]
+[lr=0.0005 clips=85 updates=100] epoch=1.3000 loss=8.3955 [took 43.120s]
+[dev epoch=1.3001] wprec = 0.60568 wrec = 0.48196 wf1 = 0.53678
+[dev epoch=1.3001] uprec = 0.64736 urec = 0.52979 uf1 = 0.58270
+[dev epoch=1.3001] lprec = 0.56918 lrec = 0.48500 lf1 = 0.52373 [took 559.986s]
+[lr=0.0005 clips=86 updates=100] epoch=1.3100 loss=8.3871 [took 42.784s]
+[lr=0.0005 clips=90 updates=100] epoch=1.3200 loss=8.4252 [took 50.436s]
+[lr=0.0005 clips=89 updates=100] epoch=1.3300 loss=8.4227 [took 50.869s]
+[lr=0.0005 clips=78 updates=100] epoch=1.3400 loss=8.3893 [took 46.984s]
+[lr=0.0005 clips=81 updates=100] epoch=1.3500 loss=8.3503 [took 45.578s]
+[dev epoch=1.3501] wprec = 0.57089 wrec = 0.48747 wf1 = 0.52589
+[dev epoch=1.3501] uprec = 0.64115 urec = 0.50777 uf1 = 0.56672
+[dev epoch=1.3501] lprec = 0.55727 lrec = 0.45813 lf1 = 0.50286 [took 559.285s]
+[lr=0.0005 clips=86 updates=100] epoch=1.3600 loss=8.3329 [took 44.979s]
+[lr=0.0005 clips=86 updates=100] epoch=1.3700 loss=8.3257 [took 40.250s]
+[lr=0.0005 clips=89 updates=100] epoch=1.3800 loss=8.3211 [took 44.985s]
+[lr=0.0005 clips=78 updates=100] epoch=1.3900 loss=8.2621 [took 37.580s]
+[lr=0.0005 clips=83 updates=100] epoch=1.4000 loss=8.2570 [took 40.167s]
+[dev epoch=1.4001] wprec = 0.62483 wrec = 0.46511 wf1 = 0.53327
+[dev epoch=1.4001] uprec = 0.67468 urec = 0.53083 uf1 = 0.59417
+[dev epoch=1.4001] lprec = 0.58773 lrec = 0.48199 lf1 = 0.52964 [took 564.984s]
+[lr=0.0005 clips=88 updates=100] epoch=1.4100 loss=8.2615 [took 43.154s]
+[lr=0.0005 clips=87 updates=100] epoch=1.4200 loss=8.2489 [took 44.827s]
+[lr=0.0005 clips=81 updates=100] epoch=1.4300 loss=8.2147 [took 44.067s]
+[lr=0.0005 clips=87 updates=100] epoch=1.4400 loss=8.2263 [took 42.564s]
+[lr=0.0005 clips=85 updates=100] epoch=1.4500 loss=8.2185 [took 42.728s]
+[dev epoch=1.4501] wprec = 0.63086 wrec = 0.45320 wf1 = 0.52747
+[dev epoch=1.4501] uprec = 0.68949 urec = 0.53731 uf1 = 0.60396
+[dev epoch=1.4501] lprec = 0.60236 lrec = 0.48814 lf1 = 0.53927 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 604.261s]
+[lr=0.0005 clips=79 updates=100] epoch=1.4600 loss=8.2156 [took 39.348s]
+[lr=0.0005 clips=84 updates=100] epoch=1.4700 loss=8.2117 [took 44.775s]
+[lr=0.0005 clips=67 updates=100] epoch=1.4800 loss=8.1579 [took 43.423s]
+[lr=0.0005 clips=86 updates=100] epoch=1.4900 loss=8.1696 [took 45.606s]
+[lr=0.0005 clips=80 updates=100] epoch=1.5000 loss=8.1434 [took 43.727s]
+[dev epoch=1.5001] wprec = 0.65087 wrec = 0.45226 wf1 = 0.53369
+[dev epoch=1.5001] uprec = 0.68822 urec = 0.54041 uf1 = 0.60543
+[dev epoch=1.5001] lprec = 0.60045 lrec = 0.49200 lf1 = 0.54084 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 594.697s]
+[lr=0.0005 clips=87 updates=100] epoch=1.5100 loss=8.1280 [took 42.265s]
+[lr=0.0005 clips=89 updates=100] epoch=1.5200 loss=8.1265 [took 45.602s]
+[lr=0.0005 clips=83 updates=100] epoch=1.5300 loss=8.1427 [took 45.450s]
+[lr=0.0005 clips=87 updates=100] epoch=1.5400 loss=8.1356 [took 40.821s]
+[lr=0.0005 clips=85 updates=100] epoch=1.5500 loss=8.1453 [took 44.218s]
+[dev epoch=1.5501] wprec = 0.59971 wrec = 0.48847 wf1 = 0.53840
+[dev epoch=1.5501] uprec = 0.66870 urec = 0.54067 uf1 = 0.59791
+[dev epoch=1.5501] lprec = 0.58271 lrec = 0.49228 lf1 = 0.53369 [took 559.438s]
+[lr=0.0005 clips=87 updates=100] epoch=1.5600 loss=8.1642 [took 42.122s]
+[lr=0.0005 clips=88 updates=100] epoch=1.5700 loss=8.1529 [took 32.656s]
+[lr=0.0005 clips=82 updates=100] epoch=1.5800 loss=8.1481 [took 40.942s]
+[lr=0.0005 clips=84 updates=100] epoch=1.5900 loss=8.1537 [took 44.165s]
+[lr=0.0005 clips=81 updates=100] epoch=1.6000 loss=8.1492 [took 43.905s]
+[dev epoch=1.6001] wprec = 0.61789 wrec = 0.47826 wf1 = 0.53918
+[dev epoch=1.6001] uprec = 0.66884 urec = 0.53264 uf1 = 0.59302
+[dev epoch=1.6001] lprec = 0.58929 lrec = 0.48757 lf1 = 0.53363 [took 557.699s]
+[lr=0.0005 clips=82 updates=100] epoch=1.6100 loss=8.1530 [took 42.283s]
+[lr=0.0005 clips=84 updates=100] epoch=1.6200 loss=8.1554 [took 40.340s]
+[lr=0.0005 clips=90 updates=100] epoch=1.6300 loss=8.1425 [took 42.683s]
+[lr=0.0005 clips=86 updates=100] epoch=1.6400 loss=8.1641 [took 46.975s]
+[lr=0.0005 clips=86 updates=100] epoch=1.6500 loss=8.1563 [took 40.690s]
+[dev epoch=1.6501] wprec = 0.61546 wrec = 0.43871 wf1 = 0.51227
+[dev epoch=1.6501] uprec = 0.69090 urec = 0.50725 uf1 = 0.58500
+[dev epoch=1.6501] lprec = 0.60339 lrec = 0.46242 lf1 = 0.52358 [took 560.716s]
+[lr=0.0005 clips=90 updates=100] epoch=1.6600 loss=8.1702 [took 51.369s]
+[lr=0.0005 clips=81 updates=100] epoch=1.6700 loss=8.1595 [took 48.712s]
+[lr=0.0005 clips=91 updates=100] epoch=1.6800 loss=8.1524 [took 43.454s]
+[lr=0.0005 clips=76 updates=100] epoch=1.6900 loss=8.1307 [took 43.661s]
+[lr=0.0005 clips=91 updates=100] epoch=1.7000 loss=8.1333 [took 48.396s]
+[dev epoch=1.7001] wprec = 0.64592 wrec = 0.45795 wf1 = 0.53593
+[dev epoch=1.7001] uprec = 0.70451 urec = 0.56269 uf1 = 0.62567
+[dev epoch=1.7001] lprec = 0.61141 lrec = 0.50386 lf1 = 0.55245 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 641.547s]
+[lr=0.0005 clips=91 updates=100] epoch=1.7100 loss=8.1451 [took 44.969s]
+[lr=0.0005 clips=88 updates=100] epoch=1.7200 loss=8.1549 [took 43.741s]
+[lr=0.0005 clips=84 updates=100] epoch=1.7300 loss=8.1613 [took 49.935s]
+[lr=0.0005 clips=87 updates=100] epoch=1.7400 loss=8.1560 [took 41.116s]
+[lr=0.0005 clips=87 updates=100] epoch=1.7500 loss=8.1602 [took 42.834s]
+[dev epoch=1.7501] wprec = 0.63156 wrec = 0.46664 wf1 = 0.53672
+[dev epoch=1.7501] uprec = 0.69172 urec = 0.54119 uf1 = 0.60727
+[dev epoch=1.7501] lprec = 0.59878 lrec = 0.49071 lf1 = 0.53939 [took 560.343s]
+[lr=0.0005 clips=78 updates=100] epoch=1.7600 loss=8.1521 [took 44.944s]
+[lr=0.0005 clips=87 updates=100] epoch=1.7700 loss=8.1441 [took 41.205s]
+[lr=0.0005 clips=84 updates=100] epoch=1.7800 loss=8.1358 [took 44.435s]
+[lr=0.0005 clips=79 updates=100] epoch=1.7900 loss=8.1087 [took 39.346s]
+[lr=0.0005 clips=82 updates=100] epoch=1.8000 loss=8.0966 [took 44.821s]
+[dev epoch=1.8001] wprec = 0.61006 wrec = 0.46905 wf1 = 0.53034
+[dev epoch=1.8001] uprec = 0.68149 urec = 0.55596 uf1 = 0.61236
+[dev epoch=1.8001] lprec = 0.59237 lrec = 0.49900 lf1 = 0.54169 [took 565.595s]
+[lr=0.0005 clips=86 updates=100] epoch=1.8100 loss=8.1032 [took 45.133s]
+[lr=0.0005 clips=82 updates=100] epoch=1.8200 loss=8.1053 [took 41.317s]
+[lr=0.0005 clips=84 updates=100] epoch=1.8300 loss=8.1110 [took 35.805s]
+[lr=0.0005 clips=84 updates=100] epoch=1.8400 loss=8.1002 [took 45.763s]
+[lr=0.0005 clips=87 updates=100] epoch=1.8500 loss=8.1122 [took 42.500s]
+[dev epoch=1.8501] wprec = 0.65142 wrec = 0.47309 wf1 = 0.54812
+[dev epoch=1.8501] uprec = 0.68490 urec = 0.55466 uf1 = 0.61294
+[dev epoch=1.8501] lprec = 0.59389 lrec = 0.50029 lf1 = 0.54309 [took 573.927s]
+[lr=0.0005 clips=84 updates=100] epoch=1.8600 loss=8.1005 [took 47.157s]
+[lr=0.0005 clips=84 updates=100] epoch=1.8700 loss=8.0927 [took 40.934s]
+[lr=0.0005 clips=83 updates=100] epoch=1.8800 loss=8.0883 [took 45.607s]
+[lr=0.0005 clips=89 updates=100] epoch=1.8900 loss=8.0965 [took 43.772s]
+[lr=0.0005 clips=86 updates=100] epoch=1.9000 loss=8.0929 [took 39.659s]
+[dev epoch=1.9001] wprec = 0.65229 wrec = 0.49076 wf1 = 0.56011
+[dev epoch=1.9001] uprec = 0.66834 urec = 0.58575 uf1 = 0.62433
+[dev epoch=1.9001] lprec = 0.58278 lrec = 0.52515 lf1 = 0.55247 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 599.266s]
+[lr=0.0005 clips=91 updates=100] epoch=1.9100 loss=8.0922 [took 42.721s]
+[lr=0.0005 clips=85 updates=100] epoch=1.9200 loss=8.0873 [took 39.397s]
+[lr=0.0005 clips=86 updates=100] epoch=1.9300 loss=8.0902 [took 39.180s]
+[lr=0.0005 clips=85 updates=100] epoch=1.9400 loss=8.0884 [took 44.672s]
+[lr=0.0005 clips=83 updates=100] epoch=1.9500 loss=8.0937 [took 46.950s]
+[dev epoch=1.9501] wprec = 0.65642 wrec = 0.45238 wf1 = 0.53563
+[dev epoch=1.9501] uprec = 0.69413 urec = 0.56321 uf1 = 0.62185
+[dev epoch=1.9501] lprec = 0.60839 lrec = 0.51372 lf1 = 0.55706 -- saving to logs/fn1.7-pretrained-argid/best-argid-1.7-model [took 594.528s]
+[lr=0.0005 clips=86 updates=100] epoch=1.9600 loss=8.0907 [took 46.544s]
+[lr=0.0005 clips=79 updates=100] epoch=1.9700 loss=8.0789 [took 35.481s]
+[lr=0.0005 clips=84 updates=100] epoch=1.9800 loss=8.0750 [took 49.556s]
+[lr=0.0005 clips=85 updates=100] epoch=1.9900 loss=8.0775 [took 39.450s]
+[lr=0.0005 clips=87 updates=100] epoch=1.10000 loss=8.0812 [took 40.695s]
