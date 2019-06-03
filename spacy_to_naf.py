@@ -279,7 +279,7 @@ def naf_from_doc(doc, time=None, language='en'):
         # At the end of the sentence, add all the dependencies to the XML structure.
         #for dep_data in dependencies_for_sentence:
         #    add_dependency_element(dependency_layer, dep_data)
-        #current_token = token_number + 1
+        current_token = token_number + 1
     
     # Add chunk layer after adding all other layers.
     #for chunk_data in chunk_tuples_for_doc(doc):
