@@ -7,7 +7,7 @@ then
     echo
     echo "input_path                : input_path (absolute path)"
     echo "output_path               : output_path (absolute path)"
-
+    echo "bash prediction_on_unseen_data.sh $(readlink -f ../output/all_sentences.txt) $(readlink -f ../output/all_sentences.conll)"
     exit -1;
 fi
 
@@ -24,8 +24,8 @@ python2 -m sesame.frameid --mode predict \
                          --model_name fn1.7-pretrained-frameid \
                          --raw_input logs/fn1.7-pretrained-targetid/predicted-targets.conll
 
-#python2 -m sesame.argid --mode predict \
-#                       --model_name fn1.7-pretrained-argid \
-#                       --raw_input logs/fn1.7-pretrained-frameid/predicted-frames.conll
+python2 -m sesame.argid --mode predict \
+                       --model_name fn1.7-pretrained-argid \
+                       --raw_input logs/fn1.7-pretrained-frameid/predicted-frames.conll
 
-cp logs/fn1.7-pretrained-frameid/predicted-frames.conll $output_path
+cp logs/fn1.7-pretrained-argid/predicted-args.conll $output_path
