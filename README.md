@@ -1,7 +1,9 @@
 # Run open-sesame
 
 The goal of this repository is to run [open-sesame](https://github.com/swabhs/open-sesame)
-on your own data.
+on your own data. The repository is created to work with NAF XML.
+You use the Python module **spacy_to_naf.py** (available after you run install.sh)
+to convert your own text to NAF files.
 
 ### Prerequisites
 Open-sesame uses Python2.7. 
@@ -22,7 +24,7 @@ python parse_with_spacy_and_convert.py.py -h
 For more information about how to use.
 
 ## TODO
-* add entity layer in NAF
+* fix begin and end timestamp
 
 ## Authors
 
