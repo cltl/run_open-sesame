@@ -71,8 +71,8 @@ for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
     # add header
     srl_lp = my_parser.create_linguistic_processor(layer='srl',
                                                    name='open-sesame',
-                                                   btime=btime,
-                                                   etime=etime,
+                                                   btimestamp=btime,
+                                                   etimestamp=etime,
                                                    version=f'commit-{arguments["--commit"]}')
     my_parser.add_linguistic_processor(layer='srl', my_lp=srl_lp)
 
