@@ -34,9 +34,13 @@ naf_output_dir = open_sesame_dir / 'NAF'
 naf_output_dir.mkdir()
 
 open_sesame_output_path = open_sesame_dir / 'all_sentences.conll'
+open_sesame_txt_path = open_sesame_dir / 'all_sentences.txt'
 stem2index2sentid_and_tokens_path = open_sesame_dir / 'stem2index2sentid_and_tokens.p'
 
-assert open_sesame_output_path.exists()
+btime = utils.creation_time_of_file(str(open_sesame_txt_path))
+etime = utils.creation_time_of_file(str(open_sesame_output_path))
+
+assert open_sesame_output_path.exists(), f'open sesame output not found, should be at {open_sesame_output_path}'
 assert stem2index2sentid_and_tokens_path.exists()
 
 verbose = int(arguments['--verbose'])
@@ -47,7 +51,6 @@ index2num_tokens = utils.load_open_sesame_output(str(open_sesame_output_path), v
 
 #load mapping tokens to sent_ids
 stem2index2sentid_and_tokens = pickle.load(open(str(stem2index2sentid_and_tokens_path), 'rb'))
-
 
 #update NAF files
 for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
@@ -68,6 +71,8 @@ for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
     # add header
     srl_lp = my_parser.create_linguistic_processor(layer='srl',
                                                    name='open-sesame',
+                                                   btime=btime,
+                                                   etime=etime,
                                                    version=f'commit-{arguments["--commit"]}')
     my_parser.add_linguistic_processor(layer='srl', my_lp=srl_lp)
 

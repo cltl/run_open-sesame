@@ -20,9 +20,6 @@ pip install -r requirements.txt
 ## How to use
 Please open the file *run_open_sesame.sh* and set the variables to the correct values.
 
-## TODO
-* fix begin and end timestamp
-
 ## Authors
 
 * **Marten Postma** (m.c.postma@vu.nl)

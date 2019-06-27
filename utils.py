@@ -1,4 +1,16 @@
+import os
+from datetime import datetime
 from collections import defaultdict
+
+
+def time_in_correct_format(datetime_obj):
+    "Function that returns the current time (UTC)"
+    return datetime_obj.strftime("%Y-%m-%dT%H:%M:%SUTC")
+
+def creation_time_of_file(path):
+    file_info = os.stat(path)
+    datetime_obj = datetime.datetime.utcfromtimestamp(file_info.st_ctime)
+    return time_in_correct_format(datetime_obj)
 
 
 def determine_end_of_role(prev_prefix, prefix):
