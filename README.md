@@ -7,7 +7,7 @@ to convert your own text to NAF files.
 
 ### Prerequisites
 Open-sesame uses Python2.7. 
-All other code in this repository will make use of Python 3.7
+All other code in this repository will make use of Python 3.6
 
 ### Installing
 
@@ -18,10 +18,7 @@ pip install -r requirements.txt
 ```
 
 ## How to use
-```bash
-python parse_with_spacy_and_convert.py.py -h
-```
-For more information about how to use.
+Please open the file *run_open_sesame.sh* and set the variables to the correct values.
 
 ## TODO
 * fix begin and end timestamp
@@ -33,6 +30,3 @@ For more information about how to use.
 ## License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgements
-We make use the of converter from [Spacy to NAF](https://github.com/cltl/SpaCy-to-NAF) for which we thank Emiel van Miltenburg.

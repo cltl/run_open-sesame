@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 
-rm -r spacy_to_naf.py
-wget https://raw.githubusercontent.com/cltl/SpaCy-to-NAF/master/spacy_to_naf.py
-
 rm -rf resources
 mkdir resources
 cd resources

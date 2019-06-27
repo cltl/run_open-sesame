@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NAF xml:lang="en" version="v3.naf">
+  <nafHeader>
+    <fileDesc creationtime="2019-06-18T13:00:04UTC" title="1294 papal conclave"/>
+    <public uri="https://en.wikipedia.org/wiki/1294_papal_conclave"/>
+    <linguisticProcessors layer="text">
+      <lp name="spaCy-model_en_core_web_sm" beginTimestamp="2019-06-20T10:27:20UTC" endTimestamp="2019-06-20T10:27:20UTC" version="spaCy_version-2.1.4__model_version-2.1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="terms">
+      <lp name="spaCy-model_en_core_web_sm" beginTimestamp="2019-06-20T10:27:20UTC" endTimestamp="2019-06-20T10:27:20UTC" version="spaCy_version-2.1.4__model_version-2.1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="raw">
+      <lp name="spaCy-model_en_core_web_sm" beginTimestamp="2019-06-20T10:27:20UTC" endTimestamp="2019-06-20T10:27:20UTC" version="spaCy_version-2.1.4__model_version-2.1.0"/>
+    </linguisticProcessors>
+  </nafHeader>
+  <raw>The papal conclave of 1294 (23–24 December) was convoked in Naples after the resignation of Pope Celestine V on 13 December 1294. Celestine V had only months earlier restored the election procedures set forth in the papal bull Ubi periculum of Pope Gregory X, which had been suspended by Pope Adrian V in July 1276. Every papal election since then has been a papal conclave. It was the first papal conclave held during the lifetime of the preceding pontiff, an event not repeated until the papal conclave of 2013 following the resignation of Pope Benedict XVI.</raw>
+  <text>
+    <wf sent="1" id="w0" length="3" offset="0">The</wf>
+    <wf sent="1" id="w1" length="5" offset="4">papal</wf>
+    <wf sent="1" id="w2" length="8" offset="10">conclave</wf>
+    <wf sent="1" id="w3" length="2" offset="19">of</wf>
+    <wf sent="1" id="w4" length="4" offset="22">1294</wf>
+    <wf sent="1" id="w5" length="1" offset="27">(</wf>
+    <wf sent="1" id="w6" length="5" offset="28">23–24</wf>
+    <wf sent="1" id="w7" length="8" offset="34">December</wf>
+    <wf sent="1" id="w8" length="1" offset="42">)</wf>
+    <wf sent="1" id="w9" length="3" offset="44">was</wf>
+    <wf sent="1" id="w10" length="8" offset="48">convoked</wf>
+    <wf sent="1" id="w11" length="2" offset="57">in</wf>
+    <wf sent="1" id="w12" length="6" offset="60">Naples</wf>
+    <wf sent="1" id="w13" length="5" offset="67">after</wf>
+    <wf sent="1" id="w14" length="3" offset="73">the</wf>
+    <wf sent="1" id="w15" length="11" offset="77">resignation</wf>
+    <wf sent="1" id="w16" length="2" offset="89">of</wf>
+    <wf sent="1" id="w17" length="4" offset="92">Pope</wf>
+    <wf sent="1" id="w18" length="9" offset="97">Celestine</wf>
+    <wf sent="1" id="w19" length="1" offset="107">V</wf>
+    <wf sent="1" id="w20" length="2" offset="109">on</wf>
+    <wf sent="1" id="w21" length="2" offset="112">13</wf>
+    <wf sent="1" id="w22" length="8" offset="115">December</wf>
+    <wf sent="1" id="w23" length="4" offset="124">1294</wf>
+    <wf sent="1" id="w24" length="1" offset="128">.</wf>
+    <wf sent="2" id="w25" length="9" offset="130">Celestine</wf>
+    <wf sent="2" id="w26" length="1" offset="140">V</wf>
+    <wf sent="2" id="w27" length="3" offset="142">had</wf>
+    <wf sent="2" id="w28" length="4" offset="146">only</wf>
+    <wf sent="2" id="w29" length="6" offset="151">months</wf>
+    <wf sent="2" id="w30" length="7" offset="158">earlier</wf>
+    <wf sent="2" id="w31" length="8" offset="166">restored</wf>
+    <wf sent="2" id="w32" length="3" offset="175">the</wf>
+    <wf sent="2" id="w33" length="8" offset="179">election</wf>
+    <wf sent="2" id="w34" length="10" offset="188">procedures</wf>
+    <wf sent="2" id="w35" length="3" offset="199">set</wf>
+    <wf sent="2" id="w36" length="5" offset="203">forth</wf>
+    <wf sent="2" id="w37" length="2" offset="209">in</wf>
+    <wf sent="2" id="w38" length="3" offset="212">the</wf>
+    <wf sent="2" id="w39" length="5" offset="216">papal</wf>
+    <wf sent="2" id="w40" length="4" offset="222">bull</wf>
+    <wf sent="2" id="w41" length="3" offset="227">Ubi</wf>
+    <wf sent="2" id="w42" length="9" offset="231">periculum</wf>
+    <wf sent="2" id="w43" length="2" offset="241">of</wf>
+    <wf sent="2" id="w44" length="4" offset="244">Pope</wf>
+    <wf sent="2" id="w45" length="7" offset="249">Gregory</wf>
+    <wf sent="2" id="w46" length="1" offset="257">X</wf>
+    <wf sent="2" id="w47" length="1" offset="258">,</wf>
+    <wf sent="2" id="w48" length="5" offset="260">which</wf>
+    <wf sent="2" id="w49" length="3" offset="266">had</wf>
+    <wf sent="2" id="w50" length="4" offset="270">been</wf>
+    <wf sent="2" id="w51" length="9" offset="275">suspended</wf>
+    <wf sent="2" id="w52" length="2" offset="285">by</wf>
+    <wf sent="2" id="w53" length="4" offset="288">Pope</wf>
+    <wf sent="2" id="w54" length="6" offset="293">Adrian</wf>
+    <wf sent="2" id="w55" length="1" offset="300">V</wf>
+    <wf sent="2" id="w56" length="2" offset="302">in</wf>
+    <wf sent="2" id="w57" length="4" offset="305">July</wf>
+    <wf sent="2" id="w58" length="4" offset="310">1276</wf>
+    <wf sent="2" id="w59" length="1" offset="314">.</wf>
+    <wf sent="3" id="w60" length="5" offset="316">Every</wf>
+    <wf sent="3" id="w61" length="5" offset="322">papal</wf>
+    <wf sent="3" id="w62" length="8" offset="328">election</wf>
+    <wf sent="3" id="w63" length="5" offset="337">since</wf>
+    <wf sent="3" id="w64" length="4" offset="343">then</wf>
+    <wf sent="3" id="w65" length="3" offset="348">has</wf>
+    <wf sent="3" id="w66" length="4" offset="352">been</wf>
+    <wf sent="3" id="w67" length="1" offset="357">a</wf>
+    <wf sent="3" id="w68" length="5" offset="359">papal</wf>
+    <wf sent="3" id="w69" length="8" offset="365">conclave</wf>
+    <wf sent="3" id="w70" length="1" offset="373">.</wf>
+    <wf sent="4" id="w71" length="2" offset="375">It</wf>
+    <wf sent="4" id="w72" length="3" offset="378">was</wf>
+    <wf sent="4" id="w73" length="3" offset="382">the</wf>
+    <wf sent="4" id="w74" length="5" offset="386">first</wf>
+    <wf sent="4" id="w75" length="5" offset="392">papal</wf>
+    <wf sent="4" id="w76" length="8" offset="398">conclave</wf>
+    <wf sent="4" id="w77" length="4" offset="407">held</wf>
+    <wf sent="4" id="w78" length="6" offset="412">during</wf>
+    <wf sent="4" id="w79" length="3" offset="419">the</wf>
+    <wf sent="4" id="w80" length="8" offset="423">lifetime</wf>
+    <wf sent="4" id="w81" length="2" offset="432">of</wf>
+    <wf sent="4" id="w82" length="3" offset="435">the</wf>
+    <wf sent="4" id="w83" length="9" offset="439">preceding</wf>
+    <wf sent="4" id="w84" length="7" offset="449">pontiff</wf>
+    <wf sent="4" id="w85" length="1" offset="456">,</wf>
+    <wf sent="4" id="w86" length="2" offset="458">an</wf>
+    <wf sent="4" id="w87" length="5" offset="461">event</wf>
+    <wf sent="4" id="w88" length="3" offset="467">not</wf>
+    <wf sent="4" id="w89" length="8" offset="471">repeated</wf>
+    <wf sent="4" id="w90" length="5" offset="480">until</wf>
+    <wf sent="4" id="w91" length="3" offset="486">the</wf>
+    <wf sent="4" id="w92" length="5" offset="490">papal</wf>
+    <wf sent="4" id="w93" length="8" offset="496">conclave</wf>
+    <wf sent="4" id="w94" length="2" offset="505">of</wf>
+    <wf sent="4" id="w95" length="4" offset="508">2013</wf>
+    <wf sent="4" id="w96" length="9" offset="513">following</wf>
+    <wf sent="4" id="w97" length="3" offset="523">the</wf>
+    <wf sent="4" id="w98" length="11" offset="527">resignation</wf>
+    <wf sent="4" id="w99" length="2" offset="539">of</wf>
+    <wf sent="4" id="w100" length="4" offset="542">Pope</wf>
+    <wf sent="4" id="w101" length="8" offset="547">Benedict</wf>
+    <wf sent="4" id="w102" length="3" offset="556">XVI</wf>
+    <wf sent="4" id="w103" length="1" offset="559">.</wf>
+  </text>
+  <terms>
+    <term id="t0" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w0"/>
+      </span>
+    </term>
+    <term id="t1" lemma="papal" pos="ADJ" morphofeat="JJ">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2" lemma="conclave" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3" lemma="of" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4" lemma="1294" pos="NUM" morphofeat="CD">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5" lemma="(" pos="PUNCT" morphofeat="-LRB-">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6" lemma="23–24" pos="NUM" morphofeat="CD">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7" lemma="December" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8" lemma=")" pos="PUNCT" morphofeat="-RRB-">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9" lemma="be" pos="VERB" morphofeat="VBD">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10" lemma="convoke" pos="VERB" morphofeat="VBN">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11" lemma="in" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12" lemma="Naples" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13" lemma="after" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15" lemma="resignation" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16" lemma="of" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17" lemma="Pope" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18" lemma="Celestine" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19" lemma="v" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20" lemma="on" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21" lemma="13" pos="NUM" morphofeat="CD">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22" lemma="December" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23" lemma="1294" pos="NUM" morphofeat="CD">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+    <term id="t24" lemma="." pos="PUNCT" morphofeat=".">
+      <span>
+        <target id="w24"/>
+      </span>
+    </term>
+    <term id="t25" lemma="Celestine" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w25"/>
+      </span>
+    </term>
+    <term id="t26" lemma="V" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w26"/>
+      </span>
+    </term>
+    <term id="t27" lemma="have" pos="VERB" morphofeat="VBD">
+      <span>
+        <target id="w27"/>
+      </span>
+    </term>
+    <term id="t28" lemma="only" pos="ADV" morphofeat="RB">
+      <span>
+        <target id="w28"/>
+      </span>
+    </term>
+    <term id="t29" lemma="month" pos="NOUN" morphofeat="NNS">
+      <span>
+        <target id="w29"/>
+      </span>
+    </term>
+    <term id="t30" lemma="earlier" pos="ADV" morphofeat="RBR">
+      <span>
+        <target id="w30"/>
+      </span>
+    </term>
+    <term id="t31" lemma="restore" pos="VERB" morphofeat="VBD">
+      <span>
+        <target id="w31"/>
+      </span>
+    </term>
+    <term id="t32" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w32"/>
+      </span>
+    </term>
+    <term id="t33" lemma="election" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w33"/>
+      </span>
+    </term>
+    <term id="t34" lemma="procedure" pos="NOUN" morphofeat="NNS">
+      <span>
+        <target id="w34"/>
+      </span>
+    </term>
+    <term id="t35" lemma="set" pos="VERB" morphofeat="VBN">
+      <span>
+        <target id="w35"/>
+      </span>
+    </term>
+    <term id="t36" lemma="forth" pos="PART" morphofeat="RP">
+      <span>
+        <target id="w36"/>
+      </span>
+    </term>
+    <term id="t37" lemma="in" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w37"/>
+      </span>
+    </term>
+    <term id="t38" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w38"/>
+      </span>
+    </term>
+    <term id="t39" lemma="papal" pos="ADJ" morphofeat="JJ">
+      <span>
+        <target id="w39"/>
+      </span>
+    </term>
+    <term id="t40" lemma="bull" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w40"/>
+      </span>
+    </term>
+    <term id="t41" lemma="Ubi" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w41"/>
+      </span>
+    </term>
+    <term id="t42" lemma="periculum" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w42"/>
+      </span>
+    </term>
+    <term id="t43" lemma="of" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w43"/>
+      </span>
+    </term>
+    <term id="t44" lemma="Pope" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w44"/>
+      </span>
+    </term>
+    <term id="t45" lemma="Gregory" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w45"/>
+      </span>
+    </term>
+    <term id="t46" lemma="X" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w46"/>
+      </span>
+    </term>
+    <term id="t47" lemma="," pos="PUNCT" morphofeat=",">
+      <span>
+        <target id="w47"/>
+      </span>
+    </term>
+    <term id="t48" lemma="which" pos="DET" morphofeat="WDT">
+      <span>
+        <target id="w48"/>
+      </span>
+    </term>
+    <term id="t49" lemma="have" pos="VERB" morphofeat="VBD">
+      <span>
+        <target id="w49"/>
+      </span>
+    </term>
+    <term id="t50" lemma="be" pos="VERB" morphofeat="VBN">
+      <span>
+        <target id="w50"/>
+      </span>
+    </term>
+    <term id="t51" lemma="suspend" pos="VERB" morphofeat="VBN">
+      <span>
+        <target id="w51"/>
+      </span>
+    </term>
+    <term id="t52" lemma="by" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w52"/>
+      </span>
+    </term>
+    <term id="t53" lemma="Pope" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w53"/>
+      </span>
+    </term>
+    <term id="t54" lemma="Adrian" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w54"/>
+      </span>
+    </term>
+    <term id="t55" lemma="V" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w55"/>
+      </span>
+    </term>
+    <term id="t56" lemma="in" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w56"/>
+      </span>
+    </term>
+    <term id="t57" lemma="July" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w57"/>
+      </span>
+    </term>
+    <term id="t58" lemma="1276" pos="NUM" morphofeat="CD">
+      <span>
+        <target id="w58"/>
+      </span>
+    </term>
+    <term id="t59" lemma="." pos="PUNCT" morphofeat=".">
+      <span>
+        <target id="w59"/>
+      </span>
+    </term>
+    <term id="t60" lemma="every" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w60"/>
+      </span>
+    </term>
+    <term id="t61" lemma="papal" pos="ADJ" morphofeat="JJ">
+      <span>
+        <target id="w61"/>
+      </span>
+    </term>
+    <term id="t62" lemma="election" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w62"/>
+      </span>
+    </term>
+    <term id="t63" lemma="since" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w63"/>
+      </span>
+    </term>
+    <term id="t64" lemma="then" pos="ADV" morphofeat="RB">
+      <span>
+        <target id="w64"/>
+      </span>
+    </term>
+    <term id="t65" lemma="have" pos="VERB" morphofeat="VBZ">
+      <span>
+        <target id="w65"/>
+      </span>
+    </term>
+    <term id="t66" lemma="be" pos="VERB" morphofeat="VBN">
+      <span>
+        <target id="w66"/>
+      </span>
+    </term>
+    <term id="t67" lemma="a" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w67"/>
+      </span>
+    </term>
+    <term id="t68" lemma="papal" pos="ADJ" morphofeat="JJ">
+      <span>
+        <target id="w68"/>
+      </span>
+    </term>
+    <term id="t69" lemma="conclave" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w69"/>
+      </span>
+    </term>
+    <term id="t70" lemma="." pos="PUNCT" morphofeat=".">
+      <span>
+        <target id="w70"/>
+      </span>
+    </term>
+    <term id="t71" lemma="-PRON-" pos="PRON" morphofeat="PRP">
+      <span>
+        <target id="w71"/>
+      </span>
+    </term>
+    <term id="t72" lemma="be" pos="VERB" morphofeat="VBD">
+      <span>
+        <target id="w72"/>
+      </span>
+    </term>
+    <term id="t73" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w73"/>
+      </span>
+    </term>
+    <term id="t74" lemma="first" pos="ADJ" morphofeat="JJ">
+      <span>
+        <target id="w74"/>
+      </span>
+    </term>
+    <term id="t75" lemma="papal" pos="ADJ" morphofeat="JJ">
+      <span>
+        <target id="w75"/>
+      </span>
+    </term>
+    <term id="t76" lemma="conclave" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w76"/>
+      </span>
+    </term>
+    <term id="t77" lemma="hold" pos="VERB" morphofeat="VBN">
+      <span>
+        <target id="w77"/>
+      </span>
+    </term>
+    <term id="t78" lemma="during" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w78"/>
+      </span>
+    </term>
+    <term id="t79" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w79"/>
+      </span>
+    </term>
+    <term id="t80" lemma="lifetime" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w80"/>
+      </span>
+    </term>
+    <term id="t81" lemma="of" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w81"/>
+      </span>
+    </term>
+    <term id="t82" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w82"/>
+      </span>
+    </term>
+    <term id="t83" lemma="precede" pos="VERB" morphofeat="VBG">
+      <span>
+        <target id="w83"/>
+      </span>
+    </term>
+    <term id="t84" lemma="pontiff" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w84"/>
+      </span>
+    </term>
+    <term id="t85" lemma="," pos="PUNCT" morphofeat=",">
+      <span>
+        <target id="w85"/>
+      </span>
+    </term>
+    <term id="t86" lemma="an" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w86"/>
+      </span>
+    </term>
+    <term id="t87" lemma="event" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w87"/>
+      </span>
+    </term>
+    <term id="t88" lemma="not" pos="ADV" morphofeat="RB">
+      <span>
+        <target id="w88"/>
+      </span>
+    </term>
+    <term id="t89" lemma="repeat" pos="VERB" morphofeat="VBN">
+      <span>
+        <target id="w89"/>
+      </span>
+    </term>
+    <term id="t90" lemma="until" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w90"/>
+      </span>
+    </term>
+    <term id="t91" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w91"/>
+      </span>
+    </term>
+    <term id="t92" lemma="papal" pos="ADJ" morphofeat="JJ">
+      <span>
+        <target id="w92"/>
+      </span>
+    </term>
+    <term id="t93" lemma="conclave" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w93"/>
+      </span>
+    </term>
+    <term id="t94" lemma="of" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w94"/>
+      </span>
+    </term>
+    <term id="t95" lemma="2013" pos="NUM" morphofeat="CD">
+      <span>
+        <target id="w95"/>
+      </span>
+    </term>
+    <term id="t96" lemma="follow" pos="VERB" morphofeat="VBG">
+      <span>
+        <target id="w96"/>
+      </span>
+    </term>
+    <term id="t97" lemma="the" pos="DET" morphofeat="DT">
+      <span>
+        <target id="w97"/>
+      </span>
+    </term>
+    <term id="t98" lemma="resignation" pos="NOUN" morphofeat="NN">
+      <span>
+        <target id="w98"/>
+      </span>
+    </term>
+    <term id="t99" lemma="of" pos="ADP" morphofeat="IN">
+      <span>
+        <target id="w99"/>
+      </span>
+    </term>
+    <term id="t100" lemma="Pope" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w100"/>
+      </span>
+    </term>
+    <term id="t101" lemma="Benedict" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w101"/>
+      </span>
+    </term>
+    <term id="t102" lemma="XVI" pos="PROPN" morphofeat="NNP">
+      <span>
+        <target id="w102"/>
+      </span>
+    </term>
+    <term id="t103" lemma="." pos="PUNCT" morphofeat=".">
+      <span>
+        <target id="w103"/>
+      </span>
+    </term>
+  </terms>
+</NAF>

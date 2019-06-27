@@ -1,0 +1,1061 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NAF xml:lang="it" version="v3.naf">
+  <nafHeader>
+    <fileDesc creationtime="2019-06-18T13:00:04UTC" title="Massacro alla Sandy Hook Elementary School"/>
+    <public uri="https://it.wikipedia.org/wiki/Massacro_alla_Sandy_Hook_Elementary_School"/>
+    <linguisticProcessors layer="text">
+      <lp name="spaCy-model_it_core_news_sm" beginTimestamp="2019-06-20T10:27:14UTC" endTimestamp="2019-06-20T10:27:14UTC" version="spaCy_version-2.1.4__model_version-2.1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="terms">
+      <lp name="spaCy-model_it_core_news_sm" beginTimestamp="2019-06-20T10:27:14UTC" endTimestamp="2019-06-20T10:27:14UTC" version="spaCy_version-2.1.4__model_version-2.1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="raw">
+      <lp name="spaCy-model_it_core_news_sm" beginTimestamp="2019-06-20T10:27:14UTC" endTimestamp="2019-06-20T10:27:14UTC" version="spaCy_version-2.1.4__model_version-2.1.0"/>
+    </linguisticProcessors>
+  </nafHeader>
+  <raw>Il massacro alla Sandy Hook Elementary School è un evento avvenuto il 14 dicembre 2012, presso la Sandy Hook Elementary School, situata a Sandy Hook, borgo della città di Newtown in Connecticut (USA), nel quale Adam Lanza, di 20 anni, ha aperto il fuoco all'interno della scuola elementare, causando la morte di 27 persone, 20 delle quali bambini di età compresa tra i 6 e i 7 anni, suicidandosi prima dell'arrivo della polizia. Lanza aveva precedentemente ucciso la madre mentre si trovava a casa e poi si era recato in auto alla scuola per mettere in atto il massacro utilizzando armi che erano regolarmente in possesso della madre. In un primo momento era stato erroneamente identificato come autore del reato suo fratello Ryan.
+Si tratta del terzo massacro scolastico in ordine di vittime avvenuto in una scuola degli Stati Uniti d'America dopo il massacro al Virginia Polytechnic Institute e il massacro della Bath School.</raw>
+  <text>
+    <wf sent="1" id="w0" length="2" offset="0">Il</wf>
+    <wf sent="1" id="w1" length="8" offset="3">massacro</wf>
+    <wf sent="1" id="w2" length="4" offset="12">alla</wf>
+    <wf sent="1" id="w3" length="5" offset="17">Sandy</wf>
+    <wf sent="1" id="w4" length="4" offset="23">Hook</wf>
+    <wf sent="1" id="w5" length="10" offset="28">Elementary</wf>
+    <wf sent="1" id="w6" length="6" offset="39">School</wf>
+    <wf sent="1" id="w7" length="1" offset="46">è</wf>
+    <wf sent="1" id="w8" length="2" offset="48">un</wf>
+    <wf sent="1" id="w9" length="6" offset="51">evento</wf>
+    <wf sent="1" id="w10" length="8" offset="58">avvenuto</wf>
+    <wf sent="1" id="w11" length="2" offset="67">il</wf>
+    <wf sent="1" id="w12" length="2" offset="70">14</wf>
+    <wf sent="1" id="w13" length="8" offset="73">dicembre</wf>
+    <wf sent="1" id="w14" length="4" offset="82">2012</wf>
+    <wf sent="1" id="w15" length="1" offset="86">,</wf>
+    <wf sent="1" id="w16" length="6" offset="88">presso</wf>
+    <wf sent="1" id="w17" length="2" offset="95">la</wf>
+    <wf sent="1" id="w18" length="5" offset="98">Sandy</wf>
+    <wf sent="1" id="w19" length="4" offset="104">Hook</wf>
+    <wf sent="1" id="w20" length="10" offset="109">Elementary</wf>
+    <wf sent="1" id="w21" length="6" offset="120">School</wf>
+    <wf sent="1" id="w22" length="1" offset="126">,</wf>
+    <wf sent="1" id="w23" length="7" offset="128">situata</wf>
+    <wf sent="1" id="w24" length="1" offset="136">a</wf>
+    <wf sent="1" id="w25" length="5" offset="138">Sandy</wf>
+    <wf sent="1" id="w26" length="4" offset="144">Hook</wf>
+    <wf sent="1" id="w27" length="1" offset="148">,</wf>
+    <wf sent="1" id="w28" length="5" offset="150">borgo</wf>
+    <wf sent="1" id="w29" length="5" offset="156">della</wf>
+    <wf sent="1" id="w30" length="5" offset="162">città</wf>
+    <wf sent="1" id="w31" length="2" offset="168">di</wf>
+    <wf sent="1" id="w32" length="7" offset="171">Newtown</wf>
+    <wf sent="1" id="w33" length="2" offset="179">in</wf>
+    <wf sent="1" id="w34" length="11" offset="182">Connecticut</wf>
+    <wf sent="1" id="w35" length="1" offset="194">(</wf>
+    <wf sent="1" id="w36" length="3" offset="195">USA</wf>
+    <wf sent="1" id="w37" length="1" offset="198">)</wf>
+    <wf sent="1" id="w38" length="1" offset="199">,</wf>
+    <wf sent="1" id="w39" length="3" offset="201">nel</wf>
+    <wf sent="1" id="w40" length="5" offset="205">quale</wf>
+    <wf sent="1" id="w41" length="4" offset="211">Adam</wf>
+    <wf sent="1" id="w42" length="5" offset="216">Lanza</wf>
+    <wf sent="1" id="w43" length="1" offset="221">,</wf>
+    <wf sent="1" id="w44" length="2" offset="223">di</wf>
+    <wf sent="1" id="w45" length="2" offset="226">20</wf>
+    <wf sent="1" id="w46" length="4" offset="229">anni</wf>
+    <wf sent="1" id="w47" length="1" offset="233">,</wf>
+    <wf sent="1" id="w48" length="2" offset="235">ha</wf>
+    <wf sent="1" id="w49" length="6" offset="238">aperto</wf>
+    <wf sent="1" id="w50" length="2" offset="245">il</wf>
+    <wf sent="1" id="w51" length="5" offset="248">fuoco</wf>
+    <wf sent="1" id="w52" length="4" offset="254">all'</wf>
+    <wf sent="1" id="w53" length="7" offset="258">interno</wf>
+    <wf sent="1" id="w54" length="5" offset="266">della</wf>
+    <wf sent="1" id="w55" length="6" offset="272">scuola</wf>
+    <wf sent="1" id="w56" length="10" offset="279">elementare</wf>
+    <wf sent="1" id="w57" length="1" offset="289">,</wf>
+    <wf sent="1" id="w58" length="8" offset="291">causando</wf>
+    <wf sent="1" id="w59" length="2" offset="300">la</wf>
+    <wf sent="1" id="w60" length="5" offset="303">morte</wf>
+    <wf sent="1" id="w61" length="2" offset="309">di</wf>
+    <wf sent="1" id="w62" length="2" offset="312">27</wf>
+    <wf sent="1" id="w63" length="7" offset="315">persone</wf>
+    <wf sent="1" id="w64" length="1" offset="322">,</wf>
+    <wf sent="1" id="w65" length="2" offset="324">20</wf>
+    <wf sent="1" id="w66" length="5" offset="327">delle</wf>
+    <wf sent="1" id="w67" length="5" offset="333">quali</wf>
+    <wf sent="1" id="w68" length="7" offset="339">bambini</wf>
+    <wf sent="1" id="w69" length="2" offset="347">di</wf>
+    <wf sent="1" id="w70" length="3" offset="350">età</wf>
+    <wf sent="1" id="w71" length="8" offset="354">compresa</wf>
+    <wf sent="1" id="w72" length="3" offset="363">tra</wf>
+    <wf sent="1" id="w73" length="1" offset="367">i</wf>
+    <wf sent="1" id="w74" length="1" offset="369">6</wf>
+    <wf sent="1" id="w75" length="1" offset="371">e</wf>
+    <wf sent="1" id="w76" length="1" offset="373">i</wf>
+    <wf sent="1" id="w77" length="1" offset="375">7</wf>
+    <wf sent="1" id="w78" length="4" offset="377">anni</wf>
+    <wf sent="1" id="w79" length="1" offset="381">,</wf>
+    <wf sent="1" id="w80" length="12" offset="383">suicidandosi</wf>
+    <wf sent="1" id="w81" length="5" offset="396">prima</wf>
+    <wf sent="1" id="w82" length="5" offset="402">dell'</wf>
+    <wf sent="1" id="w83" length="6" offset="407">arrivo</wf>
+    <wf sent="1" id="w84" length="5" offset="414">della</wf>
+    <wf sent="1" id="w85" length="7" offset="420">polizia</wf>
+    <wf sent="1" id="w86" length="1" offset="427">.</wf>
+    <wf sent="2" id="w87" length="5" offset="429">Lanza</wf>
+    <wf sent="2" id="w88" length="5" offset="435">aveva</wf>
+    <wf sent="2" id="w89" length="15" offset="441">precedentemente</wf>
+    <wf sent="2" id="w90" length="6" offset="457">ucciso</wf>
+    <wf sent="2" id="w91" length="2" offset="464">la</wf>
+    <wf sent="2" id="w92" length="5" offset="467">madre</wf>
+    <wf sent="2" id="w93" length="6" offset="473">mentre</wf>
+    <wf sent="2" id="w94" length="2" offset="480">si</wf>
+    <wf sent="2" id="w95" length="7" offset="483">trovava</wf>
+    <wf sent="2" id="w96" length="1" offset="491">a</wf>
+    <wf sent="2" id="w97" length="4" offset="493">casa</wf>
+    <wf sent="2" id="w98" length="1" offset="498">e</wf>
+    <wf sent="2" id="w99" length="3" offset="500">poi</wf>
+    <wf sent="2" id="w100" length="2" offset="504">si</wf>
+    <wf sent="2" id="w101" length="3" offset="507">era</wf>
+    <wf sent="2" id="w102" length="6" offset="511">recato</wf>
+    <wf sent="2" id="w103" length="2" offset="518">in</wf>
+    <wf sent="2" id="w104" length="4" offset="521">auto</wf>
+    <wf sent="2" id="w105" length="4" offset="526">alla</wf>
+    <wf sent="2" id="w106" length="6" offset="531">scuola</wf>
+    <wf sent="2" id="w107" length="3" offset="538">per</wf>
+    <wf sent="2" id="w108" length="7" offset="542">mettere</wf>
+    <wf sent="2" id="w109" length="2" offset="550">in</wf>
+    <wf sent="2" id="w110" length="4" offset="553">atto</wf>
+    <wf sent="2" id="w111" length="2" offset="558">il</wf>
+    <wf sent="2" id="w112" length="8" offset="561">massacro</wf>
+    <wf sent="2" id="w113" length="11" offset="570">utilizzando</wf>
+    <wf sent="2" id="w114" length="4" offset="582">armi</wf>
+    <wf sent="2" id="w115" length="3" offset="587">che</wf>
+    <wf sent="2" id="w116" length="5" offset="591">erano</wf>
+    <wf sent="2" id="w117" length="12" offset="597">regolarmente</wf>
+    <wf sent="2" id="w118" length="2" offset="610">in</wf>
+    <wf sent="2" id="w119" length="8" offset="613">possesso</wf>
+    <wf sent="2" id="w120" length="5" offset="622">della</wf>
+    <wf sent="2" id="w121" length="5" offset="628">madre</wf>
+    <wf sent="2" id="w122" length="1" offset="633">.</wf>
+    <wf sent="3" id="w123" length="2" offset="635">In</wf>
+    <wf sent="3" id="w124" length="2" offset="638">un</wf>
+    <wf sent="3" id="w125" length="5" offset="641">primo</wf>
+    <wf sent="3" id="w126" length="7" offset="647">momento</wf>
+    <wf sent="3" id="w127" length="3" offset="655">era</wf>
+    <wf sent="3" id="w128" length="5" offset="659">stato</wf>
+    <wf sent="3" id="w129" length="12" offset="665">erroneamente</wf>
+    <wf sent="3" id="w130" length="12" offset="678">identificato</wf>
+    <wf sent="3" id="w131" length="4" offset="691">come</wf>
+    <wf sent="3" id="w132" length="6" offset="696">autore</wf>
+    <wf sent="3" id="w133" length="3" offset="703">del</wf>
+    <wf sent="3" id="w134" length="5" offset="707">reato</wf>
+    <wf sent="3" id="w135" length="3" offset="713">suo</wf>
+    <wf sent="3" id="w136" length="8" offset="717">fratello</wf>
+    <wf sent="3" id="w137" length="4" offset="726">Ryan</wf>
+    <wf sent="3" id="w138" length="1" offset="730">.</wf>
+    <wf sent="3" id="w139" length="1" offset="731">
+</wf>
+    <wf sent="4" id="w140" length="2" offset="732">Si</wf>
+    <wf sent="4" id="w141" length="6" offset="735">tratta</wf>
+    <wf sent="4" id="w142" length="3" offset="742">del</wf>
+    <wf sent="4" id="w143" length="5" offset="746">terzo</wf>
+    <wf sent="4" id="w144" length="8" offset="752">massacro</wf>
+    <wf sent="4" id="w145" length="10" offset="761">scolastico</wf>
+    <wf sent="4" id="w146" length="2" offset="772">in</wf>
+    <wf sent="4" id="w147" length="6" offset="775">ordine</wf>
+    <wf sent="4" id="w148" length="2" offset="782">di</wf>
+    <wf sent="4" id="w149" length="7" offset="785">vittime</wf>
+    <wf sent="4" id="w150" length="8" offset="793">avvenuto</wf>
+    <wf sent="4" id="w151" length="2" offset="802">in</wf>
+    <wf sent="4" id="w152" length="3" offset="805">una</wf>
+    <wf sent="4" id="w153" length="6" offset="809">scuola</wf>
+    <wf sent="4" id="w154" length="5" offset="816">degli</wf>
+    <wf sent="4" id="w155" length="5" offset="822">Stati</wf>
+    <wf sent="4" id="w156" length="5" offset="828">Uniti</wf>
+    <wf sent="4" id="w157" length="2" offset="834">d'</wf>
+    <wf sent="4" id="w158" length="7" offset="836">America</wf>
+    <wf sent="4" id="w159" length="4" offset="844">dopo</wf>
+    <wf sent="4" id="w160" length="2" offset="849">il</wf>
+    <wf sent="4" id="w161" length="8" offset="852">massacro</wf>
+    <wf sent="4" id="w162" length="2" offset="861">al</wf>
+    <wf sent="4" id="w163" length="8" offset="864">Virginia</wf>
+    <wf sent="4" id="w164" length="11" offset="873">Polytechnic</wf>
+    <wf sent="4" id="w165" length="9" offset="885">Institute</wf>
+    <wf sent="4" id="w166" length="1" offset="895">e</wf>
+    <wf sent="4" id="w167" length="2" offset="897">il</wf>
+    <wf sent="4" id="w168" length="8" offset="900">massacro</wf>
+    <wf sent="4" id="w169" length="5" offset="909">della</wf>
+    <wf sent="4" id="w170" length="4" offset="915">Bath</wf>
+    <wf sent="4" id="w171" length="6" offset="920">School</wf>
+    <wf sent="4" id="w172" length="1" offset="926">.</wf>
+  </text>
+  <terms>
+    <term id="t0" lemma="Il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w0"/>
+      </span>
+    </term>
+    <term id="t1" lemma="massacrare" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t2" lemma="alla" pos="VERB" morphofeat="V__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t3" lemma="Sandy" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t4" lemma="Hook" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <term id="t5" lemma="Elementary" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t6" lemma="School" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t7" lemma="essere" pos="VERB" morphofeat="V__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t8" lemma="un" pos="DET" morphofeat="RI__Definite=Ind|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t9" lemma="evento" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10" lemma="avvenire" pos="VERB" morphofeat="V__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11" lemma="il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12" lemma="14" pos="NUM" morphofeat="N__NumType=Card">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13" lemma="dicembre" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t14" lemma="2012" pos="NUM" morphofeat="N__NumType=Card">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t15" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t16" lemma="pressare" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <term id="t17" lemma="la" pos="DET" morphofeat="RD__Definite=Def|Gender=Fem|Number=Sing|PronType=Art">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t18" lemma="Sandy" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t19" lemma="Hook" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t20" lemma="Elementary" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21" lemma="School" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t22" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23" lemma="situare" pos="VERB" morphofeat="V__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+    <term id="t24" lemma="a" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w24"/>
+      </span>
+    </term>
+    <term id="t25" lemma="Sandy" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w25"/>
+      </span>
+    </term>
+    <term id="t26" lemma="Hook" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w26"/>
+      </span>
+    </term>
+    <term id="t27" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w27"/>
+      </span>
+    </term>
+    <term id="t28" lemma="borgo" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w28"/>
+      </span>
+    </term>
+    <term id="t29" lemma="della" pos="VERB" morphofeat="V__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin">
+      <span>
+        <target id="w29"/>
+      </span>
+    </term>
+    <term id="t30" lemma="città" pos="NOUN" morphofeat="S__Gender=Fem">
+      <span>
+        <target id="w30"/>
+      </span>
+    </term>
+    <term id="t31" lemma="di" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w31"/>
+      </span>
+    </term>
+    <term id="t32" lemma="Newtown" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w32"/>
+      </span>
+    </term>
+    <term id="t33" lemma="in" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w33"/>
+      </span>
+    </term>
+    <term id="t34" lemma="Connecticut" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w34"/>
+      </span>
+    </term>
+    <term id="t35" lemma="(" pos="PUNCT" morphofeat="FB___">
+      <span>
+        <target id="w35"/>
+      </span>
+    </term>
+    <term id="t36" lemma="USA" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w36"/>
+      </span>
+    </term>
+    <term id="t37" lemma=")" pos="PUNCT" morphofeat="FB___">
+      <span>
+        <target id="w37"/>
+      </span>
+    </term>
+    <term id="t38" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w38"/>
+      </span>
+    </term>
+    <term id="t39" lemma="nel" pos="NOUN" morphofeat="S__Gender=Masc">
+      <span>
+        <target id="w39"/>
+      </span>
+    </term>
+    <term id="t40" lemma="quale" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w40"/>
+      </span>
+    </term>
+    <term id="t41" lemma="Adam" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w41"/>
+      </span>
+    </term>
+    <term id="t42" lemma="Lanza" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w42"/>
+      </span>
+    </term>
+    <term id="t43" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w43"/>
+      </span>
+    </term>
+    <term id="t44" lemma="di" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w44"/>
+      </span>
+    </term>
+    <term id="t45" lemma="20" pos="NUM" morphofeat="N__NumType=Card">
+      <span>
+        <target id="w45"/>
+      </span>
+    </term>
+    <term id="t46" lemma="anno" pos="NOUN" morphofeat="S__Gender=Masc|Number=Plur">
+      <span>
+        <target id="w46"/>
+      </span>
+    </term>
+    <term id="t47" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w47"/>
+      </span>
+    </term>
+    <term id="t48" lemma="avere" pos="AUX" morphofeat="VA__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin">
+      <span>
+        <target id="w48"/>
+      </span>
+    </term>
+    <term id="t49" lemma="aprire" pos="VERB" morphofeat="V__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w49"/>
+      </span>
+    </term>
+    <term id="t50" lemma="il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w50"/>
+      </span>
+    </term>
+    <term id="t51" lemma="fuoco" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w51"/>
+      </span>
+    </term>
+    <term id="t52" lemma="alla" pos="ADJ" morphofeat="A__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w52"/>
+      </span>
+    </term>
+    <term id="t53" lemma="internare" pos="ADJ" morphofeat="A__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w53"/>
+      </span>
+    </term>
+    <term id="t54" lemma="della" pos="ADJ" morphofeat="A__Number=Sing">
+      <span>
+        <target id="w54"/>
+      </span>
+    </term>
+    <term id="t55" lemma="scuola" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w55"/>
+      </span>
+    </term>
+    <term id="t56" lemma="elementare" pos="ADJ" morphofeat="A__Number=Sing">
+      <span>
+        <target id="w56"/>
+      </span>
+    </term>
+    <term id="t57" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w57"/>
+      </span>
+    </term>
+    <term id="t58" lemma="causare" pos="VERB" morphofeat="V__VerbForm=Ger">
+      <span>
+        <target id="w58"/>
+      </span>
+    </term>
+    <term id="t59" lemma="la" pos="DET" morphofeat="RD__Definite=Def|Gender=Fem|Number=Sing|PronType=Art">
+      <span>
+        <target id="w59"/>
+      </span>
+    </term>
+    <term id="t60" lemma="morto" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w60"/>
+      </span>
+    </term>
+    <term id="t61" lemma="di" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w61"/>
+      </span>
+    </term>
+    <term id="t62" lemma="27" pos="NUM" morphofeat="N__NumType=Card">
+      <span>
+        <target id="w62"/>
+      </span>
+    </term>
+    <term id="t63" lemma="persona" pos="NOUN" morphofeat="S__Gender=Fem|Number=Plur">
+      <span>
+        <target id="w63"/>
+      </span>
+    </term>
+    <term id="t64" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w64"/>
+      </span>
+    </term>
+    <term id="t65" lemma="20" pos="NUM" morphofeat="N__NumType=Card">
+      <span>
+        <target id="w65"/>
+      </span>
+    </term>
+    <term id="t66" lemma="della" pos="DET" morphofeat="DI__Gender=Fem|Number=Plur|PronType=Ind">
+      <span>
+        <target id="w66"/>
+      </span>
+    </term>
+    <term id="t67" lemma="quale" pos="DET" morphofeat="DQ__Number=Plur|PronType=Int">
+      <span>
+        <target id="w67"/>
+      </span>
+    </term>
+    <term id="t68" lemma="bambino" pos="NOUN" morphofeat="S__Gender=Masc|Number=Plur">
+      <span>
+        <target id="w68"/>
+      </span>
+    </term>
+    <term id="t69" lemma="di" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w69"/>
+      </span>
+    </term>
+    <term id="t70" lemma="età" pos="NOUN" morphofeat="S__Gender=Fem">
+      <span>
+        <target id="w70"/>
+      </span>
+    </term>
+    <term id="t71" lemma="compreso" pos="ADJ" morphofeat="A__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w71"/>
+      </span>
+    </term>
+    <term id="t72" lemma="tra" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w72"/>
+      </span>
+    </term>
+    <term id="t73" lemma="il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Plur|PronType=Art">
+      <span>
+        <target id="w73"/>
+      </span>
+    </term>
+    <term id="t74" lemma="6" pos="NUM" morphofeat="N__NumType=Card">
+      <span>
+        <target id="w74"/>
+      </span>
+    </term>
+    <term id="t75" lemma="e" pos="CONJ" morphofeat="CC___">
+      <span>
+        <target id="w75"/>
+      </span>
+    </term>
+    <term id="t76" lemma="il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Plur|PronType=Art">
+      <span>
+        <target id="w76"/>
+      </span>
+    </term>
+    <term id="t77" lemma="7" pos="NUM" morphofeat="N__NumType=Card">
+      <span>
+        <target id="w77"/>
+      </span>
+    </term>
+    <term id="t78" lemma="anno" pos="NOUN" morphofeat="S__Gender=Masc|Number=Plur">
+      <span>
+        <target id="w78"/>
+      </span>
+    </term>
+    <term id="t79" lemma="," pos="PUNCT" morphofeat="FF___">
+      <span>
+        <target id="w79"/>
+      </span>
+    </term>
+    <term id="t80" lemma="suicidandosi" pos="ADJ" morphofeat="A__Gender=Masc|Number=Plur">
+      <span>
+        <target id="w80"/>
+      </span>
+    </term>
+    <term id="t81" lemma="primo" pos="ADV" morphofeat="B___">
+      <span>
+        <target id="w81"/>
+      </span>
+    </term>
+    <term id="t82" lemma="della" pos="DET" morphofeat="DI__Number=Sing|PronType=Ind">
+      <span>
+        <target id="w82"/>
+      </span>
+    </term>
+    <term id="t83" lemma="arrivare" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w83"/>
+      </span>
+    </term>
+    <term id="t84" lemma="della" pos="ADJ" morphofeat="A__Number=Sing">
+      <span>
+        <target id="w84"/>
+      </span>
+    </term>
+    <term id="t85" lemma="polizia" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w85"/>
+      </span>
+    </term>
+    <term id="t86" lemma="." pos="PUNCT" morphofeat="FS___">
+      <span>
+        <target id="w86"/>
+      </span>
+    </term>
+    <term id="t87" lemma="Lanza" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w87"/>
+      </span>
+    </term>
+    <term id="t88" lemma="avere" pos="AUX" morphofeat="VA__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin">
+      <span>
+        <target id="w88"/>
+      </span>
+    </term>
+    <term id="t89" lemma="precedentemente" pos="ADV" morphofeat="B___">
+      <span>
+        <target id="w89"/>
+      </span>
+    </term>
+    <term id="t90" lemma="uccidere" pos="VERB" morphofeat="V__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w90"/>
+      </span>
+    </term>
+    <term id="t91" lemma="la" pos="DET" morphofeat="RD__Definite=Def|Gender=Fem|Number=Sing|PronType=Art">
+      <span>
+        <target id="w91"/>
+      </span>
+    </term>
+    <term id="t92" lemma="madre" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w92"/>
+      </span>
+    </term>
+    <term id="t93" lemma="mentre" pos="SCONJ" morphofeat="CS___">
+      <span>
+        <target id="w93"/>
+      </span>
+    </term>
+    <term id="t94" lemma="si" pos="PRON" morphofeat="PC__Clitic=Yes|Person=3|PronType=Prs">
+      <span>
+        <target id="w94"/>
+      </span>
+    </term>
+    <term id="t95" lemma="trovare" pos="VERB" morphofeat="V__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin">
+      <span>
+        <target id="w95"/>
+      </span>
+    </term>
+    <term id="t96" lemma="a" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w96"/>
+      </span>
+    </term>
+    <term id="t97" lemma="casa" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w97"/>
+      </span>
+    </term>
+    <term id="t98" lemma="e" pos="CONJ" morphofeat="CC___">
+      <span>
+        <target id="w98"/>
+      </span>
+    </term>
+    <term id="t99" lemma="poi" pos="ADV" morphofeat="B___">
+      <span>
+        <target id="w99"/>
+      </span>
+    </term>
+    <term id="t100" lemma="si" pos="PRON" morphofeat="PC__Clitic=Yes|Person=3|PronType=Prs">
+      <span>
+        <target id="w100"/>
+      </span>
+    </term>
+    <term id="t101" lemma="essere" pos="AUX" morphofeat="VA__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin">
+      <span>
+        <target id="w101"/>
+      </span>
+    </term>
+    <term id="t102" lemma="recare" pos="VERB" morphofeat="V__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w102"/>
+      </span>
+    </term>
+    <term id="t103" lemma="in" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w103"/>
+      </span>
+    </term>
+    <term id="t104" lemma="auto" pos="NOUN" morphofeat="S__Gender=Fem">
+      <span>
+        <target id="w104"/>
+      </span>
+    </term>
+    <term id="t105" lemma="alla" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w105"/>
+      </span>
+    </term>
+    <term id="t106" lemma="scuola" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w106"/>
+      </span>
+    </term>
+    <term id="t107" lemma="per" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w107"/>
+      </span>
+    </term>
+    <term id="t108" lemma="mettere" pos="VERB" morphofeat="V__VerbForm=Inf">
+      <span>
+        <target id="w108"/>
+      </span>
+    </term>
+    <term id="t109" lemma="in" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w109"/>
+      </span>
+    </term>
+    <term id="t110" lemma="atto" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w110"/>
+      </span>
+    </term>
+    <term id="t111" lemma="il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w111"/>
+      </span>
+    </term>
+    <term id="t112" lemma="massacrare" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w112"/>
+      </span>
+    </term>
+    <term id="t113" lemma="utilizzare" pos="VERB" morphofeat="V__VerbForm=Ger">
+      <span>
+        <target id="w113"/>
+      </span>
+    </term>
+    <term id="t114" lemma="armare" pos="NOUN" morphofeat="S__Gender=Fem|Number=Plur">
+      <span>
+        <target id="w114"/>
+      </span>
+    </term>
+    <term id="t115" lemma="che" pos="PRON" morphofeat="PR__PronType=Rel">
+      <span>
+        <target id="w115"/>
+      </span>
+    </term>
+    <term id="t116" lemma="essere" pos="VERB" morphofeat="V__Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin">
+      <span>
+        <target id="w116"/>
+      </span>
+    </term>
+    <term id="t117" lemma="regolarmente" pos="ADV" morphofeat="B___">
+      <span>
+        <target id="w117"/>
+      </span>
+    </term>
+    <term id="t118" lemma="in" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w118"/>
+      </span>
+    </term>
+    <term id="t119" lemma="possesso" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w119"/>
+      </span>
+    </term>
+    <term id="t120" lemma="della" pos="NOUN" morphofeat="S__Number=Sing">
+      <span>
+        <target id="w120"/>
+      </span>
+    </term>
+    <term id="t121" lemma="madre" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w121"/>
+      </span>
+    </term>
+    <term id="t122" lemma="." pos="PUNCT" morphofeat="FS___">
+      <span>
+        <target id="w122"/>
+      </span>
+    </term>
+    <term id="t123" lemma="In" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w123"/>
+      </span>
+    </term>
+    <term id="t124" lemma="un" pos="DET" morphofeat="RI__Definite=Ind|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w124"/>
+      </span>
+    </term>
+    <term id="t125" lemma="primo" pos="ADJ" morphofeat="NO__Gender=Masc|Number=Sing|NumType=Ord">
+      <span>
+        <target id="w125"/>
+      </span>
+    </term>
+    <term id="t126" lemma="momento" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w126"/>
+      </span>
+    </term>
+    <term id="t127" lemma="essere" pos="AUX" morphofeat="VA__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin">
+      <span>
+        <target id="w127"/>
+      </span>
+    </term>
+    <term id="t128" lemma="stare" pos="AUX" morphofeat="VA__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w128"/>
+      </span>
+    </term>
+    <term id="t129" lemma="erroneamente" pos="NOUN" morphofeat="S__Number=Sing">
+      <span>
+        <target id="w129"/>
+      </span>
+    </term>
+    <term id="t130" lemma="identificare" pos="VERB" morphofeat="V__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w130"/>
+      </span>
+    </term>
+    <term id="t131" lemma="come" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w131"/>
+      </span>
+    </term>
+    <term id="t132" lemma="autore" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w132"/>
+      </span>
+    </term>
+    <term id="t133" lemma="del" pos="DET" morphofeat="DI__Gender=Masc|Number=Sing|PronType=Ind">
+      <span>
+        <target id="w133"/>
+      </span>
+    </term>
+    <term id="t134" lemma="reato" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w134"/>
+      </span>
+    </term>
+    <term id="t135" lemma="suo" pos="DET" morphofeat="AP__Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs">
+      <span>
+        <target id="w135"/>
+      </span>
+    </term>
+    <term id="t136" lemma="fratello" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w136"/>
+      </span>
+    </term>
+    <term id="t137" lemma="Ryan" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w137"/>
+      </span>
+    </term>
+    <term id="t138" lemma="." pos="PUNCT" morphofeat="FS___">
+      <span>
+        <target id="w138"/>
+      </span>
+    </term>
+    <term id="t139" lemma="&#10;" pos="SPACE" morphofeat="_SP">
+      <span>
+        <target id="w139"/>
+      </span>
+    </term>
+    <term id="t140" lemma="Si" pos="PRON" morphofeat="PC__Clitic=Yes|Person=3|PronType=Prs">
+      <span>
+        <target id="w140"/>
+      </span>
+    </term>
+    <term id="t141" lemma="trattare" pos="VERB" morphofeat="V__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin">
+      <span>
+        <target id="w141"/>
+      </span>
+    </term>
+    <term id="t142" lemma="del" pos="DET" morphofeat="DI__Gender=Masc|Number=Sing|PronType=Ind">
+      <span>
+        <target id="w142"/>
+      </span>
+    </term>
+    <term id="t143" lemma="terzo" pos="ADJ" morphofeat="NO__Gender=Masc|Number=Sing|NumType=Ord">
+      <span>
+        <target id="w143"/>
+      </span>
+    </term>
+    <term id="t144" lemma="massacrare" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w144"/>
+      </span>
+    </term>
+    <term id="t145" lemma="scolastico" pos="ADJ" morphofeat="A__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w145"/>
+      </span>
+    </term>
+    <term id="t146" lemma="in" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w146"/>
+      </span>
+    </term>
+    <term id="t147" lemma="ordine" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w147"/>
+      </span>
+    </term>
+    <term id="t148" lemma="di" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w148"/>
+      </span>
+    </term>
+    <term id="t149" lemma="vittima" pos="NOUN" morphofeat="S__Gender=Fem|Number=Plur">
+      <span>
+        <target id="w149"/>
+      </span>
+    </term>
+    <term id="t150" lemma="avvenire" pos="VERB" morphofeat="V__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part">
+      <span>
+        <target id="w150"/>
+      </span>
+    </term>
+    <term id="t151" lemma="in" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w151"/>
+      </span>
+    </term>
+    <term id="t152" lemma="una" pos="DET" morphofeat="RI__Definite=Ind|Gender=Fem|Number=Sing|PronType=Art">
+      <span>
+        <target id="w152"/>
+      </span>
+    </term>
+    <term id="t153" lemma="scuola" pos="NOUN" morphofeat="S__Gender=Fem|Number=Sing">
+      <span>
+        <target id="w153"/>
+      </span>
+    </term>
+    <term id="t154" lemma="del" pos="DET" morphofeat="DI__Gender=Masc|Number=Plur|PronType=Ind">
+      <span>
+        <target id="w154"/>
+      </span>
+    </term>
+    <term id="t155" lemma="Stati" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w155"/>
+      </span>
+    </term>
+    <term id="t156" lemma="Uniti" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w156"/>
+      </span>
+    </term>
+    <term id="t157" lemma="di" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w157"/>
+      </span>
+    </term>
+    <term id="t158" lemma="America" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w158"/>
+      </span>
+    </term>
+    <term id="t159" lemma="dopo" pos="ADP" morphofeat="E___">
+      <span>
+        <target id="w159"/>
+      </span>
+    </term>
+    <term id="t160" lemma="il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w160"/>
+      </span>
+    </term>
+    <term id="t161" lemma="massacrare" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w161"/>
+      </span>
+    </term>
+    <term id="t162" lemma="al" pos="PUNCT" morphofeat="FS___">
+      <span>
+        <target id="w162"/>
+      </span>
+    </term>
+    <term id="t163" lemma="Virginia" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w163"/>
+      </span>
+    </term>
+    <term id="t164" lemma="Polytechnic" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w164"/>
+      </span>
+    </term>
+    <term id="t165" lemma="Institute" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w165"/>
+      </span>
+    </term>
+    <term id="t166" lemma="e" pos="CONJ" morphofeat="CC___">
+      <span>
+        <target id="w166"/>
+      </span>
+    </term>
+    <term id="t167" lemma="il" pos="DET" morphofeat="RD__Definite=Def|Gender=Masc|Number=Sing|PronType=Art">
+      <span>
+        <target id="w167"/>
+      </span>
+    </term>
+    <term id="t168" lemma="massacrare" pos="NOUN" morphofeat="S__Gender=Masc|Number=Sing">
+      <span>
+        <target id="w168"/>
+      </span>
+    </term>
+    <term id="t169" lemma="della" pos="ADJ" morphofeat="A__Number=Sing">
+      <span>
+        <target id="w169"/>
+      </span>
+    </term>
+    <term id="t170" lemma="Bath" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w170"/>
+      </span>
+    </term>
+    <term id="t171" lemma="School" pos="PROPN" morphofeat="SP___">
+      <span>
+        <target id="w171"/>
+      </span>
+    </term>
+    <term id="t172" lemma="." pos="PUNCT" morphofeat="FS___">
+      <span>
+        <target id="w172"/>
+      </span>
+    </term>
+  </terms>
+</NAF>
