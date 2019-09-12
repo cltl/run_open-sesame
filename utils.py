@@ -62,6 +62,11 @@ def load_open_sesame_output(output_path, verbose=0):
         'roles': []
     }
 
+    role_info = {
+        'role_name' : '',
+        'indices' : ''
+        }
+
     # this needs to be reset every time a predicate is added to index2predicates
     tokens = []
 
