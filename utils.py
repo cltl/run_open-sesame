@@ -1,7 +1,22 @@
 import os
+import json
 import datetime
 from collections import defaultdict
 
+def get_frame_label_to_uri(frame_to_info_json, verbose=0):
+    """
+    """
+    frame_to_uri = {}
+
+    frame_to_info = json.load(open(frame_to_info_json))
+
+    for uri, info in frame_to_info.items():
+        frame_to_uri[info['frame_label']] = uri
+
+    if verbose:
+        print()
+        print(f'loaded {len(frame_to_uri)} frame uris.')
+    return frame_to_uri
 
 def time_in_correct_format(datetime_obj):
     "Function that returns the current time (UTC)"
