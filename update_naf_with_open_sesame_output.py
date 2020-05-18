@@ -6,7 +6,7 @@ Usage:
   update_naf_with_open_sesame_output.py\
    --naf_folder=<naf_folder>\
    --output_open_sesame=<output_open_sesame>\
-   --path_frame_to_info=<path_frame_to_info>
+   --path_frame_to_info=<path_frame_to_info>\
    --commit=<commit>\
    --verbose=<verbose>
 
@@ -46,7 +46,7 @@ open_sesame_dir = Path(arguments['--output_open_sesame'])
 naf_output_dir = open_sesame_dir / 'NAF'
 naf_output_dir.mkdir()
 
-label_to_uri = json.load(open(arguments['--path_frame_to_info']))
+label_to_uri = utils.get_frame_label_to_uri(arguments['--path_frame_to_info'])
 
 open_sesame_output_path = open_sesame_dir / 'all_sentences.conll'
 open_sesame_txt_path = open_sesame_dir / 'all_sentences.txt'
@@ -67,6 +67,8 @@ index2num_tokens = utils.load_open_sesame_output(str(open_sesame_output_path), v
 #load mapping tokens to sent_ids
 stem2index2sentid_and_tokens = pickle.load(open(str(stem2index2sentid_and_tokens_path), 'rb'))
 
+name = 'open-sesame'
+
 #update NAF files
 for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
 
@@ -85,7 +87,7 @@ for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
 
     # add header
     srl_lp = my_parser.create_linguistic_processor(layer='srl',
-                                                   name='open-sesame',
+                                                   name=name,
                                                    btimestamp=btime,
                                                    etimestamp=etime,
                                                    version=f'commit-{arguments["--commit"]}')
@@ -121,9 +123,11 @@ for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
             ext_ref = CexternalReference()
             ext_ref.set_reference(uri)
             ext_ref.set_resource(resource)
-            ext_ref.set_source(arguments["--commit"])
+            ext_ref.set_source(name)
             ext_ref.set_reftype('evoke')
             ext_ref.node.set('timestamp', etime)
+            
+            predicate_obj.add_external_reference(ext_ref)
 
             # add predicate target id
             span_obj = KafNafParserPy.Cspan()
