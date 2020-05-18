@@ -3,23 +3,36 @@ update NAF files with open-sesame output
 will be stored in folder --output_open_sesame/NAF
 
 Usage:
-  update_naf_with_open_sesame_output.py --naf_folder=<naf_folder> --output_open_sesame=<output_open_sesame> --commit=<commit> --verbose=<verbose>
+  update_naf_with_open_sesame_output.py\
+   --naf_folder=<naf_folder>\
+   --output_open_sesame=<output_open_sesame>\
+   --path_frame_to_info=<path_frame_to_info>
+   --commit=<commit>\
+   --verbose=<verbose>
 
 Options:
     --naf_folder=<naf_folder> folder with the original NAF files
     --output_open_sesame=<output_open_sesame> output from open sesame
+    --path_frame_to_info=<path_frame_to_info>
     --commit=<commit> the git commit that you cloned of open-sesame (in development this is 96639aedd24442433365d4d9fca877931fe222e4)
 
 Example:
-    python update_naf_with_open_sesame_output.py --naf_folder="example_files" --output_open_sesame="output" --commit="96639aedd24442433365d4d9fca877931fe222e4" --verbose=1
+    python update_naf_with_open_sesame_output.py\
+    --naf_folder="example_files"\
+    --output_open_sesame="output"\
+    --path_frame_to_info="dep/Dutch_FrameNet_Lexicon/output/lexicon_data_for_frame_annotation_tool/frame_to_info.json"\
+    --commit="96639aedd24442433365d4d9fca877931fe222e4"\
+    --verbose=1
 """
 import pickle
+import json
 from docopt import docopt
 from pathlib import Path
 import utils
 
 from KafNafParserPy import KafNafParser
 import KafNafParserPy
+from KafNafParserPy.external_references_data import CexternalReference
 
 # load arguments
 arguments = docopt(__doc__)
@@ -32,6 +45,8 @@ naf_dir = Path(arguments['--naf_folder'])
 open_sesame_dir = Path(arguments['--output_open_sesame'])
 naf_output_dir = open_sesame_dir / 'NAF'
 naf_output_dir.mkdir()
+
+label_to_uri = json.load(open(arguments['--path_frame_to_info']))
 
 open_sesame_output_path = open_sesame_dir / 'all_sentences.conll'
 open_sesame_txt_path = open_sesame_dir / 'all_sentences.txt'
@@ -99,7 +114,16 @@ for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
             frame_label = predicate['frame_label']
             predicate_obj = KafNafParserPy.Cpredicate()
             predicate_obj.set_id(f'pr{cur_pred_id}')
-            predicate_obj.set_uri(frame_label)
+
+            uri = label_to_uri[frame_label]
+            resource = uri.rsplit('/', 1)[0]
+
+            ext_ref = CexternalReference()
+            ext_ref.set_reference(uri)
+            ext_ref.set_resource(resource)
+            ext_ref.set_source(arguments["--commit"])
+            ext_ref.set_reftype('evoke')
+            ext_ref.node.set('timestamp', etime)
 
             # add predicate target id
             span_obj = KafNafParserPy.Cspan()
