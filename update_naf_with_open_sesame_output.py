@@ -116,6 +116,7 @@ for stem, index2sentid_and_tokens in stem2index2sentid_and_tokens.items():
             frame_label = predicate['frame_label']
             predicate_obj = KafNafParserPy.Cpredicate()
             predicate_obj.set_id(f'pr{cur_pred_id}')
+            predicate_obj.node.set('status', 'system')
 
             uri = label_to_uri[frame_label]
             resource = uri.rsplit('/', 1)[0]
