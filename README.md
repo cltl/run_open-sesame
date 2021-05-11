@@ -20,10 +20,6 @@ pip install -r requirements.txt
 ## How to use
 Please open the file *run_open_sesame.sh* and set the variables to the correct values.
 
-## Authors
-
-* **Marten Postma** (m.c.postma@vu.nl)
-
 ## License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details
